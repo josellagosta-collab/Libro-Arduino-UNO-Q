@@ -1,13 +1,13 @@
 
 /* ============================================================
    LIBRO ARDUINO UNO Q - 2º ASIX
-   ESTILOS CORPORATIVOS MONLAU
-   MkDocs Material
+   CENTRO MONLAU
+   ESTILOS CORPORATIVOS Y NAVEGACION
    ============================================================ */
 
 
 /* ============================================================
-   1. COLORES CORPORATIVOS
+   1. VARIABLES Y COLORES CORPORATIVOS
    ============================================================ */
 
 :root {
@@ -38,30 +38,31 @@
     color: #ffffff;
 }
 
+.md-header__button {
+    color: #ffffff;
+}
+
 
 /* ============================================================
-   3. NAVEGACION SUPERIOR
+   3. NAVEGACION SUPERIOR - PESTAÑAS
    ============================================================ */
 
 .md-tabs {
     background-color: var(--monlau-azul);
     position: relative;
     z-index: 40;
-
-    overflow: visible !important;
 }
 
 .md-tabs__inner {
-    overflow: visible !important;
+    overflow: visible;
 }
 
 .md-tabs__list {
-    overflow: visible !important;
+    overflow: visible;
 }
 
 .md-tabs__item {
     position: relative;
-    overflow: visible !important;
 }
 
 .md-tabs__link {
@@ -77,23 +78,29 @@
 
 
 /* ============================================================
-   4. MENUS DESPLEGABLES
+   4. CONTENEDOR DE MENUS FLOTANTES
    ============================================================ */
 
 /*
-   Los menus utilizan position: fixed para evitar
-   que los contenedores de Material los recorten.
+   Los menus desplegables son creados por navigation.js
+   y se insertan directamente dentro de document.body.
 
-   JavaScript se encargara de calcular su posicion.
+   Esto evita que MkDocs Material los recorte.
 */
 
-.monlau-dropdown {
+#monlau-menu-container {
+    position: static;
+}
+
+
+/* ============================================================
+   5. MENUS DESPLEGABLES FLOTANTES
+   ============================================================ */
+
+.monlau-menu-flotante {
     display: none;
 
     position: fixed;
-
-    top: 0;
-    left: 0;
 
     width: 330px;
     max-width: calc(100vw - 20px);
@@ -108,41 +115,21 @@
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 
-    list-style: none;
-
-    z-index: 99999;
-
     max-height: 70vh;
     overflow-y: auto;
+
+    z-index: 99999;
 }
 
 
-/* Mostrar menus al pasar el raton */
+/* ============================================================
+   6. ENLACES DE LOS CAPITULOS
+   ============================================================ */
 
-.monlau-has-dropdown:hover > .monlau-dropdown,
-.monlau-has-dropdown:focus-within > .monlau-dropdown {
-    display: block;
-}
-
-
-/* Elementos de cada menu */
-
-.monlau-dropdown li {
+.monlau-menu-flotante a {
     display: block;
 
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-
-/* Enlaces de capitulos */
-
-.monlau-dropdown a {
-    display: block;
-
-    padding: 12px 16px;
+    padding: 11px 16px;
 
     color: var(--monlau-azul) !important;
 
@@ -151,15 +138,11 @@
     line-height: 1.5;
 
     text-decoration: none;
-
     white-space: normal;
 }
 
-
-/* Efecto hover */
-
-.monlau-dropdown a:hover,
-.monlau-dropdown a:focus-visible {
+.monlau-menu-flotante a:hover,
+.monlau-menu-flotante a:focus-visible {
     background-color: #eef4fa;
 
     color: var(--monlau-azul-oscuro) !important;
@@ -169,7 +152,7 @@
 
 
 /* ============================================================
-   5. OCULTAR MENU LATERAL IZQUIERDO
+   7. OCULTAR NAVEGACION LATERAL IZQUIERDA
    ============================================================ */
 
 @media screen and (min-width: 76.25em) {
@@ -182,7 +165,7 @@
 
 
 /* ============================================================
-   6. CONTENIDO PRINCIPAL
+   8. CONTENIDO PRINCIPAL
    ============================================================ */
 
 .md-main__inner {
@@ -200,7 +183,7 @@
 
 
 /* ============================================================
-   7. TITULOS Y ENLACES
+   9. TITULOS
    ============================================================ */
 
 .md-typeset h1 {
@@ -210,11 +193,17 @@
 
 .md-typeset h2 {
     color: var(--monlau-azul);
+    font-weight: 600;
 }
 
 .md-typeset h3 {
     color: var(--monlau-azul-oscuro);
 }
+
+
+/* ============================================================
+   10. ENLACES DEL CONTENIDO
+   ============================================================ */
 
 .md-typeset a {
     color: var(--monlau-azul);
@@ -226,7 +215,7 @@
 
 
 /* ============================================================
-   8. BLOQUES DE CODIGO
+   11. BLOQUES DE CODIGO
    ============================================================ */
 
 .md-typeset code {
@@ -237,9 +226,13 @@
     border-radius: 6px;
 }
 
+.md-typeset .highlight {
+    border-radius: 6px;
+}
+
 
 /* ============================================================
-   9. BOTONES Y ELEMENTOS DESTACADOS
+   12. BOTONES
    ============================================================ */
 
 .md-typeset .md-button {
@@ -255,12 +248,44 @@
 
 .md-typeset .md-button--primary {
     background-color: var(--monlau-azul);
+    border-color: var(--monlau-azul);
     color: #ffffff;
 }
 
 
 /* ============================================================
-   10. PIE DE PAGINA
+   13. TABLAS
+   ============================================================ */
+
+.md-typeset table:not([class]) th {
+    background-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+.md-typeset table:not([class]) tr:hover {
+    background-color: #eef4fa;
+}
+
+
+/* ============================================================
+   14. BLOQUES DE INFORMACION
+   ============================================================ */
+
+.md-typeset .admonition {
+    border-radius: 5px;
+}
+
+.md-typeset .admonition.tip {
+    border-color: var(--monlau-azul);
+}
+
+.md-typeset .admonition.example {
+    border-color: var(--monlau-amarillo);
+}
+
+
+/* ============================================================
+   15. PIE DE PAGINA
    ============================================================ */
 
 .md-footer {
@@ -279,19 +304,23 @@
     color: #ffffff;
 }
 
+.md-footer__direction {
+    color: #dddddd;
+}
+
 
 /* ============================================================
-   11. NAVEGACION MOVIL
+   16. NAVEGACION MOVIL
    ============================================================ */
 
 @media screen and (max-width: 76.24em) {
 
     /*
-       En movil utilizamos la navegacion
-       nativa de MkDocs Material.
+       En dispositivos moviles se utiliza
+       la navegacion nativa de MkDocs Material.
     */
 
-    .monlau-dropdown {
+    #monlau-menu-container {
         display: none !important;
     }
 
@@ -299,9 +328,28 @@
         display: block;
     }
 
+    .md-content {
+        max-width: 100%;
+    }
+
 }
 
 
 /* ============================================================
-   FIN DE ESTILOS CORPORATIVOS MONLAU
+   17. AJUSTES DE ACCESIBILIDAD
+   ============================================================ */
+
+.monlau-menu-flotante a:focus-visible {
+    outline: 2px solid var(--monlau-amarillo);
+    outline-offset: -2px;
+}
+
+.md-typeset a:focus-visible {
+    outline: 2px solid var(--monlau-amarillo);
+    outline-offset: 2px;
+}
+
+
+/* ============================================================
+   FIN DEL ARCHIVO extra.css
    ============================================================ */
