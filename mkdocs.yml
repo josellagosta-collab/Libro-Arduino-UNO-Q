@@ -1,23 +1,19 @@
 site_name: Arduino UNO Q - 2º ASIX
 site_description: Libro tutorial de Arduino UNO Q
 site_author: José Aguilera Molina
-
 theme:
   name: material
   language: es
-
   palette:
     - scheme: default
       primary: blue
       accent: amber
-
   features:
     - navigation.sections
     - navigation.footer
     - content.code.copy
     - search.suggest
     - search.highlight
-
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -27,6 +23,31 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-
 nav:
   - Inicio: index.md
+  - 'Parte 1. Introducción a Arduino UNO Q':
+      - 'Capítulo 1. Arquitectura y características de Arduino UNO Q': parte1/capitulo01.md
+      - 'Capítulo 2. Preparación del entorno de desarrollo': parte1/capitulo02.md
+      - 'Capítulo 3. Primeros programas y pruebas': parte1/capitulo03.md
+  - 'Parte 2. Programación y electrónica':
+      - 'Capítulo 4. Entradas y salidas digitales': parte2/capitulo04.md
+      - 'Capítulo 5. Sensores y actuadores': parte2/capitulo05.md
+      - 'Capítulo 6. Comunicación entre procesadores y aplicaciones': parte2/capitulo06.md
+  - 'Parte 3. Linux y Python':
+      - 'Capítulo 7. Introducción al entorno Linux de Arduino UNO Q': parte3/capitulo07.md
+      - 'Capítulo 8. Programación con Python': parte3/capitulo08.md
+      - 'Capítulo 9. Automatización y servicios': parte3/capitulo09.md
+  - 'Parte 4. Redes e IoT':
+      - 'Capítulo 10. Conectividad y servicios de red': parte4/capitulo10.md
+      - 'Capítulo 11. Servidores web y API REST': parte4/capitulo11.md
+      - 'Capítulo 12. MQTT y comunicaciones IoT': parte4/capitulo12.md
+      - 'Capítulo 13. InfluxDB y Grafana': parte4/capitulo13.md
+  - 'Parte 5. Inteligencia artificial':
+      - 'Capítulo 14. Introducción a Edge AI': parte5/capitulo14.md
+      - 'Capítulo 15. Modelos de inteligencia artificial': parte5/capitulo15.md
+      - 'Capítulo 16. Visión artificial y reconocimiento': parte5/capitulo16.md
+      - 'Capítulo 17. Integración de IA con sensores y actuadores': parte5/capitulo17.md
+  - 'Parte 6. Proyecto final':
+      - 'Capítulo 18. Diseño del proyecto final': parte6/capitulo18.md
+      - 'Capítulo 19. Implementación y pruebas': parte6/capitulo19.md
+      - 'Capítulo 20. Documentación y presentación': parte6/capitulo20.md
