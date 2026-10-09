@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!script) return;
 
-    const base = new URL("../../../", script.src);
+    const base = new URL("../../", script.src);
 
     // Crear los menus fuera de los contenedores de Material
     const contenedor = document.createElement("div");
