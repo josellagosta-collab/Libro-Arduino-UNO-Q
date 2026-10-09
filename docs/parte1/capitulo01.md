@@ -280,7 +280,7 @@ La siguiente figura muestra el pinout oficial de Arduino UNO Q,
 con la identificación de los conectores, pines de alimentación,
 entradas y salidas digitales y analógicas, y buses de comunicación.
 
-![Pinout oficial de Arduino UNO Q](../../assets/images/parte1/capitulo01/pinout-arduino-uno-q.png)
+![Pinout oficial de Arduino UNO Q](../assets/images/parte1/capitulo01/pinout-arduino-uno-q.png)
 
 *Figura 1.1. Pinout oficial de Arduino UNO Q. Fuente: Arduino,
 documento ABX00162-ABX00173, actualizado el 17 de febrero de 2026.*
