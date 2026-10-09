@@ -1,0 +1,355 @@
+
+/* ============================================================
+   LIBRO ARDUINO UNO Q - 2º ASIX
+   CENTRO MONLAU
+   ESTILOS CORPORATIVOS Y NAVEGACION
+   ============================================================ */
+
+
+/* ============================================================
+   1. VARIABLES Y COLORES CORPORATIVOS
+   ============================================================ */
+
+:root {
+    --monlau-azul: #00549f;
+    --monlau-azul-claro: #2874b8;
+    --monlau-azul-oscuro: #003c73;
+    --monlau-amarillo: #f5c400;
+
+    --md-primary-fg-color: #00549f;
+    --md-primary-fg-color--light: #2874b8;
+    --md-primary-fg-color--dark: #003c73;
+
+    --md-accent-fg-color: #f5c400;
+}
+
+
+/* ============================================================
+   2. CABECERA PRINCIPAL
+   ============================================================ */
+
+.md-header {
+    background-color: var(--monlau-azul);
+    position: relative;
+    z-index: 30;
+}
+
+.md-header__title {
+    color: #ffffff;
+}
+
+.md-header__button {
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   3. NAVEGACION SUPERIOR - PESTAÑAS
+   ============================================================ */
+
+.md-tabs {
+    background-color: var(--monlau-azul);
+    position: relative;
+    z-index: 40;
+}
+
+.md-tabs__inner {
+    overflow: visible;
+}
+
+.md-tabs__list {
+    overflow: visible;
+}
+
+.md-tabs__item {
+    position: relative;
+}
+
+.md-tabs__link {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+    color: var(--monlau-amarillo);
+    opacity: 1;
+}
+
+
+/* ============================================================
+   4. CONTENEDOR DE MENUS FLOTANTES
+   ============================================================ */
+
+/*
+   Los menus desplegables son creados por navigation.js
+   y se insertan directamente dentro de document.body.
+
+   Esto evita que MkDocs Material los recorte.
+*/
+
+#monlau-menu-container {
+    position: static;
+}
+
+
+/* ============================================================
+   5. MENUS DESPLEGABLES FLOTANTES
+   ============================================================ */
+
+.monlau-menu-flotante {
+    display: none;
+
+    position: fixed;
+
+    width: 330px;
+    max-width: calc(100vw - 20px);
+
+    margin: 0;
+    padding: 8px 0;
+
+    background-color: #ffffff;
+
+    border-top: 4px solid var(--monlau-amarillo);
+    border-radius: 0 0 6px 6px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    max-height: 70vh;
+    overflow-y: auto;
+
+    z-index: 99999;
+}
+
+
+/* ============================================================
+   6. ENLACES DE LOS CAPITULOS
+   ============================================================ */
+
+.monlau-menu-flotante a {
+    display: block;
+
+    padding: 11px 16px;
+
+    color: var(--monlau-azul) !important;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-decoration: none;
+    white-space: normal;
+}
+
+.monlau-menu-flotante a:hover,
+.monlau-menu-flotante a:focus-visible {
+    background-color: #eef4fa;
+
+    color: var(--monlau-azul-oscuro) !important;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   7. OCULTAR NAVEGACION LATERAL IZQUIERDA
+   ============================================================ */
+
+@media screen and (min-width: 76.25em) {
+
+    .md-sidebar--primary {
+        display: none !important;
+    }
+
+}
+
+
+/* ============================================================
+   8. CONTENIDO PRINCIPAL
+   ============================================================ */
+
+.md-main__inner {
+    max-width: 100%;
+}
+
+.md-content {
+    max-width: none;
+}
+
+.md-content__inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============================================================
+   9. TITULOS
+   ============================================================ */
+
+.md-typeset h1 {
+    color: var(--monlau-azul);
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    color: var(--monlau-azul);
+    font-weight: 600;
+}
+
+.md-typeset h3 {
+    color: var(--monlau-azul-oscuro);
+}
+
+
+/* ============================================================
+   10. ENLACES DEL CONTENIDO
+   ============================================================ */
+
+.md-typeset a {
+    color: var(--monlau-azul);
+}
+
+.md-typeset a:hover {
+    color: var(--monlau-azul-claro);
+}
+
+
+/* ============================================================
+   11. BLOQUES DE CODIGO
+   ============================================================ */
+
+.md-typeset code {
+    border-radius: 4px;
+}
+
+.md-typeset pre {
+    border-radius: 6px;
+}
+
+.md-typeset .highlight {
+    border-radius: 6px;
+}
+
+
+/* ============================================================
+   12. BOTONES
+   ============================================================ */
+
+.md-typeset .md-button {
+    border-color: var(--monlau-azul);
+    color: var(--monlau-azul);
+}
+
+.md-typeset .md-button:hover {
+    background-color: var(--monlau-azul);
+    border-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+.md-typeset .md-button--primary {
+    background-color: var(--monlau-azul);
+    border-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   13. TABLAS
+   ============================================================ */
+
+.md-typeset table:not([class]) th {
+    background-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+.md-typeset table:not([class]) tr:hover {
+    background-color: #eef4fa;
+}
+
+
+/* ============================================================
+   14. BLOQUES DE INFORMACION
+   ============================================================ */
+
+.md-typeset .admonition {
+    border-radius: 5px;
+}
+
+.md-typeset .admonition.tip {
+    border-color: var(--monlau-azul);
+}
+
+.md-typeset .admonition.example {
+    border-color: var(--monlau-amarillo);
+}
+
+
+/* ============================================================
+   15. PIE DE PAGINA
+   ============================================================ */
+
+.md-footer {
+    background-color: var(--monlau-azul-oscuro);
+}
+
+.md-footer__link {
+    color: #ffffff;
+}
+
+.md-footer__link:hover {
+    color: var(--monlau-amarillo);
+}
+
+.md-footer__title {
+    color: #ffffff;
+}
+
+.md-footer__direction {
+    color: #dddddd;
+}
+
+
+/* ============================================================
+   16. NAVEGACION MOVIL
+   ============================================================ */
+
+@media screen and (max-width: 76.24em) {
+
+    /*
+       En dispositivos moviles se utiliza
+       la navegacion nativa de MkDocs Material.
+    */
+
+    #monlau-menu-container {
+        display: none !important;
+    }
+
+    .md-sidebar--primary {
+        display: block;
+    }
+
+    .md-content {
+        max-width: 100%;
+    }
+
+}
+
+
+/* ============================================================
+   17. AJUSTES DE ACCESIBILIDAD
+   ============================================================ */
+
+.monlau-menu-flotante a:focus-visible {
+    outline: 2px solid var(--monlau-amarillo);
+    outline-offset: -2px;
+}
+
+.md-typeset a:focus-visible {
+    outline: 2px solid var(--monlau-amarillo);
+    outline-offset: 2px;
+}
+
+
+/* ============================================================
+   FIN DEL ARCHIVO extra.css
+   ============================================================ */
