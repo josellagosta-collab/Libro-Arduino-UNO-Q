@@ -4,16 +4,32 @@ site_author: José Aguilera Molina
 theme:
   name: material
   language: es
+
   palette:
     - scheme: default
-      primary: blue
-      accent: amber
+      primary: custom
+      accent: custom
+
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.footer
+    - navigation.top
     - content.code.copy
     - search.suggest
     - search.highlight
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/navigation.js
+  
 markdown_extensions:
   - admonition
   - pymdownx.details

@@ -1,0 +1,307 @@
+
+/* ============================================================
+   LIBRO ARDUINO UNO Q - 2º ASIX
+   ESTILOS CORPORATIVOS MONLAU
+   MkDocs Material
+   ============================================================ */
+
+
+/* ============================================================
+   1. COLORES CORPORATIVOS
+   ============================================================ */
+
+:root {
+    --monlau-azul: #00549f;
+    --monlau-azul-claro: #2874b8;
+    --monlau-azul-oscuro: #003c73;
+    --monlau-amarillo: #f5c400;
+
+    --md-primary-fg-color: #00549f;
+    --md-primary-fg-color--light: #2874b8;
+    --md-primary-fg-color--dark: #003c73;
+
+    --md-accent-fg-color: #f5c400;
+}
+
+
+/* ============================================================
+   2. CABECERA PRINCIPAL
+   ============================================================ */
+
+.md-header {
+    background-color: var(--monlau-azul);
+    position: relative;
+    z-index: 30;
+}
+
+.md-header__title {
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   3. NAVEGACION SUPERIOR
+   ============================================================ */
+
+.md-tabs {
+    background-color: var(--monlau-azul);
+    position: relative;
+    z-index: 40;
+
+    overflow: visible !important;
+}
+
+.md-tabs__inner {
+    overflow: visible !important;
+}
+
+.md-tabs__list {
+    overflow: visible !important;
+}
+
+.md-tabs__item {
+    position: relative;
+    overflow: visible !important;
+}
+
+.md-tabs__link {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+    color: var(--monlau-amarillo);
+    opacity: 1;
+}
+
+
+/* ============================================================
+   4. MENUS DESPLEGABLES
+   ============================================================ */
+
+/*
+   Los menus utilizan position: fixed para evitar
+   que los contenedores de Material los recorten.
+
+   JavaScript se encargara de calcular su posicion.
+*/
+
+.monlau-dropdown {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 330px;
+    max-width: calc(100vw - 20px);
+
+    margin: 0;
+    padding: 8px 0;
+
+    background-color: #ffffff;
+
+    border-top: 4px solid var(--monlau-amarillo);
+    border-radius: 0 0 6px 6px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    list-style: none;
+
+    z-index: 99999;
+
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+
+/* Mostrar menus al pasar el raton */
+
+.monlau-has-dropdown:hover > .monlau-dropdown,
+.monlau-has-dropdown:focus-within > .monlau-dropdown {
+    display: block;
+}
+
+
+/* Elementos de cada menu */
+
+.monlau-dropdown li {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* Enlaces de capitulos */
+
+.monlau-dropdown a {
+    display: block;
+
+    padding: 12px 16px;
+
+    color: var(--monlau-azul) !important;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    white-space: normal;
+}
+
+
+/* Efecto hover */
+
+.monlau-dropdown a:hover,
+.monlau-dropdown a:focus-visible {
+    background-color: #eef4fa;
+
+    color: var(--monlau-azul-oscuro) !important;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   5. OCULTAR MENU LATERAL IZQUIERDO
+   ============================================================ */
+
+@media screen and (min-width: 76.25em) {
+
+    .md-sidebar--primary {
+        display: none !important;
+    }
+
+}
+
+
+/* ============================================================
+   6. CONTENIDO PRINCIPAL
+   ============================================================ */
+
+.md-main__inner {
+    max-width: 100%;
+}
+
+.md-content {
+    max-width: none;
+}
+
+.md-content__inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============================================================
+   7. TITULOS Y ENLACES
+   ============================================================ */
+
+.md-typeset h1 {
+    color: var(--monlau-azul);
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    color: var(--monlau-azul);
+}
+
+.md-typeset h3 {
+    color: var(--monlau-azul-oscuro);
+}
+
+.md-typeset a {
+    color: var(--monlau-azul);
+}
+
+.md-typeset a:hover {
+    color: var(--monlau-azul-claro);
+}
+
+
+/* ============================================================
+   8. BLOQUES DE CODIGO
+   ============================================================ */
+
+.md-typeset code {
+    border-radius: 4px;
+}
+
+.md-typeset pre {
+    border-radius: 6px;
+}
+
+
+/* ============================================================
+   9. BOTONES Y ELEMENTOS DESTACADOS
+   ============================================================ */
+
+.md-typeset .md-button {
+    border-color: var(--monlau-azul);
+    color: var(--monlau-azul);
+}
+
+.md-typeset .md-button:hover {
+    background-color: var(--monlau-azul);
+    border-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+.md-typeset .md-button--primary {
+    background-color: var(--monlau-azul);
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   10. PIE DE PAGINA
+   ============================================================ */
+
+.md-footer {
+    background-color: var(--monlau-azul-oscuro);
+}
+
+.md-footer__link {
+    color: #ffffff;
+}
+
+.md-footer__link:hover {
+    color: var(--monlau-amarillo);
+}
+
+.md-footer__title {
+    color: #ffffff;
+}
+
+
+/* ============================================================
+   11. NAVEGACION MOVIL
+   ============================================================ */
+
+@media screen and (max-width: 76.24em) {
+
+    /*
+       En movil utilizamos la navegacion
+       nativa de MkDocs Material.
+    */
+
+    .monlau-dropdown {
+        display: none !important;
+    }
+
+    .md-sidebar--primary {
+        display: block;
+    }
+
+}
+
+
+/* ============================================================
+   FIN DE ESTILOS CORPORATIVOS MONLAU
+   ============================================================ */
