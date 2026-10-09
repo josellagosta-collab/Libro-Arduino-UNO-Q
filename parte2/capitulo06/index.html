@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#capitulo-6-comunicacion-entre-procesadores-y-aplicaciones" class="md-skip">
+        <a href="#capitulo-6-comunicacion-entre-procesadores-de-arduino-uno-q" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -670,6 +670,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Comunicación entre procesadores y aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -686,6 +704,497 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-una-placa-dos-entornos-de-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Una placa, dos entornos de ejecución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Una placa, dos entornos de ejecución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-ejemplo-de-aplicacion-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Ejemplo de aplicación híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-bridge-arduino-router-y-rpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Bridge, Arduino Router y RPC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Bridge, Arduino Router y RPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-funciones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Funciones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Preparación del entorno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Preparación del entorno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-necesario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material necesario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procedimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-programa-1-encender-y-apagar-un-led-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Programa 1. Encender y apagar un LED desde Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Programa 1. Encender y apagar un LED desde Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-codigo-arduino-sketchsketchino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Código Arduino: sketch/sketch.ino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-codigo-python-pythonmainpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Código Python: python/main.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Ejecución
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-analisis-de-la-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Análisis de la comunicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Análisis de la comunicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-publicar-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Publicar una función
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-invocar-la-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. Invocar la función
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-correspondencia-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. Correspondencia de tipos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-programa-2-seleccionar-el-color-rgb-desde-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Programa 2. Seleccionar el color RGB desde Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Programa 2. Seleccionar el color RGB desde Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#61-codigo-arduino-sketchsketchino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Código Arduino: sketch/sketch.ino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-codigo-python-pythonmainpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Código Python: python/main.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3. Comprobación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-programa-3-enviar-un-estado-calculado-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Programa 3. Enviar un estado calculado en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Programa 3. Enviar un estado calculado en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71-sketch-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1. Sketch Arduino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-programa-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2. Programa Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3. Resultado esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-supervision-y-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Supervisión y resolución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Supervisión y resolución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errores-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-buenas-practicas-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Buenas prácticas de diseño
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-practica-evaluable-panel-de-control-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Práctica evaluable: panel de control híbrido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Práctica evaluable: panel de control híbrido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos funcionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ampliacion-voluntaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ampliación voluntaria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacion-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentación de referencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1347,6 +1856,486 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-una-placa-dos-entornos-de-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Una placa, dos entornos de ejecución
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Una placa, dos entornos de ejecución">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-ejemplo-de-aplicacion-hibrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. Ejemplo de aplicación híbrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-bridge-arduino-router-y-rpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Bridge, Arduino Router y RPC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Bridge, Arduino Router y RPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-funciones-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1. Funciones principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Preparación del entorno
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Preparación del entorno">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-necesario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material necesario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Procedimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-programa-1-encender-y-apagar-un-led-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Programa 1. Encender y apagar un LED desde Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Programa 1. Encender y apagar un LED desde Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-codigo-arduino-sketchsketchino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1. Código Arduino: sketch/sketch.ino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-codigo-python-pythonmainpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2. Código Python: python/main.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-ejecucion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3. Ejecución
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-analisis-de-la-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Análisis de la comunicación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Análisis de la comunicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-publicar-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1. Publicar una función
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-invocar-la-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2. Invocar la función
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-correspondencia-de-tipos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3. Correspondencia de tipos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-programa-2-seleccionar-el-color-rgb-desde-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Programa 2. Seleccionar el color RGB desde Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Programa 2. Seleccionar el color RGB desde Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#61-codigo-arduino-sketchsketchino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Código Arduino: sketch/sketch.ino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-codigo-python-pythonmainpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Código Python: python/main.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3. Comprobación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-programa-3-enviar-un-estado-calculado-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Programa 3. Enviar un estado calculado en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Programa 3. Enviar un estado calculado en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71-sketch-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1. Sketch Arduino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-programa-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2. Programa Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3. Resultado esperado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-supervision-y-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Supervisión y resolución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Supervisión y resolución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#errores-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Errores frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-buenas-practicas-de-diseno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Buenas prácticas de diseño
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-practica-evaluable-panel-de-control-hibrido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Práctica evaluable: panel de control híbrido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Práctica evaluable: panel de control híbrido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos funcionales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ampliacion-voluntaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ampliación voluntaria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentacion-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentación de referencia
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1362,11 +2351,619 @@
 
 
 
-<h1 id="capitulo-6-comunicacion-entre-procesadores-y-aplicaciones">Capítulo 6. Comunicación entre procesadores y aplicaciones<a class="headerlink" href="#capitulo-6-comunicacion-entre-procesadores-y-aplicaciones" title="Permanent link">&para;</a></h1>
+<h1 id="capitulo-6-comunicacion-entre-procesadores-de-arduino-uno-q">Capítulo 6. Comunicación entre procesadores de Arduino UNO Q<a class="headerlink" href="#capitulo-6-comunicacion-entre-procesadores-de-arduino-uno-q" title="Permanent link">&para;</a></h1>
+<h2 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a class="headerlink" href="#objetivos-de-aprendizaje" title="Permanent link">&para;</a></h2>
+<p>Al finalizar el capítulo, el alumnado será capaz de:</p>
+<ul>
+<li>Diferenciar las funciones del microprocesador Qualcomm QRB2210 y del microcontrolador STM32U585.</li>
+<li>Explicar por qué una aplicación necesita intercambiar información entre Linux y el microcontrolador.</li>
+<li>Identificar el papel de <strong>Arduino Router</strong>, <strong>Bridge</strong> y las llamadas <strong>RPC</strong>.</li>
+<li>Crear una aplicación de Arduino App Lab con código Python y un sketch Arduino.</li>
+<li>Publicar una función del microcontrolador para invocarla desde Python.</li>
+<li>Intercambiar órdenes y valores numéricos entre ambos procesadores.</li>
+<li>Consultar los registros de ejecución y diagnosticar errores de comunicación.</li>
+<li>Diseñar y documentar una aplicación híbrida sencilla.</li>
+</ul>
+<h2 id="1-una-placa-dos-entornos-de-ejecucion">1. Una placa, dos entornos de ejecución<a class="headerlink" href="#1-una-placa-dos-entornos-de-ejecucion" title="Permanent link">&para;</a></h2>
+<p>Arduino UNO Q combina dos procesadores con tareas diferentes:</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Entorno</th>
+<th>Funciones principales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qualcomm QRB2210 (MPU)</td>
+<td>Debian Linux</td>
+<td>Python, red, servicios, procesamiento de datos y aplicaciones complejas</td>
+</tr>
+<tr>
+<td>STM32U585 (MCU)</td>
+<td>Zephyr y entorno Arduino</td>
+<td>Lectura de sensores, control de GPIO, temporización y actuación sobre hardware</td>
+</tr>
+</tbody>
+</table>
+<p>En los capítulos 3, 4 y 5 hemos trabajado principalmente con programas Arduino ejecutados en el STM32. En este capítulo incorporaremos <strong>Python en Linux</strong> y aprenderemos a coordinar ambos entornos.</p>
 <div class="admonition info">
-<p class="admonition-title">En preparación</p>
-<p>Este capítulo se desarrollará próximamente.</p>
+<p class="admonition-title">Idea fundamental</p>
+<p>No estamos ejecutando Python directamente en el STM32 ni accediendo a los GPIO del STM32 desde Linux como si fueran pines locales. Cada procesador ejecuta su propio código y ambos se comunican mediante un mecanismo de intercambio de mensajes.</p>
 </div>
+<h3 id="11-ejemplo-de-aplicacion-hibrida">1.1. Ejemplo de aplicación híbrida<a class="headerlink" href="#11-ejemplo-de-aplicacion-hibrida" title="Permanent link">&para;</a></h3>
+<p>Imaginemos un sistema que debe recibir órdenes desde una futura página web y encender un LED:</p>
+<ol>
+<li>Una aplicación Python en Linux recibe o genera una orden.</li>
+<li>Python envía la orden al microcontrolador.</li>
+<li>El STM32 cambia el estado de una salida digital.</li>
+<li>El LED se enciende o se apaga.</li>
+</ol>
+<p>Esta separación es especialmente útil en aplicaciones de IoT, automatización industrial y Edge AI.</p>
+<h2 id="2-bridge-arduino-router-y-rpc">2. Bridge, Arduino Router y RPC<a class="headerlink" href="#2-bridge-arduino-router-y-rpc" title="Permanent link">&para;</a></h2>
+<p><strong>RPC</strong> significa <em>Remote Procedure Call</em>, o llamada a procedimiento remoto. Permite invocar una función que se ejecuta en otro proceso o procesador.</p>
+<p>En Arduino UNO Q, la biblioteca <strong>Bridge</strong> ofrece una interfaz de programación para estas llamadas. El servicio Linux <strong>arduino-router</strong> se encarga de encaminar los mensajes entre los participantes.</p>
+<div class="highlight"><pre><span></span><code>                ARDUINO UNO Q
+┌───────────────────────────────┐
+│ Qualcomm QRB2210             │
+│ Debian Linux                 │
+│                               │
+│ python/main.py               │
+│ Bridge.call("set_led", True)  │
+│             │                 │
+│       arduino-router          │
+└─────────────┼─────────────────┘
+              │ RPC
+┌─────────────▼─────────────────┐
+│ STM32U585                     │
+│ Zephyr + Arduino              │
+│                               │
+│ sketch/sketch.ino             │
+│ Bridge.provide_safe(...)      │
+│             │                 │
+│       Salida digital          │
+└───────────────────────────────┘
+</code></pre></div>
+<p><em>Figura 6.1. Esquema conceptual de una llamada RPC entre Linux y STM32.</em></p>
+<h3 id="21-funciones-principales">2.1. Funciones principales<a class="headerlink" href="#21-funciones-principales" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Entorno</th>
+<th>Utilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Bridge.begin()</code></td>
+<td>Arduino</td>
+<td>Inicializa la comunicación del sketch</td>
+</tr>
+<tr>
+<td><code>Bridge.provide_safe(nombre, función)</code></td>
+<td>Arduino</td>
+<td>Publica una función del STM32 y la ejecuta de forma segura en el contexto del bucle principal</td>
+</tr>
+<tr>
+<td><code>Bridge.provide(nombre, función)</code></td>
+<td>Arduino</td>
+<td>Publica una función que puede ejecutarse en el hilo de comunicación; requiere especial cuidado con la concurrencia</td>
+</tr>
+<tr>
+<td><code>Bridge.call(nombre, argumentos...)</code></td>
+<td>Python</td>
+<td>Invoca una función remota y espera su respuesta</td>
+</tr>
+<tr>
+<td><code>Bridge.notify(nombre, argumentos...)</code></td>
+<td>API Bridge cuando esté disponible</td>
+<td>Envía una notificación sin esperar resultado</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Seguridad de ejecución</p>
+<p>Cuando la función remota utiliza <code>digitalWrite()</code>, <code>Serial</code> u otras API habituales de Arduino, emplearemos <code>Bridge.provide_safe()</code>.</p>
+<p>Evitaremos llamadas recursivas de comunicación desde funciones registradas con <code>Bridge.provide()</code>, porque pueden producir bloqueos.</p>
+</div>
+<h2 id="3-preparacion-del-entorno">3. Preparación del entorno<a class="headerlink" href="#3-preparacion-del-entorno" title="Permanent link">&para;</a></h2>
+<h3 id="material-necesario">Material necesario<a class="headerlink" href="#material-necesario" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Una placa Arduino UNO Q.</li>
+<li>Ordenador con Windows 11 y Arduino App Lab instalado.</li>
+<li>Cable USB-C de <strong>datos</strong> y alimentación adecuada.</li>
+<li>Conexión a la placa configurada en Arduino App Lab.</li>
+</ul>
+<p><strong>No es necesario utilizar protoboard:</strong> las primeras pruebas emplean el LED integrado controlado por el STM32.</p>
+<h3 id="procedimiento">Procedimiento<a class="headerlink" href="#procedimiento" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta Arduino UNO Q al ordenador.</li>
+<li>Abre Arduino App Lab.</li>
+<li>Comprueba que la placa aparece como dispositivo disponible.</li>
+<li>Crea una aplicación nueva con el nombre <code>06_01_bridge_led</code>.</li>
+<li>Localiza los archivos <code>python/main.py</code> y <code>sketch/sketch.ino</code>.</li>
+<li>Comprueba que puedes editar ambos archivos desde la misma aplicación.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Dos archivos, dos procesadores</p>
+<p><code>python/main.py</code> se ejecuta en Debian Linux, mientras que <code>sketch/sketch.ino</code> se compila para el microcontrolador STM32.</p>
+<p>Pulsar <strong>Run</strong> en Arduino App Lab permite preparar y ejecutar los componentes de la aplicación.</p>
+</div>
+<h2 id="4-programa-1-encender-y-apagar-un-led-desde-python">4. Programa 1. Encender y apagar un LED desde Python<a class="headerlink" href="#4-programa-1-encender-y-apagar-un-led-desde-python" title="Permanent link">&para;</a></h2>
+<h3 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">&para;</a></h3>
+<p>Enviar periódicamente una orden desde Python al STM32 para encender y apagar un LED integrado.</p>
+<p>Este primer programa adapta el ejemplo de comunicación RPC del manual oficial de Arduino UNO Q.</p>
+<h3 id="41-codigo-arduino-sketchsketchino">4.1. Código Arduino: <code>sketch/sketch.ino</code><a class="headerlink" href="#41-codigo-arduino-sketchsketchino" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"Arduino_RouterBridge.h"</span>
+
+<span class="c1">// Función invocada desde Python.</span>
+<span class="c1">// LED_BUILTIN corresponde al LED integrado usado por el ejemplo oficial.</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">set_led_state</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">encendido</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// En el LED integrado, LOW significa encendido.</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">encendido</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">LOW</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// La función usa digitalWrite: registro seguro.</span>
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">provide_safe</span><span class="p">(</span><span class="s">"set_led_state"</span><span class="p">,</span><span class="w"> </span><span class="n">set_led_state</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Bridge gestiona la recepción de llamadas remotas.</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="42-codigo-python-pythonmainpy">4.2. Código Python: <code>python/main.py</code><a class="headerlink" href="#42-codigo-python-pythonmainpy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">arduino.app_utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">led_encendido</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">loop</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">led_encendido</span>
+
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">led_encendido</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">led_encendido</span>
+
+    <span class="n">Bridge</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"set_led_state"</span><span class="p">,</span> <span class="n">led_encendido</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Orden enviada al STM32: </span><span class="si">{</span><span class="n">led_encendido</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">App</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">user_loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="43-ejecucion">4.3. Ejecución<a class="headerlink" href="#43-ejecucion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Guarda los dos archivos.</li>
+<li>Pulsa <strong>Run</strong>.</li>
+<li>Espera a que se compile el sketch y se inicie el componente Python.</li>
+<li>Observa el LED integrado del STM32.</li>
+<li>Abre la consola <strong>Main (Python)</strong> y comprueba los mensajes.</li>
+</ol>
+<p><strong>Resultado esperado:</strong> el LED cambia de estado aproximadamente cada segundo.</p>
+<div class="admonition example">
+<p class="admonition-title">Actividad 6.1</p>
+<p>Modifica el programa Python para que el LED permanezca encendido dos segundos y apagado medio segundo. No cambies el sketch Arduino.</p>
+<p>Explica por qué el comportamiento puede modificarse desde Linux sin cambiar la lógica de control del GPIO.</p>
+</div>
+<h2 id="5-analisis-de-la-comunicacion">5. Análisis de la comunicación<a class="headerlink" href="#5-analisis-de-la-comunicacion" title="Permanent link">&para;</a></h2>
+<h3 id="51-publicar-una-funcion">5.1. Publicar una función<a class="headerlink" href="#51-publicar-una-funcion" title="Permanent link">&para;</a></h3>
+<p>La instrucción:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Bridge</span><span class="p">.</span><span class="n">provide_safe</span><span class="p">(</span><span class="s">"set_led_state"</span><span class="p">,</span><span class="w"> </span><span class="n">set_led_state</span><span class="p">);</span>
+</code></pre></div>
+<p>registra un nombre remoto (<code>"set_led_state"</code>) y lo asocia con una función C++.</p>
+<h3 id="52-invocar-la-funcion">5.2. Invocar la función<a class="headerlink" href="#52-invocar-la-funcion" title="Permanent link">&para;</a></h3>
+<p>La instrucción Python:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Bridge</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"set_led_state"</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<p>solicita al STM32 que ejecute la función registrada, pasando un valor booleano.</p>
+<h3 id="53-correspondencia-de-tipos">5.3. Correspondencia de tipos<a class="headerlink" href="#53-correspondencia-de-tipos" title="Permanent link">&para;</a></h3>
+<p>En nuestras primeras aplicaciones utilizaremos tipos sencillos:</p>
+<table>
+<thead>
+<tr>
+<th>Python</th>
+<th>C++</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bool</code></td>
+<td><code>bool</code></td>
+<td><code>True</code> → encender</td>
+</tr>
+<tr>
+<td><code>int</code></td>
+<td><code>int</code></td>
+<td><code>2</code> → seleccionar color</td>
+</tr>
+<tr>
+<td><code>str</code></td>
+<td>Requiere una firma compatible</td>
+<td>Texto de diagnóstico</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Compatibilidad de parámetros</p>
+<p>El nombre RPC y los parámetros deben coincidir entre el emisor y la función registrada. Para evitar problemas, empezaremos con valores booleanos y enteros sencillos.</p>
+</div>
+<h2 id="6-programa-2-seleccionar-el-color-rgb-desde-linux">6. Programa 2. Seleccionar el color RGB desde Linux<a class="headerlink" href="#6-programa-2-seleccionar-el-color-rgb-desde-linux" title="Permanent link">&para;</a></h2>
+<h3 id="objetivo_1">Objetivo<a class="headerlink" href="#objetivo_1" title="Permanent link">&para;</a></h3>
+<p>Enviar un número desde Python y utilizarlo en el STM32 para seleccionar un color del LED RGB 3.</p>
+<table>
+<thead>
+<tr>
+<th>Valor enviado</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>LED apagado</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Rojo</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Verde</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Azul</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Amarillo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="61-codigo-arduino-sketchsketchino">6.1. Código Arduino: <code>sketch/sketch.ino</code><a class="headerlink" href="#61-codigo-arduino-sketchsketchino" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"Arduino_RouterBridge.h"</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">set_color</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">color</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Todos los canales apagados (lógica activa en LOW).</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"> </span><span class="c1">// Rojo</span>
+<span class="w">            </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="c1">// Verde</span>
+<span class="w">            </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span><span class="w"> </span><span class="c1">// Azul</span>
+<span class="w">            </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span><span class="w"> </span><span class="c1">// Amarillo</span>
+<span class="w">            </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">            </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="c1">// Apagado</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">provide_safe</span><span class="p">(</span><span class="s">"set_color"</span><span class="p">,</span><span class="w"> </span><span class="n">set_color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="62-codigo-python-pythonmainpy">6.2. Código Python: <code>python/main.py</code><a class="headerlink" href="#62-codigo-python-pythonmainpy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">arduino.app_utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">COLORES</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">0</span><span class="p">:</span> <span class="s2">"Apagado"</span><span class="p">,</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s2">"Rojo"</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s2">"Verde"</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s2">"Azul"</span><span class="p">,</span>
+    <span class="mi">4</span><span class="p">:</span> <span class="s2">"Amarillo"</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">indice</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">loop</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">indice</span>
+
+    <span class="n">color</span> <span class="o">=</span> <span class="n">COLORES</span><span class="p">[</span><span class="n">indice</span><span class="p">]</span>
+    <span class="n">Bridge</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"set_color"</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Color solicitado: </span><span class="si">{</span><span class="n">NOMBRES</span><span class="p">[</span><span class="n">color</span><span class="p">]</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">color</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+
+    <span class="n">indice</span> <span class="o">=</span> <span class="p">(</span><span class="n">indice</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">COLORES</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="n">App</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">user_loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="63-comprobacion">6.3. Comprobación<a class="headerlink" href="#63-comprobacion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Crea una nueva aplicación <code>06_02_bridge_rgb</code>.</li>
+<li>Copia los dos archivos anteriores.</li>
+<li>Ejecuta la aplicación.</li>
+<li>Comprueba que el LED recorre los colores de la tabla.</li>
+<li>Observa los mensajes en la consola Python.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Actividad 6.2</p>
+<p>Añade los colores cian, magenta y blanco.</p>
+<p>Amplía la tabla de códigos y modifica ambos programas. Documenta los nuevos valores que viajan desde Linux al STM32.</p>
+</div>
+<h2 id="7-programa-3-enviar-un-estado-calculado-en-python">7. Programa 3. Enviar un estado calculado en Python<a class="headerlink" href="#7-programa-3-enviar-un-estado-calculado-en-python" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora Python ha enviado órdenes de forma secuencial. En una aplicación real, la orden puede depender de un cálculo o de una condición.</p>
+<h3 id="objetivo_2">Objetivo<a class="headerlink" href="#objetivo_2" title="Permanent link">&para;</a></h3>
+<p>Simular una medida de temperatura en Linux y comunicar al STM32 si debe activarse una alarma visual.</p>
+<p><strong>Esta práctica utiliza datos simulados.</strong> No hay todavía un sensor físico de temperatura conectado.</p>
+<h3 id="71-sketch-arduino">7.1. Sketch Arduino<a class="headerlink" href="#71-sketch-arduino" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"Arduino_RouterBridge.h"</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">set_alarm</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">alarma</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Rojo cuando hay alarma; verde en estado normal.</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">alarma</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">LOW</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">alarma</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">HIGH</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">    </span><span class="n">pinMode</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_R</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_G</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">LED3_B</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Bridge</span><span class="p">.</span><span class="n">provide_safe</span><span class="p">(</span><span class="s">"set_alarm"</span><span class="p">,</span><span class="w"> </span><span class="n">set_alarm</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="72-programa-python">7.2. Programa Python<a class="headerlink" href="#72-programa-python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">arduino.app_utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">TEMPERATURAS</span> <span class="o">=</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
+<span class="n">UMBRAL</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">indice</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">loop</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">indice</span>
+
+    <span class="n">temperatura</span> <span class="o">=</span> <span class="n">TEMPERATURAS</span><span class="p">[</span><span class="n">indice</span><span class="p">]</span>
+    <span class="n">alarma</span> <span class="o">=</span> <span class="n">temperatura</span> <span class="o">&gt;=</span> <span class="n">UMBRAL</span>
+
+    <span class="n">Bridge</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s2">"set_alarm"</span><span class="p">,</span> <span class="n">alarma</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">"Temperatura simulada: </span><span class="si">{</span><span class="n">temperatura</span><span class="si">}</span><span class="s2"> °C | "</span>
+        <span class="sa">f</span><span class="s2">"Alarma: </span><span class="si">{</span><span class="s1">'ACTIVA'</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">alarma</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'INACTIVA'</span><span class="si">}</span><span class="s2">"</span>
+    <span class="p">)</span>
+
+    <span class="n">indice</span> <span class="o">=</span> <span class="p">(</span><span class="n">indice</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">TEMPERATURAS</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+
+<span class="n">App</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">user_loop</span><span class="o">=</span><span class="n">loop</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="73-resultado-esperado">7.3. Resultado esperado<a class="headerlink" href="#73-resultado-esperado" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Si la temperatura simulada es inferior a 30 °C, el LED aparece verde.</li>
+<li>Si la temperatura simulada alcanza o supera los 30 °C, aparece rojo.</li>
+<li>La consola Python muestra la temperatura y el estado de la alarma.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Actividad 6.3</p>
+<p>Cambia el umbral a 28 °C. Después añade un tercer estado: amarillo cuando la temperatura esté entre 26 y 27 °C, ambos incluidos.</p>
+<p>Decide qué información debe calcular Python y qué debe ejecutar el STM32. Justifica tu diseño.</p>
+</div>
+<h2 id="8-supervision-y-resolucion-de-problemas">8. Supervisión y resolución de problemas<a class="headerlink" href="#8-supervision-y-resolucion-de-problemas" title="Permanent link">&para;</a></h2>
+<p>Arduino App Lab dispone de registros diferenciados para el arranque de la aplicación, Python y el sketch del microcontrolador.</p>
+<table>
+<thead>
+<tr>
+<th>Panel</th>
+<th>Qué comprobar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start-up</strong></td>
+<td>Compilación, despliegue e inicio de la aplicación</td>
+</tr>
+<tr>
+<td><strong>Main (Python)</strong></td>
+<td>Mensajes de <code>print()</code> y excepciones Python</td>
+</tr>
+<tr>
+<td><strong>Sketch (Microcontroller)</strong></td>
+<td>Mensajes de <code>Serial.println()</code> del STM32</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errores-frecuentes">Errores frecuentes<a class="headerlink" href="#errores-frecuentes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Posible causa</th>
+<th>Comprobación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>La aplicación no inicia</td>
+<td>Error de compilación</td>
+<td>Revisar <strong>Start-up</strong></td>
+</tr>
+<tr>
+<td>Python muestra una excepción RPC</td>
+<td>Nombre de función incorrecto</td>
+<td>Comparar <code>Bridge.call()</code> y <code>Bridge.provide_safe()</code></td>
+</tr>
+<tr>
+<td>El LED no cambia</td>
+<td>Se está usando el LED o canal incorrecto</td>
+<td>Verificar <code>LED_BUILTIN</code>, <code>LED3_R</code>, <code>LED3_G</code> y <code>LED3_B</code></td>
+</tr>
+<tr>
+<td>El LED muestra el estado contrario</td>
+<td>Lógica activa en nivel bajo</td>
+<td>Revisar <code>LOW</code> y <code>HIGH</code></td>
+</tr>
+<tr>
+<td>La orden no llega al STM32</td>
+<td>Bridge no inicializado o componente detenido</td>
+<td>Revisar <code>Bridge.begin()</code> y los registros</td>
+</tr>
+<tr>
+<td>La aplicación se bloquea</td>
+<td>Uso inadecuado de callbacks o llamadas anidadas</td>
+<td>Mantener cortas las funciones RPC y usar <code>provide_safe()</code> para GPIO</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Método de diagnóstico</p>
+<ol>
+<li>Comprueba que la placa está conectada.</li>
+<li>Revisa primero los mensajes de arranque.</li>
+<li>Comprueba que Python se está ejecutando.</li>
+<li>Verifica que el nombre RPC coincide exactamente.</li>
+<li>Comprueba el tipo de dato enviado.</li>
+<li>Ejecuta de nuevo una versión mínima del programa.</li>
+</ol>
+</div>
+<h2 id="9-buenas-practicas-de-diseno">9. Buenas prácticas de diseño<a class="headerlink" href="#9-buenas-practicas-de-diseno" title="Permanent link">&para;</a></h2>
+<p>En proyectos con dos procesadores conviene repartir las responsabilidades:</p>
+<ul>
+<li><strong>Linux/Python:</strong> interfaz de usuario, redes, almacenamiento, análisis de datos y lógica de alto nivel.</li>
+<li><strong>STM32/Arduino:</strong> lectura y escritura de GPIO, temporización y actuación sobre periféricos.</li>
+<li><strong>Bridge/RPC:</strong> intercambio de órdenes y resultados entre ambos entornos.</li>
+</ul>
+<p>Evita enviar órdenes repetidas sin necesidad. En aplicaciones reales, define qué ocurre si Linux se reinicia o deja de comunicarse: por ejemplo, apagar una salida mediante un mecanismo de seguridad implementado en el microcontrolador.</p>
+<div class="admonition warning">
+<p class="admonition-title">Aplicaciones críticas</p>
+<p>Las prácticas de este capítulo son educativas. Un sistema de seguridad industrial no debe depender únicamente de una orden RPC ni de un LED de diagnóstico. Debe incorporar protecciones y mecanismos independientes adecuados al riesgo.</p>
+</div>
+<h2 id="10-practica-evaluable-panel-de-control-hibrido">10. Práctica evaluable: panel de control híbrido<a class="headerlink" href="#10-practica-evaluable-panel-de-control-hibrido" title="Permanent link">&para;</a></h2>
+<h3 id="enunciado">Enunciado<a class="headerlink" href="#enunciado" title="Permanent link">&para;</a></h3>
+<p>Desarrolla una aplicación de Arduino UNO Q que permita controlar el LED RGB 3 desde un programa Python que se ejecuta en Linux.</p>
+<h3 id="requisitos-funcionales">Requisitos funcionales<a class="headerlink" href="#requisitos-funcionales" title="Permanent link">&para;</a></h3>
+<ol>
+<li>La aplicación tendrá un archivo Python y un sketch Arduino.</li>
+<li>Python enviará al menos <strong>cinco códigos de estado</strong> distintos.</li>
+<li>El STM32 interpretará los códigos y mostrará un color diferente para cada estado (se permite incluir apagado).</li>
+<li>La comunicación utilizará <code>Bridge.call()</code> y <code>Bridge.provide_safe()</code>.</li>
+<li>Los cambios de estado se realizarán automáticamente cada dos segundos.</li>
+<li>Python mostrará en consola el código y el nombre del estado enviado.</li>
+<li>El código incluirá comentarios y constantes con nombres descriptivos.</li>
+<li>Se documentarán al menos tres pruebas de funcionamiento.</li>
+</ol>
+<h3 id="ampliacion-voluntaria">Ampliación voluntaria<a class="headerlink" href="#ampliacion-voluntaria" title="Permanent link">&para;</a></h3>
+<p>Añade un estado de alarma intermitente gestionado por el STM32 sin bloquear el procesamiento de las órdenes entrantes. Para ello puedes utilizar <code>millis()</code> en <code>loop()</code>.</p>
+<h3 id="entrega">Entrega<a class="headerlink" href="#entrega" title="Permanent link">&para;</a></h3>
+<p>El alumnado entregará:</p>
+<ul>
+<li>Los archivos <code>python/main.py</code> y <code>sketch/sketch.ino</code>.</li>
+<li>Un PDF con portada, objetivo, arquitectura de la aplicación, explicación de las llamadas RPC, capturas de las consolas, resultados de las pruebas y conclusiones.</li>
+<li>Una demostración del funcionamiento sobre la placa.</li>
+</ul>
+<h3 id="rubrica-de-evaluacion">Rúbrica de evaluación<a class="headerlink" href="#rubrica-de-evaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntuación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicación con los dos componentes correctamente configurados</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Inicialización y registro RPC correctos</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Envío y recepción de los cinco estados</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Control correcto del LED RGB</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Mensajes y diagnóstico</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Claridad y organización del código</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Documentación y pruebas</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-resumen">11. Resumen<a class="headerlink" href="#11-resumen" title="Permanent link">&para;</a></h2>
+<p>En este capítulo hemos aprendido a comunicar los dos procesadores de Arduino UNO Q. Hemos utilizado Python en Debian Linux para generar órdenes y un sketch Arduino en el STM32 para controlar hardware.</p>
+<p>El mecanismo <strong>Bridge/RPC</strong> permite combinar las ventajas de ambos entornos sin mezclar sus responsabilidades. Este conocimiento será fundamental para los capítulos de Linux, Python, redes, servicios e inteligencia artificial.</p>
+<p>En el <strong>capítulo 7</strong> comenzaremos a explorar Debian Linux en Arduino UNO Q.</p>
+<h2 id="documentacion-de-referencia">Documentación de referencia<a class="headerlink" href="#documentacion-de-referencia" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.arduino.cc/tutorials/uno-q/user-manual/">Arduino UNO Q — Manual oficial y comunicación Bridge/RPC</a></li>
+<li><a href="https://docs.arduino.cc/hardware/uno-q">Arduino UNO Q — Características y recursos oficiales</a></li>
+<li><a href="https://docs.arduino.cc/tutorials/uno-q/debian-guide/">Arduino UNO Q — Introducción a Debian Linux</a></li>
+<li><a href="https://docs.arduino.cc/software/app-lab/tutorials/examples/">Arduino App Lab — Ejemplos oficiales</a></li>
+</ul>
 
 
 
