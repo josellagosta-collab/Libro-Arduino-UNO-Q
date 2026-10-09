@@ -1,0 +1,32 @@
+site_name: Arduino UNO Q - 2º ASIX
+site_description: Libro tutorial de Arduino UNO Q
+site_author: José Aguilera Molina
+
+theme:
+  name: material
+  language: es
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: amber
+
+  features:
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
