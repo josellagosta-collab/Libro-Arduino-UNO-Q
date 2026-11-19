@@ -196,8 +196,8 @@ media = sum(muestras) / len(muestras)
 alarma = temperatura_simulada >= umbral
 
 print(f"Dispositivo: {nombre}")
-print(f"Temperatura simulada: {temperatura_simulada:.1f} °C")
-print(f"Media de las muestras: {media:.2f} °C")
+print(f"Temperatura simulada: {temperatura_simulada:.1f} \u00b0C")
+print(f"Media de las muestras: {media:.2f} \u00b0C")
 print(f"Alarma activada: {alarma}")
 ```
 
@@ -369,7 +369,7 @@ nano 04_csv.py
 ```
 
 ```python
-# Programa 4: Registro y análisis de datos CSV
+# Programa 4: Registro y analisis de datos CSV
 import csv
 from pathlib import Path
 from statistics import mean
@@ -393,10 +393,10 @@ with archivo.open("r", newline="", encoding="utf-8") as fichero:
         lecturas.append(float(fila["temperatura_c"]))
 
 print(f"Archivo creado: {archivo}")
-print(f"Número de muestras: {len(lecturas)}")
-print(f"Mínima: {min(lecturas):.1f} °C")
-print(f"Máxima: {max(lecturas):.1f} °C")
-print(f"Media: {mean(lecturas):.2f} °C")
+print(f"Numero de muestras: {len(lecturas)}")
+print(f"Minima: {min(lecturas):.1f} \u00b0C")
+print(f"Maxima: {max(lecturas):.1f} \u00b0C")
+print(f"Media: {mean(lecturas):.2f} \u00b0C")
 ```
 
 Ejecuta:
@@ -468,8 +468,10 @@ nano 05_diagnostico.py
 ```
 
 ```python
-# Programa 5: Diagnóstico básico de Arduino UNO Q
-import os
+
+# Programa 5: Diagnostico basico de Arduino UNO Q
+
+import getpass
 import platform
 import shutil
 import socket
@@ -479,32 +481,46 @@ from pathlib import Path
 
 
 def ejecutar_comando(argumentos):
+    """Ejecuta un comando Linux y devuelve su salida."""
     try:
         resultado = subprocess.run(
             argumentos,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=5,
             check=False
         )
+
         if resultado.returncode != 0:
-            return f"No disponible: {resultado.stderr.strip()}"
+            mensaje = resultado.stderr.strip()
+            return f"No disponible: {mensaje or 'Error de ejecucion'}"
+
         return resultado.stdout.strip()
+
     except (OSError, subprocess.TimeoutExpired) as error:
         return f"No disponible: {error}"
 
 
 def generar_informe():
+    """Recopila informacion del sistema Linux."""
+
     memoria = ejecutar_comando(["free", "-h"])
-    ruta = ejecutar_comando(["ip", "route", "show", "default"])
-    interfaces = ejecutar_comando(["ip", "-brief", "address"])
+    ruta = ejecutar_comando(
+        ["ip", "route", "show", "default"]
+    )
+    interfaces = ejecutar_comando(
+        ["ip", "-brief", "address"]
+    )
+
     disco = shutil.disk_usage(Path.home())
 
     lineas = [
-        "INFORME DE DIAGNÓSTICO - ARDUINO UNO Q",
+        "INFORME DE DIAGNOSTICO - ARDUINO UNO Q",
         "=" * 46,
         f"Fecha: {datetime.now().isoformat(timespec='seconds')}",
-        f"Usuario: {os.getlogin() if os.isatty(0) else os.environ.get('USER', 'desconocido')}",
+        f"Usuario: {getpass.getuser()}",
         f"Equipo: {socket.gethostname()}",
         f"Sistema: {platform.system()}",
         f"Arquitectura: {platform.machine()}",
@@ -521,16 +537,30 @@ def generar_informe():
         "RUTA POR DEFECTO",
         ruta or "No se ha encontrado una ruta por defecto",
     ]
+
     return "\n".join(lineas) + "\n"
 
 
 def main():
-    carpeta = Path.home() / "practicas" / "capitulo08" / "informes"
+    """Genera, guarda y muestra el informe."""
+
+    carpeta = (
+        Path.home()
+        / "practicas"
+        / "capitulo08"
+        / "informes"
+    )
+
     carpeta.mkdir(parents=True, exist_ok=True)
+
     destino = carpeta / "diagnostico_python.txt"
 
     informe = generar_informe()
-    destino.write_text(informe, encoding="utf-8")
+
+    destino.write_text(
+        informe,
+        encoding="utf-8"
+    )
 
     print(informe)
     print(f"Informe guardado en: {destino}")
@@ -538,6 +568,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
 Ejecuta:
@@ -602,7 +633,7 @@ logging.basicConfig(
     encoding="utf-8"
 )
 
-logging.info("Aplicación iniciada")
+logging.info("Aplicacion iniciada")
 
 valor_simulado = 85
 if valor_simulado >= 80:
@@ -610,7 +641,7 @@ if valor_simulado >= 80:
 else:
     logging.info("Estado simulado normal")
 
-logging.info("Aplicación finalizada")
+logging.info("Aplicacion finalizada")
 print("Registro creado correctamente")
 ```
 
