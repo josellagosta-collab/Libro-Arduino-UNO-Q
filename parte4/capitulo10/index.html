@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#capitulo-10-conectividad-y-servicios-de-red" class="md-skip">
+        <a href="#capitulo-10-conectividad-y-redes-en-arduino-uno-q" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -900,6 +900,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 10. Conectividad y servicios de red
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -916,6 +934,497 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Preparación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-fundamentos-de-redes-aplicados-a-arduino-uno-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. Fundamentos de redes aplicados a Arduino UNO Q
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3. Fundamentos de redes aplicados a Arduino UNO Q">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diferencia-entre-ip-local-e-ip-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diferencia entre IP local e IP pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-de-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo de comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-identificacion-de-interfaces-y-direcciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. Identificación de interfaces y direcciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4. Identificación de interfaces y direcciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consultar-las-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar las interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-la-ruta-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar la ruta por defecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-los-servidores-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar los servidores DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-101-ficha-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.1. Ficha de red
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-diagnostico-de-conectividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5. Diagnóstico de conectividad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5. Diagnóstico de conectividad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prueba-1-pila-tcpip-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 1. Pila TCP/IP local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-2-puerta-de-enlace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 2. Puerta de enlace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-3-salida-ip-hacia-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 3. Salida IP hacia Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-4-resolucion-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 4. Resolución DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-5-conectividad-httphttps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 5. Conectividad HTTP/HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-interpretacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de interpretación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-102-diagnostico-escalonado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.2. Diagnóstico escalonado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-puertos-y-servicios-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6. Puertos y servicios de red
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-programa-1-diagnostico-de-red-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7. Programa 1: diagnóstico de red en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.7. Programa 1: diagnóstico de red en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-103-interpretacion-del-informe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.3. Interpretación del informe
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-programa-2-comprobacion-de-conexiones-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8. Programa 2: comprobación de conexiones TCP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8. Programa 2: comprobación de conexiones TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-104-servicios-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.4. Servicios autorizados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-programa-3-consulta-http-y-registro-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9. Programa 3: consulta HTTP y registro CSV
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-automatizacion-de-las-comprobaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10. Automatización de las comprobaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1011-seguridad-basica-en-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11. Seguridad básica en redes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.11. Seguridad básica en redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-105-auditoria-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.5. Auditoría básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1012-practica-integradora-evaluable-nodo-de-diagnostico-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12. Práctica integradora evaluable: nodo de diagnóstico de red
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.12. Práctica integradora evaluable: nodo de diagnóstico de red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#situacion-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situación profesional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion-10-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación (10 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1013-resolucion-de-problemas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.13. Resolución de problemas habituales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.13. Resolución de problemas habituales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-de-consulta-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos de consulta rápida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1014-resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.14. Resumen del capítulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1015-referencias-y-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.15. Referencias y recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1347,6 +1856,486 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Preparación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-fundamentos-de-redes-aplicados-a-arduino-uno-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. Fundamentos de redes aplicados a Arduino UNO Q
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3. Fundamentos de redes aplicados a Arduino UNO Q">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diferencia-entre-ip-local-e-ip-publica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diferencia entre IP local e IP pública
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modelo-de-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelo de comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-identificacion-de-interfaces-y-direcciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. Identificación de interfaces y direcciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4. Identificación de interfaces y direcciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consultar-las-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar las interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-la-ruta-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar la ruta por defecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consultar-los-servidores-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Consultar los servidores DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-101-ficha-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.1. Ficha de red
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-diagnostico-de-conectividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5. Diagnóstico de conectividad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5. Diagnóstico de conectividad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prueba-1-pila-tcpip-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 1. Pila TCP/IP local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-2-puerta-de-enlace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 2. Puerta de enlace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-3-salida-ip-hacia-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 3. Salida IP hacia Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-4-resolucion-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 4. Resolución DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-5-conectividad-httphttps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba 5. Conectividad HTTP/HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabla-de-interpretacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tabla de interpretación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-102-diagnostico-escalonado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.2. Diagnóstico escalonado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-puertos-y-servicios-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6. Puertos y servicios de red
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-programa-1-diagnostico-de-red-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7. Programa 1: diagnóstico de red en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.7. Programa 1: diagnóstico de red en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-103-interpretacion-del-informe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.3. Interpretación del informe
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-programa-2-comprobacion-de-conexiones-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8. Programa 2: comprobación de conexiones TCP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8. Programa 2: comprobación de conexiones TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-104-servicios-autorizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.4. Servicios autorizados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-programa-3-consulta-http-y-registro-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9. Programa 3: consulta HTTP y registro CSV
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-automatizacion-de-las-comprobaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10. Automatización de las comprobaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1011-seguridad-basica-en-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11. Seguridad básica en redes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.11. Seguridad básica en redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-105-auditoria-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 10.5. Auditoría básica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1012-practica-integradora-evaluable-nodo-de-diagnostico-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12. Práctica integradora evaluable: nodo de diagnóstico de red
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.12. Práctica integradora evaluable: nodo de diagnóstico de red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#situacion-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Situación profesional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion-10-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación (10 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1013-resolucion-de-problemas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.13. Resolución de problemas habituales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.13. Resolución de problemas habituales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-de-consulta-rapida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos de consulta rápida
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1014-resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.14. Resumen del capítulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1015-referencias-y-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.15. Referencias y recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1362,10 +2351,634 @@
 
 
 
-<h1 id="capitulo-10-conectividad-y-servicios-de-red">Capítulo 10. Conectividad y servicios de red<a class="headerlink" href="#capitulo-10-conectividad-y-servicios-de-red" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">En preparación</p>
-<p>Este capítulo se desarrollará próximamente.</p>
+<h1 id="capitulo-10-conectividad-y-redes-en-arduino-uno-q">Capítulo 10. Conectividad y redes en Arduino UNO Q<a class="headerlink" href="#capitulo-10-conectividad-y-redes-en-arduino-uno-q" title="Permanent link">&para;</a></h1>
+<h2 id="101-introduccion">10.1. Introducción<a class="headerlink" href="#101-introduccion" title="Permanent link">&para;</a></h2>
+<p>En los capítulos anteriores hemos aprendido a utilizar Linux, programar en Python y automatizar tareas mediante <code>cron</code> y <code>systemd</code>. Ahora utilizaremos esas herramientas para configurar, analizar y diagnosticar las comunicaciones de red del <strong>Arduino UNO Q</strong>.</p>
+<p>Arduino UNO Q combina un entorno Linux con un microcontrolador. En este capítulo trabajaremos <strong>desde Linux</strong>, utilizando la conexión de red disponible en la placa. La disponibilidad y el nombre de las interfaces dependen del firmware, los controladores y la conexión utilizada.</p>
+<div class="admonition note">
+<p class="admonition-title">Relación con el proyecto final</p>
+<p>Las técnicas de este capítulo serán la base de los servidores web, las API REST, MQTT y los sistemas de monitorización que desarrollaremos en los capítulos siguientes.</p>
+</div>
+<h3 id="objetivos-de-aprendizaje">Objetivos de aprendizaje<a class="headerlink" href="#objetivos-de-aprendizaje" title="Permanent link">&para;</a></h3>
+<p>Al finalizar el capítulo, el alumnado será capaz de:</p>
+<ul>
+<li>Identificar las interfaces de red y las direcciones IP de Arduino UNO Q.</li>
+<li>Explicar la función de IP, máscara/prefijo, puerta de enlace, DNS, TCP y UDP.</li>
+<li>Diagnosticar problemas de conectividad mediante herramientas Linux.</li>
+<li>Diferenciar conectividad local, salida a Internet y resolución de nombres.</li>
+<li>Desarrollar programas Python para comprobar conexiones TCP y consultar servicios HTTP.</li>
+<li>Registrar resultados de diagnóstico en archivos CSV.</li>
+<li>Aplicar medidas básicas de seguridad en dispositivos conectados.</li>
+</ul>
+<h3 id="requisitos-previos">Requisitos previos<a class="headerlink" href="#requisitos-previos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Arduino UNO Q encendido y conectado a una red.</li>
+<li>Acceso a la terminal Linux mediante SSH o terminal local.</li>
+<li>Python 3 instalado y funcionando.</li>
+<li>Haber realizado los capítulos 7, 8 y 9.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Precaución en el aula</p>
+<p>No cambies la dirección IP, las rutas o la configuración Wi-Fi de una placa a la que accedes por SSH sin disponer de una vía alternativa de acceso. Podrías perder la conexión. En este capítulo las primeras prácticas son <strong>de observación y diagnóstico</strong>.</p>
+</div>
+<h2 id="102-preparacion-del-entorno">10.2. Preparación del entorno<a class="headerlink" href="#102-preparacion-del-entorno" title="Permanent link">&para;</a></h2>
+<p>Conéctate por SSH al Arduino UNO Q. Comprueba el usuario y el nombre del equipo:</p>
+<div class="highlight"><pre><span></span><code>whoami
+hostname
+</code></pre></div>
+<p>Crea el directorio de trabajo:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/practicas/capitulo10/datos
+<span class="nb">cd</span><span class="w"> </span>~/practicas/capitulo10
+</code></pre></div>
+<p>Comprueba la versión de Python:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
+</code></pre></div>
+<p>Comprueba si están disponibles las herramientas de diagnóstico:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>ip
+<span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>ping
+<span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>getent
+<span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>curl
+<span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>ss
+</code></pre></div>
+<p>Si falta alguna, consulta primero al profesor. En sistemas Debian, <code>ip</code> suele pertenecer a <code>iproute2</code>, <code>ping</code> a <code>iputils-ping</code>, <code>curl</code> a <code>curl</code> y <code>ss</code> a <code>iproute2</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">No instalar paquetes innecesarios</p>
+<p>Antes de instalar software, comprueba qué herramientas existen. Una placa integrada puede tener restricciones de almacenamiento y paquetes diferentes de los de un PC convencional.</p>
+</div>
+<h2 id="103-fundamentos-de-redes-aplicados-a-arduino-uno-q">10.3. Fundamentos de redes aplicados a Arduino UNO Q<a class="headerlink" href="#103-fundamentos-de-redes-aplicados-a-arduino-uno-q" title="Permanent link">&para;</a></h2>
+<p>Una red permite que varios dispositivos intercambien información. Para que Arduino UNO Q pueda comunicarse con otros equipos necesita una interfaz activa, una dirección IP adecuada y, cuando la comunicación sale de la red local, una ruta hacia otras redes.</p>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Función</th>
+<th>Ejemplo ilustrativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirección IPv4</td>
+<td>Identifica una interfaz dentro de una red</td>
+<td><code>192.168.1.49</code></td>
+</tr>
+<tr>
+<td>Prefijo</td>
+<td>Delimita la parte de red de la dirección</td>
+<td><code>/24</code></td>
+</tr>
+<tr>
+<td>Puerta de enlace</td>
+<td>Permite llegar a otras redes</td>
+<td><code>192.168.1.1</code></td>
+</tr>
+<tr>
+<td>DNS</td>
+<td>Traduce nombres a direcciones IP</td>
+<td><code>example.com</code></td>
+</tr>
+<tr>
+<td>TCP</td>
+<td>Comunicación orientada a conexión</td>
+<td>SSH, HTTP, HTTPS</td>
+</tr>
+<tr>
+<td>UDP</td>
+<td>Comunicación sin establecimiento previo de conexión</td>
+<td>DNS, algunas aplicaciones IoT</td>
+</tr>
+<tr>
+<td>Puerto</td>
+<td>Identifica un servicio en un equipo</td>
+<td>SSH: <code>22</code>; HTTP: <code>80</code></td>
+</tr>
+</tbody>
+</table>
+<p>Los valores de la tabla son ejemplos: deben sustituirse por los de cada puesto de trabajo.</p>
+<h3 id="diferencia-entre-ip-local-e-ip-publica">Diferencia entre IP local e IP pública<a class="headerlink" href="#diferencia-entre-ip-local-e-ip-publica" title="Permanent link">&para;</a></h3>
+<p>La dirección privada que recibe Arduino UNO Q en la red del aula normalmente no es una dirección pública accesible desde Internet. El router puede utilizar NAT para compartir su conexión. <strong>Conocer la IP local no significa que el dispositivo sea accesible desde fuera del centro</strong>.</p>
+<h3 id="modelo-de-comunicacion">Modelo de comunicación<a class="headerlink" href="#modelo-de-comunicacion" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Arduino UNO Q ---- Wi-Fi / red local ---- Router ---- Internet
+       |                                  |
+       +---- Otros equipos del aula -----+
+</code></pre></div>
+<h2 id="104-identificacion-de-interfaces-y-direcciones">10.4. Identificación de interfaces y direcciones<a class="headerlink" href="#104-identificacion-de-interfaces-y-direcciones" title="Permanent link">&para;</a></h2>
+<h3 id="consultar-las-interfaces">Consultar las interfaces<a class="headerlink" href="#consultar-las-interfaces" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>-brief<span class="w"> </span>address
+</code></pre></div>
+<p>Una salida posible sería:</p>
+<div class="highlight"><pre><span></span><code>lo        UNKNOWN    127.0.0.1/8 ::1/128
+wlan0     UP         192.168.1.49/24
+</code></pre></div>
+<p><strong>No presupongas que tu interfaz se llama <code>wlan0</code></strong>: comprueba el nombre real en la salida del comando.</p>
+<p>Para ver información detallada:</p>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>address<span class="w"> </span>show
+ip<span class="w"> </span>link<span class="w"> </span>show
+</code></pre></div>
+<p>La interfaz <code>lo</code> corresponde al bucle local. Su dirección <code>127.0.0.1</code> permite que los procesos del mismo equipo se comuniquen entre sí.</p>
+<h3 id="consultar-la-ruta-por-defecto">Consultar la ruta por defecto<a class="headerlink" href="#consultar-la-ruta-por-defecto" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>route
+ip<span class="w"> </span>route<span class="w"> </span>show<span class="w"> </span>default
+</code></pre></div>
+<p>Ejemplo:</p>
+<div class="highlight"><pre><span></span><code>default via 192.168.1.1 dev wlan0
+</code></pre></div>
+<p>La puerta de enlace mostrada en tu placa puede ser diferente.</p>
+<h3 id="consultar-los-servidores-dns">Consultar los servidores DNS<a class="headerlink" href="#consultar-los-servidores-dns" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/etc/resolv.conf
+</code></pre></div>
+<p>En algunas instalaciones el archivo puede estar gestionado automáticamente. Si existe el comando <code>resolvectl</code>, también puedes ejecutar:</p>
+<div class="highlight"><pre><span></span><code>resolvectl<span class="w"> </span>status
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Archivo administrado por el sistema</p>
+<p>No modifiques directamente <code>/etc/resolv.conf</code> durante estas prácticas. Puede ser un enlace simbólico o un archivo generado por un servicio de red.</p>
+</div>
+<h3 id="actividad-101-ficha-de-red">Actividad 10.1. Ficha de red<a class="headerlink" href="#actividad-101-ficha-de-red" title="Permanent link">&para;</a></h3>
+<p>Elabora una ficha con el nombre del equipo, nombre de interfaz, dirección IPv4, prefijo, puerta de enlace y servidores DNS. Adjunta capturas o transcripciones de los comandos utilizados.</p>
+<h2 id="105-diagnostico-de-conectividad">10.5. Diagnóstico de conectividad<a class="headerlink" href="#105-diagnostico-de-conectividad" title="Permanent link">&para;</a></h2>
+<h3 id="prueba-1-pila-tcpip-local">Prueba 1. Pila TCP/IP local<a class="headerlink" href="#prueba-1-pila-tcpip-local" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">127</span>.0.0.1
+</code></pre></div>
+<p>Esta prueba verifica el funcionamiento de la pila de red local, pero <strong>no demuestra</strong> que exista conectividad Wi-Fi.</p>
+<h3 id="prueba-2-puerta-de-enlace">Prueba 2. Puerta de enlace<a class="headerlink" href="#prueba-2-puerta-de-enlace" title="Permanent link">&para;</a></h3>
+<p>Sustituye la IP por la obtenida con <code>ip route show default</code>:</p>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">192</span>.168.1.1
+</code></pre></div>
+<p>Si la prueba falla, revisa la conexión y la configuración IP. Algunos equipos bloquean ICMP, por lo que un <code>ping</code> fallido no demuestra por sí solo que el equipo esté apagado.</p>
+<h3 id="prueba-3-salida-ip-hacia-internet">Prueba 3. Salida IP hacia Internet<a class="headerlink" href="#prueba-3-salida-ip-hacia-internet" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">1</span>.1.1.1
+</code></pre></div>
+<p>Este paso comprueba la conectividad IP hacia un destino externo que puede responder a ICMP. Su éxito no garantiza que todos los servicios de Internet estén disponibles.</p>
+<h3 id="prueba-4-resolucion-dns">Prueba 4. Resolución DNS<a class="headerlink" href="#prueba-4-resolucion-dns" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>getent<span class="w"> </span>ahostsv4<span class="w"> </span>example.com
+</code></pre></div>
+<h3 id="prueba-5-conectividad-httphttps">Prueba 5. Conectividad HTTP/HTTPS<a class="headerlink" href="#prueba-5-conectividad-httphttps" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-I<span class="w"> </span>--max-time<span class="w"> </span><span class="m">10</span><span class="w"> </span>https://example.com
+</code></pre></div>
+<p>El resultado puede variar según el servidor, el proxy y las políticas de la red. Un error de certificado o de proxy debe analizarse de forma diferenciada.</p>
+<h3 id="tabla-de-interpretacion">Tabla de interpretación<a class="headerlink" href="#tabla-de-interpretacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>Posible causa</th>
+<th>Siguiente comprobación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sin dirección IP</td>
+<td>Interfaz desconectada o fallo de configuración</td>
+<td><code>ip -brief address</code></td>
+</tr>
+<tr>
+<td>Hay IP, pero no ruta por defecto</td>
+<td>Falta configuración de enrutamiento</td>
+<td><code>ip route</code></td>
+</tr>
+<tr>
+<td>Responde la puerta de enlace, pero no una IP externa</td>
+<td>Router, cortafuegos o salida a Internet</td>
+<td>Revisar ruta y política de red</td>
+</tr>
+<tr>
+<td>Funciona IP externa, pero falla un nombre</td>
+<td>Problema de DNS</td>
+<td><code>getent</code>, <code>/etc/resolv.conf</code></td>
+</tr>
+<tr>
+<td>DNS funciona, pero falla HTTPS</td>
+<td>Servicio, proxy, TLS o filtrado</td>
+<td><code>curl -v</code> con precaución</td>
+</tr>
+</tbody>
+</table>
+<h3 id="actividad-102-diagnostico-escalonado">Actividad 10.2. Diagnóstico escalonado<a class="headerlink" href="#actividad-102-diagnostico-escalonado" title="Permanent link">&para;</a></h3>
+<p>Realiza las cinco pruebas, anota los resultados y redacta una conclusión razonada. Evita afirmar que existe un fallo de DNS únicamente porque <code>ping example.com</code> no recibe respuesta: el destino podría bloquear ICMP.</p>
+<h2 id="106-puertos-y-servicios-de-red">10.6. Puertos y servicios de red<a class="headerlink" href="#106-puertos-y-servicios-de-red" title="Permanent link">&para;</a></h2>
+<p>En una comunicación TCP, un servidor escucha en un puerto y un cliente intenta establecer una conexión.</p>
+<p>Ejemplos frecuentes:</p>
+<table>
+<thead>
+<tr>
+<th>Servicio</th>
+<th style="text-align: right;">Puerto habitual</th>
+<th>Protocolo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSH</td>
+<td style="text-align: right;">22</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td style="text-align: right;">80</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td style="text-align: right;">443</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>MQTT</td>
+<td style="text-align: right;">1883</td>
+<td>TCP</td>
+</tr>
+<tr>
+<td>MQTT con TLS</td>
+<td style="text-align: right;">8883</td>
+<td>TCP</td>
+</tr>
+</tbody>
+</table>
+<p>Para consultar los puertos TCP en escucha en Arduino UNO Q:</p>
+<div class="highlight"><pre><span></span><code>ss<span class="w"> </span>-ltn
+</code></pre></div>
+<p>Para consultar también los procesos asociados, cuando los permisos lo permitan:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ss<span class="w"> </span>-ltnp
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Seguridad</p>
+<p>No abras puertos en el router, no desactives el cortafuegos y no expongas servicios de prueba a Internet. Las prácticas se realizarán dentro de la red autorizada del aula.</p>
+</div>
+<h2 id="107-programa-1-diagnostico-de-red-en-python">10.7. Programa 1: diagnóstico de red en Python<a class="headerlink" href="#107-programa-1-diagnostico-de-red-en-python" title="Permanent link">&para;</a></h2>
+<p>Crearemos <code>01_diagnostico_red.py</code>. <strong>Todo el código fuente utiliza caracteres ASCII</strong>, sin tildes, <code>ñ</code> ni símbolos especiales.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/practicas/capitulo10/01_diagnostico_red.py
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">platform</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">socket</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">BASE</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"practicas"</span> <span class="o">/</span> <span class="s2">"capitulo10"</span>
+<span class="n">DATOS</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"datos"</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ejecutar</span><span class="p">(</span><span class="n">argumentos</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">proceso</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+            <span class="n">argumentos</span><span class="p">,</span>
+            <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">,</span>
+            <span class="n">errors</span><span class="o">=</span><span class="s2">"replace"</span><span class="p">,</span>
+            <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">check</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">salida</span> <span class="o">=</span> <span class="n">proceso</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">error</span> <span class="o">=</span> <span class="n">proceso</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">salida</span> <span class="k">if</span> <span class="n">proceso</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="sa">f</span><span class="s2">"ERROR: </span><span class="si">{</span><span class="n">error</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">salida</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">OSError</span><span class="p">,</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">TimeoutExpired</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"ERROR: </span><span class="si">{</span><span class="n">exc</span><span class="si">}</span><span class="s2">"</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">generar_informe</span><span class="p">():</span>
+    <span class="n">secciones</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">"DIAGNOSTICO DE RED - ARDUINO UNO Q"</span><span class="p">,</span>
+        <span class="s2">"="</span> <span class="o">*</span> <span class="mi">40</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"Fecha: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="n">timespec</span><span class="o">=</span><span class="s1">'seconds'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"Equipo: </span><span class="si">{</span><span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"Sistema: </span><span class="si">{</span><span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">platform</span><span class="o">.</span><span class="n">release</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"INTERFACES"</span><span class="p">,</span>
+        <span class="n">ejecutar</span><span class="p">([</span><span class="s2">"ip"</span><span class="p">,</span> <span class="s2">"-brief"</span><span class="p">,</span> <span class="s2">"address"</span><span class="p">]),</span>
+        <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"RUTAS"</span><span class="p">,</span>
+        <span class="n">ejecutar</span><span class="p">([</span><span class="s2">"ip"</span><span class="p">,</span> <span class="s2">"route"</span><span class="p">]),</span>
+        <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"DNS"</span><span class="p">,</span>
+        <span class="n">ejecutar</span><span class="p">([</span><span class="s2">"getent"</span><span class="p">,</span> <span class="s2">"ahostsv4"</span><span class="p">,</span> <span class="s2">"example.com"</span><span class="p">]),</span>
+        <span class="s2">""</span><span class="p">,</span>
+        <span class="s2">"PUERTOS TCP EN ESCUCHA"</span><span class="p">,</span>
+        <span class="n">ejecutar</span><span class="p">([</span><span class="s2">"ss"</span><span class="p">,</span> <span class="s2">"-ltn"</span><span class="p">]),</span>
+    <span class="p">]</span>
+    <span class="k">return</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">secciones</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">DATOS</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">informe</span> <span class="o">=</span> <span class="n">generar_informe</span><span class="p">()</span>
+    <span class="n">archivo</span> <span class="o">=</span> <span class="n">DATOS</span> <span class="o">/</span> <span class="s2">"informe_red.txt"</span>
+    <span class="n">archivo</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">informe</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">informe</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Informe guardado: </span><span class="si">{</span><span class="n">archivo</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>Comprueba sintaxis y ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>py_compile<span class="w"> </span>~/practicas/capitulo10/01_diagnostico_red.py
+python3<span class="w"> </span>~/practicas/capitulo10/01_diagnostico_red.py
+cat<span class="w"> </span>~/practicas/capitulo10/datos/informe_red.txt
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Codificacion de los programas</p>
+<p>Para evitar los problemas de codificacion encontrados en el capitulo 8, los programas Python del libro emplean solamente caracteres ASCII. Los textos explicativos del libro Markdown si pueden contener tildes y otros caracteres Unicode.</p>
+</div>
+<h3 id="actividad-103-interpretacion-del-informe">Actividad 10.3. Interpretación del informe<a class="headerlink" href="#actividad-103-interpretacion-del-informe" title="Permanent link">&para;</a></h3>
+<p>Localiza en el informe la interfaz utilizada, la ruta por defecto, el resultado de DNS y los puertos en escucha. Explica qué información no puede deducirse únicamente de ese informe.</p>
+<h2 id="108-programa-2-comprobacion-de-conexiones-tcp">10.8. Programa 2: comprobación de conexiones TCP<a class="headerlink" href="#108-programa-2-comprobacion-de-conexiones-tcp" title="Permanent link">&para;</a></h2>
+<p>La herramienta <code>ping</code> utiliza ICMP. Para comprobar un servicio TCP resulta más apropiado intentar abrir una conexión al puerto correspondiente.</p>
+<p>Crea el archivo:</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/practicas/capitulo10/02_comprobar_tcp.py
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">socket</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">PRUEBAS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">"example.com"</span><span class="p">,</span> <span class="mi">443</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"example.com"</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span>
+<span class="p">]</span>
+<span class="n">TIEMPO_ESPERA</span> <span class="o">=</span> <span class="mi">4</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">comprobar</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">puerto</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">socket</span><span class="o">.</span><span class="n">create_connection</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">puerto</span><span class="p">),</span> <span class="n">timeout</span><span class="o">=</span><span class="n">TIEMPO_ESPERA</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s2">"OK"</span><span class="p">,</span> <span class="s2">"Conexion establecida"</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">OSError</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">timeout</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">"ERROR"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"COMPROBACION DE SERVICIOS TCP"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Fecha: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="n">timespec</span><span class="o">=</span><span class="s1">'seconds'</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">host</span><span class="p">,</span> <span class="n">puerto</span> <span class="ow">in</span> <span class="n">PRUEBAS</span><span class="p">:</span>
+        <span class="n">estado</span><span class="p">,</span> <span class="n">detalle</span> <span class="o">=</span> <span class="n">comprobar</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">puerto</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">puerto</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">estado</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">detalle</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>Ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>py_compile<span class="w"> </span>~/practicas/capitulo10/02_comprobar_tcp.py
+python3<span class="w"> </span>~/practicas/capitulo10/02_comprobar_tcp.py
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Interpretacion correcta</p>
+<p>Una conexion TCP correcta demuestra que se ha establecido una conexion con el puerto, pero no que la aplicacion haya respondido correctamente a una peticion HTTP o que su contenido sea valido.</p>
+</div>
+<h3 id="actividad-104-servicios-autorizados">Actividad 10.4. Servicios autorizados<a class="headerlink" href="#actividad-104-servicios-autorizados" title="Permanent link">&para;</a></h3>
+<p>Modifica <code>PRUEBAS</code> para incluir la dirección IP de un servidor del aula y un puerto TCP cuyo uso haya autorizado el profesor. Compara los resultados y explica la diferencia entre <code>connection refused</code>, un tiempo de espera agotado y un error de resolución DNS.</p>
+<h2 id="109-programa-3-consulta-http-y-registro-csv">10.9. Programa 3: consulta HTTP y registro CSV<a class="headerlink" href="#109-programa-3-consulta-http-y-registro-csv" title="Permanent link">&para;</a></h2>
+<p>El siguiente programa realizará una solicitud HTTP GET a una dirección pública de prueba y registrará la fecha, el estado y la duración de la consulta. Utilizaremos exclusivamente la biblioteca estándar de Python.</p>
+<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>~/practicas/capitulo10/03_monitor_http.py
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">urllib.error</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">URL</span> <span class="o">=</span> <span class="s2">"https://www.wikipedia.org/"</span>
+<span class="n">DESTINO</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"practicas"</span> <span class="o">/</span> <span class="s2">"capitulo10"</span> <span class="o">/</span> <span class="s2">"datos"</span> <span class="o">/</span> <span class="s2">"http.csv"</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">consultar</span><span class="p">():</span>
+    <span class="n">inicio</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">monotonic</span><span class="p">()</span>
+    <span class="n">codigo</span> <span class="o">=</span> <span class="s2">"SIN_RESPUESTA"</span>
+    <span class="n">estado</span> <span class="o">=</span> <span class="s2">"ERROR"</span>
+    <span class="n">detalle</span> <span class="o">=</span> <span class="s2">""</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">peticion</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span>
+            <span class="n">URL</span><span class="p">,</span>
+            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">"User-Agent"</span><span class="p">:</span> <span class="s2">"ArduinoUNOQ-Lab/1.0"</span><span class="p">},</span>
+        <span class="p">)</span>
+        <span class="k">with</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">peticion</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="k">as</span> <span class="n">respuesta</span><span class="p">:</span>
+            <span class="n">codigo</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">respuesta</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+            <span class="n">estado</span> <span class="o">=</span> <span class="s2">"OK"</span> <span class="k">if</span> <span class="mi">200</span> <span class="o">&lt;=</span> <span class="n">respuesta</span><span class="o">.</span><span class="n">status</span> <span class="o">&lt;</span> <span class="mi">400</span> <span class="k">else</span> <span class="s2">"ERROR"</span>
+    <span class="k">except</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">HTTPError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="n">codigo</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">code</span><span class="p">)</span>
+        <span class="n">detalle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="o">.</span><span class="n">reason</span><span class="p">)</span>
+    <span class="k">except</span> <span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span><span class="p">,</span> <span class="ne">TimeoutError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">)</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="n">detalle</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span>
+
+    <span class="n">duracion_ms</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">time</span><span class="o">.</span><span class="n">monotonic</span><span class="p">()</span> <span class="o">-</span> <span class="n">inicio</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">"fecha"</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="n">timespec</span><span class="o">=</span><span class="s2">"seconds"</span><span class="p">),</span>
+        <span class="s2">"url"</span><span class="p">:</span> <span class="n">URL</span><span class="p">,</span>
+        <span class="s2">"estado"</span><span class="p">:</span> <span class="n">estado</span><span class="p">,</span>
+        <span class="s2">"codigo"</span><span class="p">:</span> <span class="n">codigo</span><span class="p">,</span>
+        <span class="s2">"duracion_ms"</span><span class="p">:</span> <span class="n">duracion_ms</span><span class="p">,</span>
+        <span class="s2">"detalle"</span><span class="p">:</span> <span class="n">detalle</span><span class="p">,</span>
+    <span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">DESTINO</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">existe</span> <span class="o">=</span> <span class="n">DESTINO</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="n">DESTINO</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span> <span class="o">&gt;</span> <span class="mi">0</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="n">consultar</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">DESTINO</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+        <span class="n">escritor</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">fieldnames</span><span class="o">=</span><span class="n">resultado</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">existe</span><span class="p">:</span>
+            <span class="n">escritor</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+        <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Estado: </span><span class="si">{</span><span class="n">resultado</span><span class="p">[</span><span class="s1">'estado'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Codigo HTTP: </span><span class="si">{</span><span class="n">resultado</span><span class="p">[</span><span class="s1">'codigo'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Duracion: </span><span class="si">{</span><span class="n">resultado</span><span class="p">[</span><span class="s1">'duracion_ms'</span><span class="p">]</span><span class="si">}</span><span class="s2"> ms"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Registro: </span><span class="si">{</span><span class="n">DESTINO</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>Comprueba y ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>py_compile<span class="w"> </span>~/practicas/capitulo10/03_monitor_http.py
+python3<span class="w"> </span>~/practicas/capitulo10/03_monitor_http.py
+cat<span class="w"> </span>~/practicas/capitulo10/datos/http.csv
+</code></pre></div>
+<p>Ejecuta el programa varias veces y observa cómo se añaden filas al archivo CSV.</p>
+<div class="admonition warning">
+<p class="admonition-title">Interpretacion de errores HTTPS</p>
+<p>Si aparece un error de certificado TLS, no lo soluciones desactivando la validacion de certificados. Comprueba la fecha del equipo, los certificados de confianza y la configuracion de red.</p>
+</div>
+<h2 id="1010-automatizacion-de-las-comprobaciones">10.10. Automatización de las comprobaciones<a class="headerlink" href="#1010-automatizacion-de-las-comprobaciones" title="Permanent link">&para;</a></h2>
+<p>En el capítulo 9 configuramos tareas con <code>cron</code>. Podemos reutilizar esos conocimientos para ejecutar el monitor HTTP cada 10 minutos.</p>
+<p>Primero verifica que el programa funciona manualmente. Después abre:</p>
+<div class="highlight"><pre><span></span><code>crontab<span class="w"> </span>-e
+</code></pre></div>
+<p><strong>Conserva las tareas que ya existan</strong> y añade esta línea:</p>
+<div class="highlight"><pre><span></span><code>*/10 * * * * /usr/bin/python3 /home/arduino/practicas/capitulo10/03_monitor_http.py &gt;&gt; /home/arduino/practicas/capitulo10/datos/cron_http.log 2&gt;&amp;1
+</code></pre></div>
+<p>Guarda y comprueba:</p>
+<div class="highlight"><pre><span></span><code>crontab<span class="w"> </span>-l
+</code></pre></div>
+<p>Transcurrido el siguiente intervalo de 10 minutos:</p>
+<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">10</span><span class="w"> </span>~/practicas/capitulo10/datos/http.csv
+cat<span class="w"> </span>~/practicas/capitulo10/datos/cron_http.log
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Comprobacion de cron</p>
+<p>Que el comando aparezca en <code>crontab -l</code> confirma que la tarea esta programada, pero no que se haya ejecutado correctamente. Para verificarlo, consulta el CSV, el archivo de errores y, si es necesario, el registro del servicio cron.</p>
+</div>
+<h2 id="1011-seguridad-basica-en-redes">10.11. Seguridad básica en redes<a class="headerlink" href="#1011-seguridad-basica-en-redes" title="Permanent link">&para;</a></h2>
+<p>Un dispositivo Linux conectado a la red puede ejecutar servicios accesibles desde otros equipos. Antes de publicar una aplicación conviene aplicar estas recomendaciones:</p>
+<ol>
+<li>Utilizar contraseñas robustas y, cuando proceda, autenticación SSH mediante claves.</li>
+<li>Mantener el sistema y las dependencias actualizados siguiendo el procedimiento autorizado por el centro.</li>
+<li>Comprobar qué puertos están escuchando con <code>ss -ltn</code>.</li>
+<li>Evitar ejecutar programas de prácticas como <code>root</code> cuando no sea necesario.</li>
+<li>No incluir contraseñas, tokens o claves privadas en archivos publicados en GitHub.</li>
+<li>Limitar los servicios de laboratorio a la red autorizada.</li>
+<li>Utilizar HTTPS y validar certificados en las comunicaciones externas.</li>
+<li>Documentar los cambios de configuración y conservar copias de seguridad.</li>
+</ol>
+<h3 id="actividad-105-auditoria-basica">Actividad 10.5. Auditoría básica<a class="headerlink" href="#actividad-105-auditoria-basica" title="Permanent link">&para;</a></h3>
+<p>Obtén una lista de puertos TCP en escucha. Investiga qué servicio corresponde a cada puerto que puedas identificar y redacta tres recomendaciones de seguridad para la placa. No detengas servicios del sistema sin autorización.</p>
+<h2 id="1012-practica-integradora-evaluable-nodo-de-diagnostico-de-red">10.12. Práctica integradora evaluable: nodo de diagnóstico de red<a class="headerlink" href="#1012-practica-integradora-evaluable-nodo-de-diagnostico-de-red" title="Permanent link">&para;</a></h2>
+<h3 id="situacion-profesional">Situación profesional<a class="headerlink" href="#situacion-profesional" title="Permanent link">&para;</a></h3>
+<p>El departamento de informática necesita un dispositivo capaz de verificar periódicamente la conectividad del aula y conservar evidencias para investigar interrupciones de servicio. El alumnado deberá configurar Arduino UNO Q como <strong>nodo de diagnóstico</strong>.</p>
+<h3 id="requisitos">Requisitos<a class="headerlink" href="#requisitos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>R1.</strong> Identificar y documentar la configuración de red real de la placa.</li>
+<li><strong>R2.</strong> Realizar un diagnóstico escalonado de conectividad y DNS.</li>
+<li><strong>R3.</strong> Ejecutar y explicar <code>01_diagnostico_red.py</code>.</li>
+<li><strong>R4.</strong> Adaptar <code>02_comprobar_tcp.py</code> para comprobar un servicio autorizado.</li>
+<li><strong>R5.</strong> Ejecutar <code>03_monitor_http.py</code> y verificar el registro CSV.</li>
+<li><strong>R6.</strong> Programar una ejecución periódica con cron, conservando las tareas anteriores.</li>
+<li><strong>R7.</strong> Documentar al menos una incidencia posible y su procedimiento de diagnóstico.</li>
+<li><strong>R8.</strong> Presentar evidencias y conclusiones en un informe técnico.</li>
+</ul>
+<h3 id="entrega">Entrega<a class="headerlink" href="#entrega" title="Permanent link">&para;</a></h3>
+<p>La entrega individual o por parejas, según indique el profesor, incluirá:</p>
+<div class="highlight"><pre><span></span><code>capitulo10/
+├── 01_diagnostico_red.py
+├── 02_comprobar_tcp.py
+├── 03_monitor_http.py
+├── datos/
+│   ├── informe_red.txt
+│   ├── http.csv
+│   └── cron_http.log
+└── informe_practica.pdf
+</code></pre></div>
+<p>El archivo PDF se elaborará fuera de la placa y deberá contener la ficha de red, pruebas, interpretación de resultados, capturas relevantes y conclusiones. El registro <code>cron_http.log</code> puede no existir hasta que cron haya ejecutado la tarea; si el programa no escribe salida, se deberá documentar esa circunstancia.</p>
+<h3 id="rubrica-de-evaluacion-10-puntos">Rúbrica de evaluación (10 puntos)<a class="headerlink" href="#rubrica-de-evaluacion-10-puntos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntuación máxima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación correcta de interfaces, IP, ruta y DNS</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Diagnóstico escalonado e interpretación de resultados</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Programa de informe de red operativo y explicado</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Comprobación TCP de un servicio autorizado</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td>Monitor HTTP y CSV correctos</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Automatización con cron y evidencias de ejecución</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td>Seguridad y procedimiento de resolución de incidencias</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td>Calidad del informe y presentación de evidencias</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10,0</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Criterio de validacion</p>
+<p>No basta con presentar una captura de un comando. El alumno debe explicar que demuestra la prueba, que no demuestra y que haria si el resultado fuera distinto del esperado.</p>
+</div>
+<h2 id="1013-resolucion-de-problemas-habituales">10.13. Resolución de problemas habituales<a class="headerlink" href="#1013-resolucion-de-problemas-habituales" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Comprobación recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Network is unreachable</code></td>
+<td>Revisar <code>ip address</code> y <code>ip route</code></td>
+</tr>
+<tr>
+<td><code>Temporary failure in name resolution</code></td>
+<td>Revisar DNS con <code>getent</code> y <code>/etc/resolv.conf</code></td>
+</tr>
+<tr>
+<td><code>Connection refused</code></td>
+<td>Comprobar servicio y puerto del destino</td>
+</tr>
+<tr>
+<td><code>Connection timed out</code></td>
+<td>Revisar conectividad, filtrado y disponibilidad</td>
+</tr>
+<tr>
+<td><code>Permission denied</code> al guardar CSV</td>
+<td>Comprobar propietario y permisos de <code>datos/</code></td>
+</tr>
+<tr>
+<td><code>SyntaxError: Non-UTF-8 code</code></td>
+<td>Revisar codificación; mantener el código Python en ASCII</td>
+</tr>
+<tr>
+<td>Cron no escribe resultados</td>
+<td>Revisar rutas absolutas, <code>crontab -l</code> y registros</td>
+</tr>
+<tr>
+<td>HTTPS falla por certificado</td>
+<td>Revisar fecha, CA y configuración TLS sin desactivar verificación</td>
+</tr>
+</tbody>
+</table>
+<h3 id="comandos-de-consulta-rapida">Comandos de consulta rápida<a class="headerlink" href="#comandos-de-consulta-rapida" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ip<span class="w"> </span>-brief<span class="w"> </span>address
+ip<span class="w"> </span>route
+getent<span class="w"> </span>ahostsv4<span class="w"> </span>example.com
+ss<span class="w"> </span>-ltn
+crontab<span class="w"> </span>-l
+</code></pre></div>
+<h2 id="1014-resumen-del-capitulo">10.14. Resumen del capítulo<a class="headerlink" href="#1014-resumen-del-capitulo" title="Permanent link">&para;</a></h2>
+<p>En este capítulo hemos utilizado Arduino UNO Q como un equipo Linux conectado a una red. Hemos identificado interfaces, direcciones, rutas y DNS; diagnosticado la conectividad; analizado puertos TCP; creado tres programas Python y automatizado la recogida de información con cron.</p>
+<p>El siguiente capítulo, <strong>Capítulo 11. Servidores web y API REST</strong>, utilizará estos conocimientos para publicar un servicio HTTP accesible desde otro equipo de la red local y desarrollar una API sencilla.</p>
+<h2 id="1015-referencias-y-recursos">10.15. Referencias y recursos<a class="headerlink" href="#1015-referencias-y-recursos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Documentación oficial de Python: <a href="https://docs.python.org/3/library/socket.html">https://docs.python.org/3/library/socket.html</a></li>
+<li>Biblioteca <code>urllib.request</code>: <a href="https://docs.python.org/3/library/urllib.request.html">https://docs.python.org/3/library/urllib.request.html</a></li>
+<li>Biblioteca <code>csv</code>: <a href="https://docs.python.org/3/library/csv.html">https://docs.python.org/3/library/csv.html</a></li>
+<li>Manual de <code>ip</code>: <code>man ip</code></li>
+<li>Manual de <code>ss</code>: <code>man ss</code></li>
+<li>Manual de <code>crontab</code>: <code>man 5 crontab</code></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Para el profesorado</p>
+<p>La correspondencia de este capitulo con los resultados de aprendizaje del modulo de Hardware debe concretarse en la programacion del centro. Las actividades de conectividad y monitorizacion complementan, pero no sustituyen, las practicas de montaje, mantenimiento y recuperacion de equipos informaticos.</p>
 </div>
 
 
