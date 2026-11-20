@@ -1,0 +1,2178 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Libro tutorial de Arduino UNO Q">
+      
+      
+        <meta name="author" content="José Aguilera Molina">
+      
+      
+      
+        <link rel="prev" href="../capitulo21/">
+      
+      
+        <link rel="next" href="../capitulo23/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>22. Infraestructura y mantenimiento de un CPD - 0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-22-infraestructura-y-mantenimiento-de-un-cpd" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX" class="md-header__button md-logo" aria-label="0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              22. Infraestructura y mantenimiento de un CPD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte1/capitulo01/" class="md-tabs__link">
+          
+  
+  
+  Parte 1. Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte2/capitulo04/" class="md-tabs__link">
+          
+  
+  
+  Parte 2. Electrónica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte3/capitulo07/" class="md-tabs__link">
+          
+  
+  
+  Parte 3. Linux y Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte4/capitulo10/" class="md-tabs__link">
+          
+  
+  
+  Parte 4. Redes e IoT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte5/capitulo14/" class="md-tabs__link">
+          
+  
+  
+  Parte 5. IA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte6/capitulo18/" class="md-tabs__link">
+          
+  
+  
+  Parte 6. Proyecto final
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../capitulo21/" class="md-tabs__link">
+          
+  
+  
+  Parte 7. Complementarias
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX" class="md-nav__button md-logo" aria-label="0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 1. Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Arquitectura y características de Arduino UNO Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Preparación del entorno de desarrollo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Primeros programas y pruebas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 2. Electrónica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 2. Electrónica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Entradas y salidas digitales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Sensores y actuadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Comunicación entre procesadores y aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 3. Linux y Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 3. Linux y Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 7. Introducción al entorno Linux de Arduino UNO Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 8. Programación con Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 9. Automatización y servicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 4. Redes e IoT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 4. Redes e IoT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 10. Conectividad y servicios de red
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 11. Servidores web y API REST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 12. MQTT y comunicaciones IoT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 13. InfluxDB y Grafana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 5. IA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 5. IA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 14. Introducción a Edge AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 15. Modelos de inteligencia artificial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 16. Visión artificial y reconocimiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 17. Integración de IA con sensores y actuadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 6. Proyecto final
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 6. Proyecto final
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte6/capitulo18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 18. Diseño del proyecto final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte6/capitulo19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 19. Implementación y pruebas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte6/capitulo20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 20. Documentación y presentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 7. Complementarias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 7. Complementarias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21. Creación, verificación y restauración de imágenes de equipos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Infraestructura y mantenimiento de un CPD
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22. Infraestructura y mantenimiento de un CPD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#221-objetivos-y-planificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.1. Objetivos y planificación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-elementos-de-un-cpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.2. Elementos de un CPD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22.2. Elementos de un CPD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raid-y-copias-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAID y copias de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-actividad-1-reconocimiento-del-rack-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.3. Actividad 1: reconocimiento del rack (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-actividad-2-redundancia-y-almacenamiento-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.4. Actividad 2: redundancia y almacenamiento (60 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22.4. Actividad 2: redundancia y almacenamiento (60 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-disponibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de disponibilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-actividad-3-mantenimiento-del-cpd-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.5. Actividad 3: mantenimiento del CPD (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226-practica-evaluable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.6. Práctica evaluable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227-incidencias-y-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.7. Incidencias y autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    23. Seguridad, ESD y gestión responsable del taller
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#221-objetivos-y-planificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.1. Objetivos y planificación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#222-elementos-de-un-cpd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.2. Elementos de un CPD
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22.2. Elementos de un CPD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raid-y-copias-de-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAID y copias de seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#223-actividad-1-reconocimiento-del-rack-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.3. Actividad 1: reconocimiento del rack (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#224-actividad-2-redundancia-y-almacenamiento-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.4. Actividad 2: redundancia y almacenamiento (60 min)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="22.4. Actividad 2: redundancia y almacenamiento (60 min)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-disponibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matriz de disponibilidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#225-actividad-3-mantenimiento-del-cpd-60-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.5. Actividad 3: mantenimiento del CPD (60 min)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226-practica-evaluable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.6. Práctica evaluable
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#227-incidencias-y-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22.7. Incidencias y autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-22-infraestructura-y-mantenimiento-de-un-cpd">Capítulo 22. Infraestructura y mantenimiento de un CPD<a class="headerlink" href="#capitulo-22-infraestructura-y-mantenimiento-de-un-cpd" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Parte VII — Actividades complementarias imprescindibles · RA4 · 3 horas</p>
+<p>Actividad práctica de reconocimiento de infraestructura de centros de procesamiento de datos (CPD): servidores, racks, redundancia, almacenamiento y mantenimiento. Se trabaja con equipos del taller, fotografías autorizadas o un inventario simulado.</p>
+</div>
+<h2 id="221-objetivos-y-planificacion">22.1. Objetivos y planificación<a class="headerlink" href="#221-objetivos-y-planificacion" title="Permanent link">&para;</a></h2>
+<p>Al finalizar, el alumnado identificará componentes de un CPD, describirá sus funciones, reconocerá puntos únicos de fallo y elaborará una propuesta básica de mantenimiento.</p>
+<table>
+<thead>
+<tr>
+<th>Bloque</th>
+<th style="text-align: right;">Tiempo</th>
+<th>Producto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reconocimiento de equipos y rack</td>
+<td style="text-align: right;">60 min</td>
+<td>Plano e inventario</td>
+</tr>
+<tr>
+<td>Redundancia y almacenamiento</td>
+<td style="text-align: right;">60 min</td>
+<td>Diagrama y análisis de fallos</td>
+</tr>
+<tr>
+<td>Mantenimiento y defensa</td>
+<td style="text-align: right;">60 min</td>
+<td>Checklist e informe</td>
+</tr>
+</tbody>
+</table>
+<h2 id="222-elementos-de-un-cpd">22.2. Elementos de un CPD<a class="headerlink" href="#222-elementos-de-un-cpd" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Rack:</strong> armario o bastidor normalizado que organiza equipos; la altura se expresa habitualmente en unidades <code>U</code>.</li>
+<li><strong>Servidor:</strong> equipo dedicado a ejecutar servicios, aplicaciones o máquinas virtuales.</li>
+<li><strong>Switch:</strong> interconecta dispositivos en la red local; pueden existir enlaces y equipos redundantes.</li>
+<li><strong>SAI/UPS:</strong> proporciona alimentación temporal y facilita un apagado controlado ante fallos eléctricos.</li>
+<li><strong>PDU:</strong> distribuye la energía dentro del rack; no equivale a un SAI.</li>
+<li><strong>Almacenamiento NAS/SAN:</strong> proporciona almacenamiento compartido mediante arquitecturas y protocolos diferentes.</li>
+<li><strong>Ventilación y climatización:</strong> mantienen las condiciones ambientales de operación.</li>
+<li><strong>Cableado y etiquetado:</strong> permiten localizar puertos, equipos y circuitos con rapidez.</li>
+</ul>
+<h3 id="raid-y-copias-de-seguridad">RAID y copias de seguridad<a class="headerlink" href="#raid-y-copias-de-seguridad" title="Permanent link">&para;</a></h3>
+<p>RAID puede mejorar disponibilidad o rendimiento, según su nivel, pero <strong>no sustituye una copia de seguridad</strong>. Un borrado accidental o un ransomware pueden afectar simultáneamente a varios discos de un conjunto RAID.</p>
+<table>
+<thead>
+<tr>
+<th>Solución</th>
+<th>Finalidad</th>
+<th>Limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RAID 1</td>
+<td>Espejo entre discos</td>
+<td>No protege contra borrados lógicos</td>
+</tr>
+<tr>
+<td>RAID 5/6</td>
+<td>Paridad y tolerancia a fallos de discos</td>
+<td>Reconstrucción y riesgo de fallos adicionales</td>
+</tr>
+<tr>
+<td>Copia externa</td>
+<td>Recuperación de datos</td>
+<td>Depende de periodicidad y pruebas de restauración</td>
+</tr>
+<tr>
+<td>Dos fuentes de alimentación</td>
+<td>Redundancia eléctrica del servidor</td>
+<td>No sirve si ambas dependen del mismo punto de fallo</td>
+</tr>
+<tr>
+<td>Dos enlaces de red</td>
+<td>Mayor disponibilidad</td>
+<td>Requiere configuración correcta de red</td>
+</tr>
+</tbody>
+</table>
+<h2 id="223-actividad-1-reconocimiento-del-rack-60-min">22.3. Actividad 1: reconocimiento del rack (60 min)<a class="headerlink" href="#223-actividad-1-reconocimiento-del-rack-60-min" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Observa un rack del centro o una fotografía proporcionada por el docente.</li>
+<li>Identifica servidores, switches, paneles de parcheo, PDU, SAI, ventilación y organizadores de cable.</li>
+<li>Elabora un esquema frontal de posiciones, sin mover ni desconectar dispositivos.</li>
+<li>Completa el inventario y anota los elementos que no puedas identificar con certeza.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Posición / U</th>
+<th>Equipo</th>
+<th>Función</th>
+<th>Conexiones visibles</th>
+<th>Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Trabajo en infraestructura real</p>
+<p>La actividad es <strong>visual y documental</strong>. No se abrirán servidores, SAI ni cuadros eléctricos, ni se desconectarán cables o fuentes de alimentación. Las intervenciones físicas requieren autorización y personal competente.</p>
+</div>
+<h2 id="224-actividad-2-redundancia-y-almacenamiento-60-min">22.4. Actividad 2: redundancia y almacenamiento (60 min)<a class="headerlink" href="#224-actividad-2-redundancia-y-almacenamiento-60-min" title="Permanent link">&para;</a></h2>
+<p>Diseña una infraestructura de ejemplo para alojar una aplicación y sus datos. Incluye:</p>
+<ol>
+<li>Un servidor principal y una estrategia de recuperación.</li>
+<li>Almacenamiento y copias de seguridad.</li>
+<li>Alimentación eléctrica y apagado seguro.</li>
+<li>Conectividad de red.</li>
+<li>Dos posibles puntos únicos de fallo y una mejora para cada uno.</li>
+</ol>
+<h3 id="matriz-de-disponibilidad">Matriz de disponibilidad<a class="headerlink" href="#matriz-de-disponibilidad" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Fallo previsto</th>
+<th>Consecuencia</th>
+<th>Medida preventiva o de recuperación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disco</td>
+<td>Avería física</td>
+<td>Pérdida de acceso a datos</td>
+<td>RAID adecuado + copias verificadas</td>
+</tr>
+<tr>
+<td>Fuente eléctrica</td>
+<td>Corte de suministro</td>
+<td>Parada del servicio</td>
+<td>SAI y apagado controlado</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>Avería de equipo</td>
+<td>Pérdida de conectividad</td>
+<td>Redundancia cuando esté justificada</td>
+</tr>
+<tr>
+<td>Temperatura</td>
+<td>Refrigeración insuficiente</td>
+<td>Sobrecalentamiento</td>
+<td>Monitorización y alarmas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="225-actividad-3-mantenimiento-del-cpd-60-min">22.5. Actividad 3: mantenimiento del CPD (60 min)<a class="headerlink" href="#225-actividad-3-mantenimiento-del-cpd-60-min" title="Permanent link">&para;</a></h2>
+<p>Elabora una lista de comprobación de mantenimiento <strong>no invasivo</strong>. Cada verificación debe tener responsable, frecuencia y evidencia.</p>
+<table>
+<thead>
+<tr>
+<th>Comprobación</th>
+<th>Frecuencia propuesta</th>
+<th>Evidencia</th>
+<th>Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Estado de alarmas de hardware</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Temperatura y ventilación</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Capacidad de almacenamiento</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Estado de copias y restauraciones de prueba</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Etiquetado e inventario</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Alertas del SAI</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Registros y actualizaciones planificadas</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Presenta en cinco minutos el esquema del rack, los dos principales riesgos identificados y el plan de mantenimiento. Distingue las comprobaciones que puedes realizar como observador de las que requieren autorización técnica.</p>
+<h2 id="226-practica-evaluable">22.6. Práctica evaluable<a class="headerlink" href="#226-practica-evaluable" title="Permanent link">&para;</a></h2>
+<p><strong>Enunciado:</strong> realiza una auditoría documental básica de un rack o CPD de ejemplo y entrega un informe con inventario, esquema, riesgos y mantenimiento.</p>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación de equipos y funciones</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Esquema y organización del rack</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Redundancia, RAID y copias diferenciados</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Plan de mantenimiento razonado</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Claridad de la exposición y evidencias</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="227-incidencias-y-autoevaluacion">22.7. Incidencias y autoevaluación<a class="headerlink" href="#227-incidencias-y-autoevaluacion" title="Permanent link">&para;</a></h2>
+<p>Si una etiqueta es ilegible, registra la incertidumbre: <strong>no inventes modelos ni conexiones</strong>. Si no se dispone de rack real, trabaja con imágenes autorizadas y especifica que el inventario es simulado.</p>
+<ol>
+<li>¿Por qué una PDU no sustituye a un SAI?</li>
+<li>¿Qué diferencia existe entre redundancia y copia de seguridad?</li>
+<li>¿Qué representa una unidad U en un rack?</li>
+<li>¿Qué comprobaciones pueden hacerse sin manipular equipos?</li>
+<li>¿Qué información debe contener una ficha de mantenimiento?</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">RA4 — Evidencia final</p>
+<p>El alumnado entrega un <strong>inventario del rack</strong>, un <strong>diagrama de redundancia</strong> y una <strong>lista de mantenimiento documentada</strong>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../capitulo21/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 21. Creación, verificación y restauración de imágenes de equipos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                21. Creación, verificación y restauración de imágenes de equipos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../capitulo23/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 23. Seguridad, ESD y gestión responsable del taller">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                23. Seguridad, ESD y gestión responsable del taller
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.footer", "navigation.top", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/javascripts/navigation.js"></script>
+      
+    
+  </body>
+</html>
