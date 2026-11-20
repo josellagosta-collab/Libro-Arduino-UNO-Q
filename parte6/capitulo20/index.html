@@ -1,0 +1,3860 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Libro tutorial de Arduino UNO Q">
+      
+      
+        <meta name="author" content="José Aguilera Molina">
+      
+      
+      
+        <link rel="prev" href="../capitulo19/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Capítulo 20. Documentación y presentación - Arduino UNO Q - 2º ASIX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-20-documentacion-y-presentacion-del-proyecto" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arduino UNO Q - 2º ASIX" class="md-header__button md-logo" aria-label="Arduino UNO Q - 2º ASIX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arduino UNO Q - 2º ASIX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 20. Documentación y presentación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte1/capitulo01/" class="md-tabs__link">
+          
+  
+  
+  Parte 1. Introducción a Arduino UNO Q
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte2/capitulo04/" class="md-tabs__link">
+          
+  
+  
+  Parte 2. Programación y electrónica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte3/capitulo07/" class="md-tabs__link">
+          
+  
+  
+  Parte 3. Linux y Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte4/capitulo10/" class="md-tabs__link">
+          
+  
+  
+  Parte 4. Redes e IoT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../parte5/capitulo14/" class="md-tabs__link">
+          
+  
+  
+  Parte 5. Inteligencia artificial
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../capitulo18/" class="md-tabs__link">
+          
+  
+  
+  Parte 6. Proyecto final
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arduino UNO Q - 2º ASIX" class="md-nav__button md-logo" aria-label="Arduino UNO Q - 2º ASIX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Arduino UNO Q - 2º ASIX
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 1. Introducción a Arduino UNO Q
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 1. Introducción a Arduino UNO Q
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1. Arquitectura y características de Arduino UNO Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2. Preparación del entorno de desarrollo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte1/capitulo03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3. Primeros programas y pruebas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 2. Programación y electrónica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 2. Programación y electrónica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4. Entradas y salidas digitales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5. Sensores y actuadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte2/capitulo06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 6. Comunicación entre procesadores y aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 3. Linux y Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 3. Linux y Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 7. Introducción al entorno Linux de Arduino UNO Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 8. Programación con Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte3/capitulo09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 9. Automatización y servicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 4. Redes e IoT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 4. Redes e IoT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 10. Conectividad y servicios de red
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 11. Servidores web y API REST
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 12. MQTT y comunicaciones IoT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte4/capitulo13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 13. InfluxDB y Grafana
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 5. Inteligencia artificial
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 5. Inteligencia artificial
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 14. Introducción a Edge AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 15. Modelos de inteligencia artificial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 16. Visión artificial y reconocimiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../parte5/capitulo17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 17. Integración de IA con sensores y actuadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parte 6. Proyecto final
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Parte 6. Proyecto final
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 18. Diseño del proyecto final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capitulo19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 19. Implementación y pruebas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 20. Documentación y presentación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 20. Documentación y presentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#201-objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.1. Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202-por-que-es-imprescindible-documentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2. ¿Por qué es imprescindible documentar?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.2. ¿Por qué es imprescindible documentar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2021-documentacion-tecnica-y-documentacion-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2.1. Documentación técnica y documentación de usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#203-estructura-de-entrega-del-proyecto-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.3. Estructura de entrega del proyecto final
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.3. Estructura de entrega del proyecto final">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2031-crear-los-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.3.1. Crear los directorios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204-elaboracion-de-la-memoria-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4. Elaboración de la memoria técnica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.4. Elaboración de la memoria técnica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2041-portada-y-ficha-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.1. Portada y ficha del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2042-resumen-ejecutivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.2. Resumen ejecutivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2043-requisitos-y-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.3. Requisitos y alcance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2044-arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.4. Arquitectura del sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2045-modelo-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.5. Modelo de inteligencia artificial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2046-resultados-y-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.6. Resultados y conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#205-documentar-la-instalacion-y-la-puesta-en-marcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5. Documentar la instalación y la puesta en marcha
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.5. Documentar la instalación y la puesta en marcha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2051-identificacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.1. Identificación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2052-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.2. Dependencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2053-variables-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.3. Variables de configuración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2054-procedimiento-de-arranque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.4. Procedimiento de arranque
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#206-preparar-un-readme-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.6. Preparar un README profesional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.6. Preparar un README profesional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programa-1-generar-una-plantilla-de-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 1. Generar una plantilla de README
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#207-registrar-las-pruebas-y-las-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7. Registrar las pruebas y las evidencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.7. Registrar las pruebas y las evidencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2071-ficha-de-prueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7.1. Ficha de prueba
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-2-registrar-una-prueba-desde-la-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 2. Registrar una prueba desde la terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2072-pruebas-minimas-propuestas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7.2. Pruebas mínimas propuestas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#208-informe-automatico-del-estado-de-las-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.8. Informe automático del estado de las pruebas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.8. Informe automático del estado de las pruebas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programa-3-resumir-el-registro-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 3. Resumir el registro CSV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#209-preparar-el-manual-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9. Preparar el manual de usuario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.9. Preparar el manual de usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2091-contenido-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9.1. Contenido recomendado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2092-tabla-de-incidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9.2. Tabla de incidencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2010-preparar-la-presentacion-oral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10. Preparar la presentación oral
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.10. Preparar la presentación oral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20101-propuesta-de-ocho-diapositivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10.1. Propuesta de ocho diapositivas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20102-recomendaciones-de-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10.2. Recomendaciones de comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2011-preparar-una-demostracion-tecnica-fiable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11. Preparar una demostración técnica fiable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.11. Preparar una demostración técnica fiable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20111-guion-de-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11.1. Guion de demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20112-plan-de-contingencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11.2. Plan de contingencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2012-entrega-y-control-de-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12. Entrega y control de versiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.12. Entrega y control de versiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20121-archivos-que-deben-entregarse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.1. Archivos que deben entregarse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20122-archivo-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.2. Archivo .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20123-sincronizacion-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.3. Sincronización con GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2013-actividades-guiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.13. Actividades guiadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.13. Actividades guiadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-1-inventario-documental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 1. Inventario documental
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-2-readme-reproducible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 2. README reproducible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-3-registro-de-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 3. Registro de pruebas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-4-preparacion-de-la-defensa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 4. Preparación de la defensa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-5-ensayo-de-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 5. Ensayo de demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2014-practica-final-integradora-entrega-y-defensa-del-sistema-edge-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.14. Práctica final integradora: entrega y defensa del sistema Edge AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.14. Práctica final integradora: entrega y defensa del sistema Edge AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condiciones-de-realizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Condiciones de realización
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion-10-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación (10 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2015-lista-de-comprobacion-antes-de-entregar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.15. Lista de comprobación antes de entregar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2016-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.16. Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2017-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.17. Resolución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.17. Resolución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-archivo-de-registro-de-pruebas-no-existe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El archivo de registro de pruebas no existe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-se-encuentra-la-carpeta-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No se encuentra la carpeta del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-readme-ya-existe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El README ya existe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-muestra-mas-pruebas-de-las-esperadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El informe muestra más pruebas de las esperadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-aparecen-datos-nuevos-en-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No aparecen datos nuevos en Grafana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-demostracion-depende-de-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La demostración depende de Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2018-conclusiones-del-capitulo-y-cierre-del-libro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.18. Conclusiones del capítulo y cierre del libro
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#201-objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.1. Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202-por-que-es-imprescindible-documentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2. ¿Por qué es imprescindible documentar?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.2. ¿Por qué es imprescindible documentar?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2021-documentacion-tecnica-y-documentacion-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2.1. Documentación técnica y documentación de usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#203-estructura-de-entrega-del-proyecto-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.3. Estructura de entrega del proyecto final
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.3. Estructura de entrega del proyecto final">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2031-crear-los-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.3.1. Crear los directorios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204-elaboracion-de-la-memoria-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4. Elaboración de la memoria técnica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.4. Elaboración de la memoria técnica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2041-portada-y-ficha-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.1. Portada y ficha del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2042-resumen-ejecutivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.2. Resumen ejecutivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2043-requisitos-y-alcance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.3. Requisitos y alcance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2044-arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.4. Arquitectura del sistema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2045-modelo-de-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.5. Modelo de inteligencia artificial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2046-resultados-y-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.4.6. Resultados y conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#205-documentar-la-instalacion-y-la-puesta-en-marcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5. Documentar la instalación y la puesta en marcha
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.5. Documentar la instalación y la puesta en marcha">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2051-identificacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.1. Identificación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2052-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.2. Dependencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2053-variables-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.3. Variables de configuración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2054-procedimiento-de-arranque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.5.4. Procedimiento de arranque
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#206-preparar-un-readme-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.6. Preparar un README profesional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.6. Preparar un README profesional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programa-1-generar-una-plantilla-de-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 1. Generar una plantilla de README
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#207-registrar-las-pruebas-y-las-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7. Registrar las pruebas y las evidencias
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.7. Registrar las pruebas y las evidencias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2071-ficha-de-prueba" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7.1. Ficha de prueba
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-2-registrar-una-prueba-desde-la-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 2. Registrar una prueba desde la terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2072-pruebas-minimas-propuestas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.7.2. Pruebas mínimas propuestas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#208-informe-automatico-del-estado-de-las-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.8. Informe automático del estado de las pruebas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.8. Informe automático del estado de las pruebas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programa-3-resumir-el-registro-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 3. Resumir el registro CSV
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#209-preparar-el-manual-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9. Preparar el manual de usuario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.9. Preparar el manual de usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2091-contenido-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9.1. Contenido recomendado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2092-tabla-de-incidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.9.2. Tabla de incidencias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2010-preparar-la-presentacion-oral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10. Preparar la presentación oral
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.10. Preparar la presentación oral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20101-propuesta-de-ocho-diapositivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10.1. Propuesta de ocho diapositivas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20102-recomendaciones-de-comunicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.10.2. Recomendaciones de comunicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2011-preparar-una-demostracion-tecnica-fiable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11. Preparar una demostración técnica fiable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.11. Preparar una demostración técnica fiable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20111-guion-de-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11.1. Guion de demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20112-plan-de-contingencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.11.2. Plan de contingencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2012-entrega-y-control-de-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12. Entrega y control de versiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.12. Entrega y control de versiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20121-archivos-que-deben-entregarse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.1. Archivos que deben entregarse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20122-archivo-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.2. Archivo .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20123-sincronizacion-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.12.3. Sincronización con GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2013-actividades-guiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.13. Actividades guiadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.13. Actividades guiadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-1-inventario-documental" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 1. Inventario documental
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-2-readme-reproducible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 2. README reproducible
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-3-registro-de-pruebas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 3. Registro de pruebas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-4-preparacion-de-la-defensa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 4. Preparación de la defensa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-5-ensayo-de-demostracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 5. Ensayo de demostración
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2014-practica-final-integradora-entrega-y-defensa-del-sistema-edge-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.14. Práctica final integradora: entrega y defensa del sistema Edge AI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.14. Práctica final integradora: entrega y defensa del sistema Edge AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condiciones-de-realizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Condiciones de realización
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entregables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion-10-puntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación (10 puntos)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2015-lista-de-comprobacion-antes-de-entregar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.15. Lista de comprobación antes de entregar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2016-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.16. Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2017-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.17. Resolución de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20.17. Resolución de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#el-archivo-de-registro-de-pruebas-no-existe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El archivo de registro de pruebas no existe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-se-encuentra-la-carpeta-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No se encuentra la carpeta del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-readme-ya-existe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El README ya existe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-informe-muestra-mas-pruebas-de-las-esperadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El informe muestra más pruebas de las esperadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-aparecen-datos-nuevos-en-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No aparecen datos nuevos en Grafana
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-demostracion-depende-de-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La demostración depende de Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2018-conclusiones-del-capitulo-y-cierre-del-libro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.18. Conclusiones del capítulo y cierre del libro
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-20-documentacion-y-presentacion-del-proyecto">Capítulo 20. Documentación y presentación del proyecto<a class="headerlink" href="#capitulo-20-documentacion-y-presentacion-del-proyecto" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Parte VI — Proyecto final integrador</p>
+<p>Este capítulo cierra el libro <strong>Arduino UNO Q</strong>. El alumnado elaborará una memoria técnica reproducible, organizará las evidencias de las pruebas, preparará una demostración y defenderá las decisiones adoptadas. La documentación debe describir <strong>lo que realmente se ha implementado y comprobado</strong>, diferenciándolo de las funciones previstas o simuladas.</p>
+</div>
+<h2 id="201-objetivos-de-aprendizaje">20.1. Objetivos de aprendizaje<a class="headerlink" href="#201-objetivos-de-aprendizaje" title="Permanent link">&para;</a></h2>
+<p>Al finalizar este capítulo, el alumnado será capaz de:</p>
+<ul>
+<li>Organizar la documentación de un proyecto de IoT y Edge AI de manera profesional.</li>
+<li>Explicar la arquitectura y el flujo de información entre Arduino UNO Q, Python, MQTT, InfluxDB y Grafana.</li>
+<li>Documentar la instalación, configuración, ejecución y recuperación del sistema.</li>
+<li>Presentar resultados verificables y reconocer sus limitaciones.</li>
+<li>Registrar evidencias de pruebas funcionales, de integración y de rendimiento.</li>
+<li>Preparar una presentación oral y una demostración técnica controlada.</li>
+<li>Entregar un proyecto reproducible y evaluable por otra persona.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Continuidad con los capítulos anteriores</p>
+<p>En el capítulo 18 se definió el diseño del sistema y en el capítulo 19 se abordó su implementación y las pruebas. En este capítulo se reutilizará la carpeta <code>~/practicas/proyecto_final</code> y se documentarán <strong>los archivos y resultados que realmente existan</strong>. No se deben inventar capturas, métricas ni pruebas superadas.</p>
+</div>
+<h2 id="202-por-que-es-imprescindible-documentar">20.2. ¿Por qué es imprescindible documentar?<a class="headerlink" href="#202-por-que-es-imprescindible-documentar" title="Permanent link">&para;</a></h2>
+<p>Un proyecto puede funcionar correctamente en el ordenador de su autor y resultar imposible de reproducir en otro equipo. Una documentación de calidad permite:</p>
+<ol>
+<li>Comprender qué problema resuelve el sistema.</li>
+<li>Identificar los requisitos y las decisiones de diseño.</li>
+<li>Repetir la instalación y las pruebas.</li>
+<li>Detectar errores y realizar mantenimiento.</li>
+<li>Transferir el proyecto a otro equipo de trabajo.</li>
+<li>Evaluar los resultados con criterios objetivos.</li>
+</ol>
+<p>La documentación no consiste en copiar fragmentos de código sin explicarlos. Debe conectar cada decisión con una necesidad técnica y cada resultado con una evidencia.</p>
+<h3 id="2021-documentacion-tecnica-y-documentacion-de-usuario">20.2.1. Documentación técnica y documentación de usuario<a class="headerlink" href="#2021-documentacion-tecnica-y-documentacion-de-usuario" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Destinatario</th>
+<th>Contenido principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memoria técnica</td>
+<td>Profesorado y equipo técnico</td>
+<td>Objetivos, arquitectura, implementación, pruebas y conclusiones</td>
+</tr>
+<tr>
+<td>Guía de instalación</td>
+<td>Personal técnico</td>
+<td>Dependencias, configuración y comandos de puesta en marcha</td>
+</tr>
+<tr>
+<td>Manual de uso</td>
+<td>Usuario final</td>
+<td>Operación normal, indicadores y solución de incidencias habituales</td>
+</tr>
+<tr>
+<td>Registro de pruebas</td>
+<td>Equipo de validación</td>
+<td>Casos de prueba, resultados, fecha y evidencias</td>
+</tr>
+<tr>
+<td>Presentación</td>
+<td>Tribunal o grupo clase</td>
+<td>Problema, solución, demostración, resultados y mejoras</td>
+</tr>
+</tbody>
+</table>
+<h2 id="203-estructura-de-entrega-del-proyecto-final">20.3. Estructura de entrega del proyecto final<a class="headerlink" href="#203-estructura-de-entrega-del-proyecto-final" title="Permanent link">&para;</a></h2>
+<p>Trabajaremos sobre la estructura utilizada en los capítulos 18 y 19, incorporando la documentación y los resultados de evaluación.</p>
+<div class="highlight"><pre><span></span><code>proyecto_final/
+├── configuracion/
+├── datos/
+│   ├── entradas/
+│   └── registros/
+├── modelos/
+├── src/
+├── pruebas/
+├── resultados/
+│   ├── evidencias/
+│   └── informes/
+├── documentacion/
+│   ├── README.md
+│   ├── memoria_tecnica.md
+│   ├── instalacion.md
+│   ├── manual_usuario.md
+│   ├── registro_pruebas.csv
+│   └── presentacion.md
+└── .gitignore
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Seguridad de la información</p>
+<p>No se incluirán contraseñas, claves de API, tokens de InfluxDB, credenciales MQTT ni archivos <code>.env</code> con secretos. Las capturas de pantalla también deben revisarse antes de compartirlas.</p>
+</div>
+<h3 id="2031-crear-los-directorios">20.3.1. Crear los directorios<a class="headerlink" href="#2031-crear-los-directorios" title="Permanent link">&para;</a></h3>
+<p>Conéctate al Arduino UNO Q mediante SSH o PuTTY:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/practicas/proyecto_final
+mkdir<span class="w"> </span>-p<span class="w"> </span>documentacion<span class="w"> </span>resultados/evidencias<span class="w"> </span>resultados/informes
+</code></pre></div>
+<p>Comprueba el contenido disponible:</p>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>.<span class="w"> </span>-maxdepth<span class="w"> </span><span class="m">3</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+</code></pre></div>
+<p>El listado obtenido será el punto de partida de la documentación. Los nombres exactos de los programas pueden variar según la implementación realizada en el capítulo 19.</p>
+<h2 id="204-elaboracion-de-la-memoria-tecnica">20.4. Elaboración de la memoria técnica<a class="headerlink" href="#204-elaboracion-de-la-memoria-tecnica" title="Permanent link">&para;</a></h2>
+<p>La memoria técnica debe ser comprensible sin necesidad de consultar todo el historial de desarrollo. Se recomienda la siguiente estructura.</p>
+<h3 id="2041-portada-y-ficha-del-proyecto">20.4.1. Portada y ficha del proyecto<a class="headerlink" href="#2041-portada-y-ficha-del-proyecto" title="Permanent link">&para;</a></h3>
+<p>Incluir:</p>
+<ul>
+<li>Título del proyecto.</li>
+<li>Nombre del alumno o equipo.</li>
+<li>Curso y módulo.</li>
+<li>Centro educativo.</li>
+<li>Profesor responsable.</li>
+<li>Fecha y versión del documento.</li>
+</ul>
+<h3 id="2042-resumen-ejecutivo">20.4.2. Resumen ejecutivo<a class="headerlink" href="#2042-resumen-ejecutivo" title="Permanent link">&para;</a></h3>
+<p>Redactar entre 150 y 250 palabras para responder:</p>
+<ul>
+<li>¿Qué problema se quiere resolver?</li>
+<li>¿Qué dispositivos y tecnologías se utilizan?</li>
+<li>¿Qué función cumple el modelo de IA?</li>
+<li>¿Qué resultados se han obtenido?</li>
+<li>¿Qué limitaciones se han detectado?</li>
+</ul>
+<h3 id="2043-requisitos-y-alcance">20.4.3. Requisitos y alcance<a class="headerlink" href="#2043-requisitos-y-alcance" title="Permanent link">&para;</a></h3>
+<p>Separar los requisitos funcionales de los no funcionales.</p>
+<table>
+<thead>
+<tr>
+<th>Identificador</th>
+<th>Tipo</th>
+<th>Requisito</th>
+<th>Verificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF-01</td>
+<td>Funcional</td>
+<td>Obtener lecturas ambientales o simuladas</td>
+<td>Archivo de entradas o salida de consola</td>
+</tr>
+<tr>
+<td>RF-02</td>
+<td>Funcional</td>
+<td>Ejecutar inferencia local</td>
+<td>Registro de predicciones</td>
+</tr>
+<tr>
+<td>RF-03</td>
+<td>Funcional</td>
+<td>Publicar resultados por MQTT, si está habilitado</td>
+<td>Mensaje recibido por un suscriptor</td>
+</tr>
+<tr>
+<td>RF-04</td>
+<td>Funcional</td>
+<td>Consultar históricos en InfluxDB y Grafana, si están configurados</td>
+<td>Consulta y captura del panel</td>
+</tr>
+<tr>
+<td>RNF-01</td>
+<td>No funcional</td>
+<td>Evitar publicar credenciales</td>
+<td>Revisión de archivos de entrega</td>
+</tr>
+<tr>
+<td>RNF-02</td>
+<td>No funcional</td>
+<td>Documentar el tiempo de inferencia</td>
+<td>Informe de rendimiento</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Trazabilidad</p>
+<p>Para cada requisito se indicará una prueba concreta. Un requisito sin comprobación debe figurar como <strong>pendiente</strong>, nunca como validado.</p>
+</div>
+<h3 id="2044-arquitectura-del-sistema">20.4.4. Arquitectura del sistema<a class="headerlink" href="#2044-arquitectura-del-sistema" title="Permanent link">&para;</a></h3>
+<p>El esquema lógico general es:</p>
+<div class="highlight"><pre><span></span><code>+----------------------+       +-----------------------+
+| Sensor o simulador   | ----&gt; | Arduino UNO Q         |
+| de datos ambientales |       | Linux + Python        |
++----------------------+       | Modelo de Edge AI     |
+                               +-----------+-----------+
+                                           |
+                                  Prediccion / decision
+                                           |
+                        +------------------+------------------+
+                        |                                     |
+                 Registro local                         MQTT opcional
+                        |                                     |
+                   CSV / JSON                          Consumidor IoT
+                                                              |
+                                                      InfluxDB / Grafana
+                                                       (si configurados)
+</code></pre></div>
+<p>Explicar qué componentes se ejecutan en el Arduino UNO Q y cuáles están desplegados en otros servicios o equipos. <strong>No asumir que todos los servicios están instalados en el mismo dispositivo.</strong></p>
+<h3 id="2045-modelo-de-inteligencia-artificial">20.4.5. Modelo de inteligencia artificial<a class="headerlink" href="#2045-modelo-de-inteligencia-artificial" title="Permanent link">&para;</a></h3>
+<p>Documentar, como mínimo:</p>
+<ol>
+<li>Problema de clasificación o predicción.</li>
+<li>Variables de entrada y sus unidades.</li>
+<li>Origen y cantidad de los datos.</li>
+<li>Algoritmo utilizado, por ejemplo k-NN.</li>
+<li>Parámetros elegidos y criterio de selección.</li>
+<li>Separación entre entrenamiento y prueba.</li>
+<li>Métricas calculadas y limitaciones de los datos simulados.</li>
+<li>Comportamiento previsto ante entradas inválidas.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Interpretación de resultados</p>
+<p>Una exactitud elevada sobre datos sintéticos no demuestra automáticamente que el modelo funcione bien con sensores reales. Deben describirse las condiciones de prueba y las posibles diferencias con el entorno de producción.</p>
+</div>
+<h3 id="2046-resultados-y-conclusiones">20.4.6. Resultados y conclusiones<a class="headerlink" href="#2046-resultados-y-conclusiones" title="Permanent link">&para;</a></h3>
+<p>Para cada resultado, incluir la evidencia correspondiente. Las conclusiones deben responder a los objetivos iniciales, identificar problemas resueltos y proponer mejoras realistas.</p>
+<h2 id="205-documentar-la-instalacion-y-la-puesta-en-marcha">20.5. Documentar la instalación y la puesta en marcha<a class="headerlink" href="#205-documentar-la-instalacion-y-la-puesta-en-marcha" title="Permanent link">&para;</a></h2>
+<p>Una guía de instalación debe permitir que otra persona reproduzca el sistema.</p>
+<h3 id="2051-identificacion-del-entorno">20.5.1. Identificación del entorno<a class="headerlink" href="#2051-identificacion-del-entorno" title="Permanent link">&para;</a></h3>
+<p>En el Arduino UNO Q, ejecuta:</p>
+<div class="highlight"><pre><span></span><code>uname<span class="w"> </span>-a
+python3<span class="w"> </span>--version
+hostname
+<span class="nb">pwd</span>
+</code></pre></div>
+<p>Para consultar paquetes Python instalados en el entorno activo:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>list
+</code></pre></div>
+<p>Si se utiliza un entorno virtual, actívalo antes de ejecutar el último comando. No instales paquetes de nuevo solo para documentar versiones.</p>
+<h3 id="2052-dependencias">20.5.2. Dependencias<a class="headerlink" href="#2052-dependencias" title="Permanent link">&para;</a></h3>
+<p>Crear un archivo de dependencias únicamente con las bibliotecas realmente utilizadas. Por ejemplo, si el proyecto utiliza <code>paho-mqtt</code> y <code>influxdb-client</code>, pueden figurar en <code>requirements.txt</code>; si no se usan, no deben añadirse.</p>
+<p>Para exportar las dependencias del entorno virtual activo:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>documentacion/requirements_instalados.txt
+</code></pre></div>
+<p>Este listado refleja el entorno actual y puede incluir bibliotecas ajenas al proyecto. Revisarlo antes de convertirlo en el archivo definitivo de instalación.</p>
+<h3 id="2053-variables-de-configuracion">20.5.3. Variables de configuración<a class="headerlink" href="#2053-variables-de-configuracion" title="Permanent link">&para;</a></h3>
+<p>Documentar el nombre y la función de cada variable, <strong>sin revelar su valor secreto</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Variable de ejemplo</th>
+<th>Finalidad</th>
+<th>¿Se puede publicar su valor?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MQTT_HOST</code></td>
+<td>Dirección del broker</td>
+<td>Depende de la red</td>
+</tr>
+<tr>
+<td><code>MQTT_PORT</code></td>
+<td>Puerto de comunicación</td>
+<td>Generalmente sí</td>
+</tr>
+<tr>
+<td><code>INFLUX_URL</code></td>
+<td>URL de InfluxDB</td>
+<td>Depende del despliegue</td>
+</tr>
+<tr>
+<td><code>INFLUX_ORG</code></td>
+<td>Organización de InfluxDB</td>
+<td>Revisar</td>
+</tr>
+<tr>
+<td><code>INFLUX_BUCKET</code></td>
+<td>Bucket de datos</td>
+<td>Revisar</td>
+</tr>
+<tr>
+<td><code>INFLUX_TOKEN</code></td>
+<td>Token de acceso</td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2054-procedimiento-de-arranque">20.5.4. Procedimiento de arranque<a class="headerlink" href="#2054-procedimiento-de-arranque" title="Permanent link">&para;</a></h3>
+<p>En <code>documentacion/instalacion.md</code>, registrar los comandos reales para:</p>
+<ol>
+<li>Acceder al directorio del proyecto.</li>
+<li>Activar el entorno Python, si existe.</li>
+<li>Iniciar el generador de datos o leer los sensores.</li>
+<li>Ejecutar el programa de inferencia.</li>
+<li>Activar los servicios externos que correspondan.</li>
+<li>Consultar los registros y detener el sistema de forma segura.</li>
+</ol>
+<p>No copiar comandos de ejemplo que no se hayan probado en el equipo.</p>
+<h2 id="206-preparar-un-readme-profesional">20.6. Preparar un README profesional<a class="headerlink" href="#206-preparar-un-readme-profesional" title="Permanent link">&para;</a></h2>
+<p>El archivo <code>README.md</code> será la puerta de entrada al proyecto. Debe incluir:</p>
+<ul>
+<li>Descripción breve y finalidad.</li>
+<li>Requisitos de hardware y software.</li>
+<li>Árbol de directorios.</li>
+<li>Instalación y ejecución.</li>
+<li>Resultados esperados y ubicación de los registros.</li>
+<li>Limitaciones conocidas.</li>
+<li>Referencias a la memoria y al manual de usuario.</li>
+</ul>
+<h3 id="programa-1-generar-una-plantilla-de-readme">Programa 1. Generar una plantilla de README<a class="headerlink" href="#programa-1-generar-una-plantilla-de-readme" title="Permanent link">&para;</a></h3>
+<p>Crea <code>documentacion/01_generar_readme.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">base</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"practicas"</span> <span class="o">/</span> <span class="s2">"proyecto_final"</span>
+<span class="n">docs</span> <span class="o">=</span> <span class="n">base</span> <span class="o">/</span> <span class="s2">"documentacion"</span>
+<span class="n">docs</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">contenido</span> <span class="o">=</span> <span class="s2">"""# Proyecto final Arduino UNO Q</span>
+
+<span class="s2">## Descripcion</span>
+<span class="s2">Sistema de monitorizacion ambiental con inferencia local.</span>
+
+<span class="s2">## Objetivos</span>
+<span class="s2">- Obtener datos ambientales o simulados.</span>
+<span class="s2">- Ejecutar un modelo de IA local.</span>
+<span class="s2">- Registrar y visualizar resultados cuando corresponda.</span>
+
+<span class="s2">## Requisitos</span>
+<span class="s2">Completar con el hardware, el sistema y las versiones reales.</span>
+
+<span class="s2">## Instalacion</span>
+<span class="s2">Consultar instalacion.md.</span>
+
+<span class="s2">## Ejecucion</span>
+<span class="s2">Completar con los comandos comprobados en el equipo.</span>
+
+<span class="s2">## Resultados</span>
+<span class="s2">Consultar resultados/ y documentacion/registro_pruebas.csv.</span>
+
+<span class="s2">## Limitaciones</span>
+<span class="s2">Indicar sensores simulados, servicios opcionales y pruebas pendientes.</span>
+
+<span class="s2">## Documentacion</span>
+<span class="s2">- memoria_tecnica.md</span>
+<span class="s2">- instalacion.md</span>
+<span class="s2">- manual_usuario.md</span>
+<span class="s2">"""</span>
+
+<span class="n">destino</span> <span class="o">=</span> <span class="n">docs</span> <span class="o">/</span> <span class="s2">"README.md"</span>
+<span class="k">if</span> <span class="n">destino</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"El archivo ya existe. No se sobrescribe:"</span><span class="p">,</span> <span class="n">destino</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">destino</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">contenido</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Plantilla creada:"</span><span class="p">,</span> <span class="n">destino</span><span class="p">)</span>
+</code></pre></div>
+<p>Ejecútalo desde el directorio del proyecto:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/practicas/proyecto_final
+python3<span class="w"> </span>documentacion/01_generar_readme.py
+cat<span class="w"> </span>documentacion/README.md
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Comprobación</p>
+<p>El programa crea una plantilla, <strong>no una memoria terminada</strong>. Cada apartado debe completarse con la información real del proyecto. Si el archivo ya existe, el programa lo conserva.</p>
+</div>
+<h2 id="207-registrar-las-pruebas-y-las-evidencias">20.7. Registrar las pruebas y las evidencias<a class="headerlink" href="#207-registrar-las-pruebas-y-las-evidencias" title="Permanent link">&para;</a></h2>
+<p>Una prueba verificable debe indicar qué se esperaba, qué ocurrió y cómo se demuestra.</p>
+<h3 id="2071-ficha-de-prueba">20.7.1. Ficha de prueba<a class="headerlink" href="#2071-ficha-de-prueba" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificador</td>
+<td>Código único, por ejemplo <code>P-01</code></td>
+</tr>
+<tr>
+<td>Fecha</td>
+<td>Día de ejecución</td>
+</tr>
+<tr>
+<td>Componente</td>
+<td>Módulo o servicio evaluado</td>
+</tr>
+<tr>
+<td>Procedimiento</td>
+<td>Pasos ejecutados</td>
+</tr>
+<tr>
+<td>Resultado esperado</td>
+<td>Comportamiento previsto</td>
+</tr>
+<tr>
+<td>Resultado observado</td>
+<td>Comportamiento realmente obtenido</td>
+</tr>
+<tr>
+<td>Estado</td>
+<td><code>OK</code>, <code>FALLO</code> o <code>PENDIENTE</code></td>
+</tr>
+<tr>
+<td>Evidencia</td>
+<td>Ruta de captura, registro o archivo</td>
+</tr>
+<tr>
+<td>Observaciones</td>
+<td>Incidencias y correcciones</td>
+</tr>
+</tbody>
+</table>
+<h3 id="programa-2-registrar-una-prueba-desde-la-terminal">Programa 2. Registrar una prueba desde la terminal<a class="headerlink" href="#programa-2-registrar-una-prueba-desde-la-terminal" title="Permanent link">&para;</a></h3>
+<p>Crea <code>documentacion/02_registrar_prueba.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">base</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"practicas"</span> <span class="o">/</span> <span class="s2">"proyecto_final"</span>
+<span class="n">destino</span> <span class="o">=</span> <span class="n">base</span> <span class="o">/</span> <span class="s2">"documentacion"</span> <span class="o">/</span> <span class="s2">"registro_pruebas.csv"</span>
+<span class="n">destino</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">campos</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"fecha"</span><span class="p">,</span> <span class="s2">"id"</span><span class="p">,</span> <span class="s2">"componente"</span><span class="p">,</span> <span class="s2">"esperado"</span><span class="p">,</span> <span class="s2">"observado"</span><span class="p">,</span>
+    <span class="s2">"estado"</span><span class="p">,</span> <span class="s2">"evidencia"</span><span class="p">,</span> <span class="s2">"observaciones"</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Registro de pruebas del proyecto final"</span><span class="p">)</span>
+<span class="n">identificador</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"ID de prueba: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">componente</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Componente: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">esperado</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Resultado esperado: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">observado</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Resultado observado: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">estado</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Estado (OK/FALLO/PENDIENTE): "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">evidencia</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ruta de evidencia (opcional): "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">observaciones</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Observaciones: "</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">identificador</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">componente</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="s2">"ERROR: ID y componente son obligatorios"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">estado</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"OK"</span><span class="p">,</span> <span class="s2">"FALLO"</span><span class="p">,</span> <span class="s2">"PENDIENTE"</span><span class="p">}:</span>
+    <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="s2">"ERROR: estado no valido"</span><span class="p">)</span>
+
+<span class="n">nuevo</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">destino</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">or</span> <span class="n">destino</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">with</span> <span class="n">destino</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">escritor</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">fieldnames</span><span class="o">=</span><span class="n">campos</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">nuevo</span><span class="p">:</span>
+        <span class="n">escritor</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span>
+    <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">({</span>
+        <span class="s2">"fecha"</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="n">timespec</span><span class="o">=</span><span class="s2">"seconds"</span><span class="p">),</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="n">identificador</span><span class="p">,</span>
+        <span class="s2">"componente"</span><span class="p">:</span> <span class="n">componente</span><span class="p">,</span>
+        <span class="s2">"esperado"</span><span class="p">:</span> <span class="n">esperado</span><span class="p">,</span>
+        <span class="s2">"observado"</span><span class="p">:</span> <span class="n">observado</span><span class="p">,</span>
+        <span class="s2">"estado"</span><span class="p">:</span> <span class="n">estado</span><span class="p">,</span>
+        <span class="s2">"evidencia"</span><span class="p">:</span> <span class="n">evidencia</span><span class="p">,</span>
+        <span class="s2">"observaciones"</span><span class="p">:</span> <span class="n">observaciones</span><span class="p">,</span>
+    <span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Prueba registrada en:"</span><span class="p">,</span> <span class="n">destino</span><span class="p">)</span>
+</code></pre></div>
+<p>Ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>documentacion/02_registrar_prueba.py
+</code></pre></div>
+<p>Introduce una prueba que hayas realizado realmente. Después consulta el archivo:</p>
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span>documentacion/registro_pruebas.csv
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Integridad de las evidencias</p>
+<p>El registro es una declaración de resultados introducida por el usuario. No verifica automáticamente que la prueba haya ocurrido ni que la evidencia exista. El profesor deberá contrastar los registros con los archivos y la demostración.</p>
+</div>
+<h3 id="2072-pruebas-minimas-propuestas">20.7.2. Pruebas mínimas propuestas<a class="headerlink" href="#2072-pruebas-minimas-propuestas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Prueba</th>
+<th>Evidencia recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P-01</td>
+<td>Generación o captura de lecturas</td>
+<td>CSV y salida de consola</td>
+</tr>
+<tr>
+<td>P-02</td>
+<td>Inferencia local</td>
+<td>Predicciones y entradas asociadas</td>
+</tr>
+<tr>
+<td>P-03</td>
+<td>Rechazo de datos inválidos</td>
+<td>Registro de error o prueba unitaria</td>
+</tr>
+<tr>
+<td>P-04</td>
+<td>Publicación MQTT, si se usa</td>
+<td>Mensaje recibido</td>
+</tr>
+<tr>
+<td>P-05</td>
+<td>Escritura en InfluxDB, si se usa</td>
+<td>Consulta de puntos</td>
+</tr>
+<tr>
+<td>P-06</td>
+<td>Visualización en Grafana, si se usa</td>
+<td>Captura del dashboard</td>
+</tr>
+<tr>
+<td>P-07</td>
+<td>Rendimiento del modelo</td>
+<td>Informe con tiempos y condiciones</td>
+</tr>
+<tr>
+<td>P-08</td>
+<td>Reinicio y recuperación</td>
+<td>Registro de procedimiento</td>
+</tr>
+</tbody>
+</table>
+<p>Los servicios opcionales no utilizados se marcarán como <strong>no aplicables</strong> en la memoria; no se contabilizarán como pruebas realizadas.</p>
+<h2 id="208-informe-automatico-del-estado-de-las-pruebas">20.8. Informe automático del estado de las pruebas<a class="headerlink" href="#208-informe-automatico-del-estado-de-las-pruebas" title="Permanent link">&para;</a></h2>
+<h3 id="programa-3-resumir-el-registro-csv">Programa 3. Resumir el registro CSV<a class="headerlink" href="#programa-3-resumir-el-registro-csv" title="Permanent link">&para;</a></h3>
+<p>Crea <code>documentacion/03_resumen_pruebas.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">base</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">"practicas"</span> <span class="o">/</span> <span class="s2">"proyecto_final"</span>
+<span class="n">origen</span> <span class="o">=</span> <span class="n">base</span> <span class="o">/</span> <span class="s2">"documentacion"</span> <span class="o">/</span> <span class="s2">"registro_pruebas.csv"</span>
+<span class="n">destino</span> <span class="o">=</span> <span class="n">base</span> <span class="o">/</span> <span class="s2">"resultados"</span> <span class="o">/</span> <span class="s2">"informes"</span> <span class="o">/</span> <span class="s2">"resumen_pruebas.txt"</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">origen</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+    <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="s2">"ERROR: no existe el registro de pruebas"</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">origen</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"r"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">filas</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">archivo</span><span class="p">))</span>
+
+<span class="n">conteos</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">fila</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"estado"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">filas</span><span class="p">)</span>
+<span class="n">lineas</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"RESUMEN DE PRUEBAS"</span><span class="p">,</span>
+    <span class="s2">"Total de registros: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filas</span><span class="p">)),</span>
+    <span class="s2">"OK: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">conteos</span><span class="p">[</span><span class="s2">"OK"</span><span class="p">]),</span>
+    <span class="s2">"FALLO: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">conteos</span><span class="p">[</span><span class="s2">"FALLO"</span><span class="p">]),</span>
+    <span class="s2">"PENDIENTE: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">conteos</span><span class="p">[</span><span class="s2">"PENDIENTE"</span><span class="p">]),</span>
+<span class="p">]</span>
+
+<span class="n">destino</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">destino</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lineas</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lineas</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Informe guardado en:"</span><span class="p">,</span> <span class="n">destino</span><span class="p">)</span>
+</code></pre></div>
+<p>Ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>documentacion/03_resumen_pruebas.py
+cat<span class="w"> </span>resultados/informes/resumen_pruebas.txt
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Cómo interpretar el informe</p>
+<p>El programa cuenta <strong>registros</strong>, no pruebas únicas. Si repites una misma prueba varias veces, cada ejecución registrada se contabilizará. En la memoria debes explicar las repeticiones y distinguir los resultados iniciales de los definitivos.</p>
+</div>
+<h2 id="209-preparar-el-manual-de-usuario">20.9. Preparar el manual de usuario<a class="headerlink" href="#209-preparar-el-manual-de-usuario" title="Permanent link">&para;</a></h2>
+<p>El manual debe explicar cómo utilizar el proyecto sin necesidad de conocer su código fuente.</p>
+<h3 id="2091-contenido-recomendado">20.9.1. Contenido recomendado<a class="headerlink" href="#2091-contenido-recomendado" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Descripción general del sistema.</li>
+<li>Requisitos previos y conexión al Arduino UNO Q.</li>
+<li>Procedimiento de inicio.</li>
+<li>Lectura e interpretación de los resultados.</li>
+<li>Significado de los estados de la IA.</li>
+<li>Procedimiento de parada.</li>
+<li>Mensajes de error habituales.</li>
+<li>Contacto de mantenimiento o responsable.</li>
+</ol>
+<h3 id="2092-tabla-de-incidencias">20.9.2. Tabla de incidencias<a class="headerlink" href="#2092-tabla-de-incidencias" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Causa posible</th>
+<th>Comprobación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No se generan lecturas</td>
+<td>Programa detenido o ruta incorrecta</td>
+<td>Revisar proceso y directorio</td>
+</tr>
+<tr>
+<td>No aparece el modelo</td>
+<td>Archivo no generado o ruta errónea</td>
+<td>Verificar <code>modelos/</code></td>
+</tr>
+<tr>
+<td>Fallan las predicciones</td>
+<td>Datos incompletos o formato incompatible</td>
+<td>Revisar entradas y registro</td>
+</tr>
+<tr>
+<td>MQTT no recibe mensajes</td>
+<td>Broker inaccesible o configuración incorrecta</td>
+<td>Comprobar red y suscriptor</td>
+</tr>
+<tr>
+<td>Grafana no muestra datos</td>
+<td>Rango temporal o consulta incorrecta</td>
+<td>Revisar bucket, campo y tiempo</td>
+</tr>
+<tr>
+<td>El programa no inicia</td>
+<td>Dependencia o entorno Python incorrecto</td>
+<td>Revisar versión y bibliotecas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2010-preparar-la-presentacion-oral">20.10. Preparar la presentación oral<a class="headerlink" href="#2010-preparar-la-presentacion-oral" title="Permanent link">&para;</a></h2>
+<p>Una buena presentación no debe reproducir toda la memoria. Debe destacar las decisiones y los resultados más importantes.</p>
+<h3 id="20101-propuesta-de-ocho-diapositivas">20.10.1. Propuesta de ocho diapositivas<a class="headerlink" href="#20101-propuesta-de-ocho-diapositivas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Diapositiva</th>
+<th>Contenido</th>
+<th>Tiempo orientativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Título, autores y objetivo</td>
+<td>1 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Problema y requisitos</td>
+<td>1 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Arquitectura del sistema</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Datos y modelo de IA</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Implementación y tecnologías</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Demostración</td>
+<td>3 min</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Resultados, pruebas y limitaciones</td>
+<td>2 min</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Conclusiones y mejoras</td>
+<td>2 min</td>
+</tr>
+</tbody>
+</table>
+<p>Duración orientativa total: <strong>15 minutos</strong>. El profesor puede adaptarla a la organización del grupo.</p>
+<h3 id="20102-recomendaciones-de-comunicacion">20.10.2. Recomendaciones de comunicación<a class="headerlink" href="#20102-recomendaciones-de-comunicacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Utilizar esquemas sencillos y capturas legibles.</li>
+<li>Explicar las siglas antes de emplearlas.</li>
+<li>Distinguir entre funcionalidades reales y simuladas.</li>
+<li>Presentar métricas con sus unidades y condiciones de medición.</li>
+<li>Evitar mostrar contraseñas o tokens durante la demostración.</li>
+<li>Repartir las intervenciones si el proyecto es en equipo.</li>
+<li>Reservar tiempo para preguntas.</li>
+</ul>
+<h2 id="2011-preparar-una-demostracion-tecnica-fiable">20.11. Preparar una demostración técnica fiable<a class="headerlink" href="#2011-preparar-una-demostracion-tecnica-fiable" title="Permanent link">&para;</a></h2>
+<p>La demostración debe ser breve, reproducible y resistente a fallos previsibles.</p>
+<h3 id="20111-guion-de-demostracion">20.11.1. Guion de demostración<a class="headerlink" href="#20111-guion-de-demostracion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Mostrar la estructura de directorios y explicar los componentes.</li>
+<li>Enseñar una entrada ambiental real o simulada.</li>
+<li>Ejecutar el programa de inferencia local.</li>
+<li>Mostrar la predicción y explicar su significado.</li>
+<li>Abrir el registro generado.</li>
+<li>Si están configurados, comprobar MQTT e InfluxDB/Grafana.</li>
+<li>Mostrar el registro de pruebas y las limitaciones conocidas.</li>
+</ol>
+<h3 id="20112-plan-de-contingencia">20.11.2. Plan de contingencia<a class="headerlink" href="#20112-plan-de-contingencia" title="Permanent link">&para;</a></h3>
+<p>Antes de la defensa:</p>
+<ul>
+<li>Comprobar alimentación, conexión de red y acceso SSH.</li>
+<li>Verificar que los servicios necesarios están disponibles.</li>
+<li>Preparar un conjunto de datos de prueba reproducible.</li>
+<li>Conservar capturas de ejecuciones anteriores <strong>identificadas como evidencias históricas</strong>, no como demostración en directo.</li>
+<li>Preparar una explicación de los componentes opcionales que no estén conectados.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Demostraciones con actuadores</p>
+<p>Si se han incorporado actuadores reales, comprobar límites eléctricos, estados seguros y posibilidad de desconexión antes de la presentación. No ejecutar acciones físicas potencialmente peligrosas como parte de una demostración improvisada.</p>
+</div>
+<h2 id="2012-entrega-y-control-de-versiones">20.12. Entrega y control de versiones<a class="headerlink" href="#2012-entrega-y-control-de-versiones" title="Permanent link">&para;</a></h2>
+<h3 id="20121-archivos-que-deben-entregarse">20.12.1. Archivos que deben entregarse<a class="headerlink" href="#20121-archivos-que-deben-entregarse" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Código fuente desarrollado.</li>
+<li>Configuración de ejemplo sin secretos.</li>
+<li>Modelo y datos de prueba permitidos.</li>
+<li>Memoria técnica y manual de usuario.</li>
+<li>Instrucciones de instalación.</li>
+<li>Registro de pruebas y evidencias.</li>
+<li>Presentación o guion de defensa.</li>
+<li>Lista de limitaciones y mejoras.</li>
+</ul>
+<h3 id="20122-archivo-gitignore">20.12.2. Archivo <code>.gitignore</code><a class="headerlink" href="#20122-archivo-gitignore" title="Permanent link">&para;</a></h3>
+<p>En el directorio raíz del proyecto puede utilizarse:</p>
+<div class="highlight"><pre><span></span><code>.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.token
+*.key
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Revisión antes de publicar</p>
+<p>Un <code>.gitignore</code> evita incorporar ciertos archivos nuevos, pero <strong>no elimina secretos ya incluidos en el historial de Git</strong>. Revisar <code>git status</code>, los archivos preparados para el commit y el historial si previamente se publicaron credenciales.</p>
+</div>
+<h3 id="20123-sincronizacion-con-github">20.12.3. Sincronización con GitHub<a class="headerlink" href="#20123-sincronizacion-con-github" title="Permanent link">&para;</a></h3>
+<p>Si el proyecto final dispone de un repositorio Git independiente y configurado, pueden utilizarse:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>status
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Documentar proyecto final Arduino UNO Q"</span>
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<p>Estos comandos deben ejecutarse <strong>dentro del repositorio correspondiente</strong>. No es necesario crear un repositorio independiente para completar la práctica.</p>
+<p>La publicación del <strong>libro MkDocs</strong>, en cambio, se realizará desde VS Code en Windows, dentro de <code>F:\proyectos_SDD\Libro-Arduino-UNO-Q</code>, siguiendo el procedimiento habitual con <code>mkdocs build --strict</code>, <code>git push</code> y <code>mkdocs gh-deploy</code>.</p>
+<h2 id="2013-actividades-guiadas">20.13. Actividades guiadas<a class="headerlink" href="#2013-actividades-guiadas" title="Permanent link">&para;</a></h2>
+<h3 id="actividad-1-inventario-documental">Actividad 1. Inventario documental<a class="headerlink" href="#actividad-1-inventario-documental" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ejecuta <code>find . -maxdepth 3 -type f | sort</code>.</li>
+<li>Identifica código, datos, modelos, registros y documentación.</li>
+<li>Marca qué archivos deben entregarse y cuáles contienen información sensible.</li>
+<li>Redacta una tabla con la función de cada archivo principal.</li>
+</ol>
+<p><strong>Evidencia:</strong> inventario incluido en la memoria.</p>
+<h3 id="actividad-2-readme-reproducible">Actividad 2. README reproducible<a class="headerlink" href="#actividad-2-readme-reproducible" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Ejecuta <code>01_generar_readme.py</code>.</li>
+<li>Completa todos los apartados de la plantilla.</li>
+<li>Añade los comandos de ejecución realmente comprobados.</li>
+<li>Pide a un compañero que siga las instrucciones y anota las dificultades encontradas.</li>
+</ol>
+<p><strong>Evidencia:</strong> <code>documentacion/README.md</code> revisado.</p>
+<h3 id="actividad-3-registro-de-pruebas">Actividad 3. Registro de pruebas<a class="headerlink" href="#actividad-3-registro-de-pruebas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Selecciona tres pruebas realizadas en el capítulo 19.</li>
+<li>Regístralas con <code>02_registrar_prueba.py</code>.</li>
+<li>Añade referencias a evidencias existentes.</li>
+<li>Ejecuta <code>03_resumen_pruebas.py</code>.</li>
+<li>Explica las diferencias entre registros correctos, fallidos y pendientes.</li>
+</ol>
+<p><strong>Evidencia:</strong> CSV y resumen TXT.</p>
+<h3 id="actividad-4-preparacion-de-la-defensa">Actividad 4. Preparación de la defensa<a class="headerlink" href="#actividad-4-preparacion-de-la-defensa" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Crea una presentación de ocho diapositivas.</li>
+<li>Incluye un diagrama de arquitectura.</li>
+<li>Presenta al menos una métrica real de prueba.</li>
+<li>Explica una limitación técnica detectada.</li>
+<li>Ensaya una exposición de aproximadamente 15 minutos.</li>
+</ol>
+<p><strong>Evidencia:</strong> presentación y guion.</p>
+<h3 id="actividad-5-ensayo-de-demostracion">Actividad 5. Ensayo de demostración<a class="headerlink" href="#actividad-5-ensayo-de-demostracion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Reinicia la aplicación siguiendo la guía de instalación.</li>
+<li>Ejecuta una inferencia local.</li>
+<li>Muestra su registro.</li>
+<li>Comprueba los servicios externos que se hayan incorporado.</li>
+<li>Documenta un fallo posible y su recuperación.</li>
+</ol>
+<p><strong>Evidencia:</strong> acta breve de ensayo y capturas pertinentes.</p>
+<h2 id="2014-practica-final-integradora-entrega-y-defensa-del-sistema-edge-ai">20.14. Práctica final integradora: entrega y defensa del sistema Edge AI<a class="headerlink" href="#2014-practica-final-integradora-entrega-y-defensa-del-sistema-edge-ai" title="Permanent link">&para;</a></h2>
+<h3 id="enunciado">Enunciado<a class="headerlink" href="#enunciado" title="Permanent link">&para;</a></h3>
+<p>El alumnado entregará y defenderá el proyecto final desarrollado en los capítulos 18 y 19. El sistema debe contar con documentación suficiente para que una tercera persona comprenda su arquitectura, reproduzca sus funciones principales y evalúe sus resultados.</p>
+<p>La entrega incluirá una memoria técnica, una guía de instalación, un manual de usuario, un registro de pruebas, evidencias verificables y una presentación oral con demostración.</p>
+<h3 id="condiciones-de-realizacion">Condiciones de realización<a class="headerlink" href="#condiciones-de-realizacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Trabajo individual o en equipo, según la organización del profesor.</li>
+<li>Se permite el uso de datos simulados, siempre que se identifiquen como tales.</li>
+<li>Los componentes no implementados deben marcarse como pendientes u opcionales.</li>
+<li>Las métricas deben proceder de ejecuciones reales y documentadas.</li>
+<li>No se publicarán secretos, credenciales ni datos personales innecesarios.</li>
+</ul>
+<h3 id="entregables">Entregables<a class="headerlink" href="#entregables" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Carpeta del proyecto con código y configuración segura.</li>
+<li><code>documentacion/README.md</code> completo.</li>
+<li><code>documentacion/memoria_tecnica.md</code>.</li>
+<li><code>documentacion/instalacion.md</code> y <code>manual_usuario.md</code>.</li>
+<li><code>documentacion/registro_pruebas.csv</code> y evidencias.</li>
+<li>Presentación y demostración del proyecto.</li>
+</ol>
+<h3 id="rubrica-de-evaluacion-10-puntos">Rúbrica de evaluación (10 puntos)<a class="headerlink" href="#rubrica-de-evaluacion-10-puntos" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntuación máxima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memoria técnica: claridad, arquitectura y requisitos</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr>
+<td>Reproducibilidad de la instalación y del uso</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Calidad del registro de pruebas y evidencias</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr>
+<td>Explicación del modelo de IA y sus limitaciones</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td>Presentación oral y organización de contenidos</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Demostración técnica y respuesta a preguntas</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Seguridad documental y control de versiones</td>
+<td style="text-align: right;">0,5</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10,0</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Criterios de calidad</p>
+<p>La máxima puntuación exige documentación coherente con el sistema implementado, pruebas contrastables y una defensa que explique las decisiones técnicas. No se penalizará la ausencia de hardware opcional si el alcance aprobado del proyecto contempla simulación y esta se documenta correctamente.</p>
+</div>
+<h2 id="2015-lista-de-comprobacion-antes-de-entregar">20.15. Lista de comprobación antes de entregar<a class="headerlink" href="#2015-lista-de-comprobacion-antes-de-entregar" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] La memoria explica el problema, los objetivos y la arquitectura.</li>
+<li>[ ] Se identifica el hardware utilizado y el software instalado.</li>
+<li>[ ] Se distinguen los datos reales de los simulados.</li>
+<li>[ ] El modelo de IA está descrito con sus entradas y limitaciones.</li>
+<li>[ ] El README contiene comandos comprobados.</li>
+<li>[ ] El manual de usuario explica el funcionamiento normal.</li>
+<li>[ ] Existe un registro de pruebas con resultados observados.</li>
+<li>[ ] Las evidencias corresponden a ejecuciones reales.</li>
+<li>[ ] No se incluyen contraseñas ni tokens.</li>
+<li>[ ] La presentación tiene una duración adecuada.</li>
+<li>[ ] La demostración se ha ensayado.</li>
+<li>[ ] Se han documentado incidencias y mejoras futuras.</li>
+</ul>
+<h2 id="2016-autoevaluacion">20.16. Autoevaluación<a class="headerlink" href="#2016-autoevaluacion" title="Permanent link">&para;</a></h2>
+<ol>
+<li>¿Qué diferencia existe entre una memoria técnica y un manual de usuario?</li>
+<li>¿Por qué es importante documentar las versiones del software?</li>
+<li>¿Qué información mínima debe contener un caso de prueba?</li>
+<li>¿Qué riesgo supone publicar un token de InfluxDB?</li>
+<li>¿Por qué no basta con afirmar que un modelo tiene una exactitud elevada?</li>
+<li>¿Cómo debe documentarse una función todavía no implementada?</li>
+<li>¿Qué debe hacerse si una demostración en directo falla?</li>
+<li>¿Qué ventajas aporta un README bien estructurado?</li>
+<li>¿Qué limitaciones presenta una prueba realizada solo con datos sintéticos?</li>
+<li>¿Qué relación existe entre requisitos, pruebas y evidencias?</li>
+</ol>
+<h2 id="2017-resolucion-de-problemas">20.17. Resolución de problemas<a class="headerlink" href="#2017-resolucion-de-problemas" title="Permanent link">&para;</a></h2>
+<h3 id="el-archivo-de-registro-de-pruebas-no-existe">El archivo de registro de pruebas no existe<a class="headerlink" href="#el-archivo-de-registro-de-pruebas-no-existe" title="Permanent link">&para;</a></h3>
+<p>Ejecuta primero <code>02_registrar_prueba.py</code> y guarda al menos una prueba válida. Después vuelve a ejecutar el programa de resumen.</p>
+<h3 id="no-se-encuentra-la-carpeta-del-proyecto">No se encuentra la carpeta del proyecto<a class="headerlink" href="#no-se-encuentra-la-carpeta-del-proyecto" title="Permanent link">&para;</a></h3>
+<p>Comprueba:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-la<span class="w"> </span>~/practicas
+ls<span class="w"> </span>-la<span class="w"> </span>~/practicas/proyecto_final
+</code></pre></div>
+<p>Si tu implementación utiliza otra ruta, modifica las variables <code>base</code> de los programas para que apunten a la carpeta real.</p>
+<h3 id="el-readme-ya-existe">El README ya existe<a class="headerlink" href="#el-readme-ya-existe" title="Permanent link">&para;</a></h3>
+<p>El primer programa evita sobrescribirlo. Edita el documento existente o haz una copia de seguridad antes de crear una nueva plantilla.</p>
+<h3 id="el-informe-muestra-mas-pruebas-de-las-esperadas">El informe muestra más pruebas de las esperadas<a class="headerlink" href="#el-informe-muestra-mas-pruebas-de-las-esperadas" title="Permanent link">&para;</a></h3>
+<p>Cada ejecución registrada produce una fila. Revisa si has registrado varias veces el mismo identificador y explica las repeticiones.</p>
+<h3 id="no-aparecen-datos-nuevos-en-grafana">No aparecen datos nuevos en Grafana<a class="headerlink" href="#no-aparecen-datos-nuevos-en-grafana" title="Permanent link">&para;</a></h3>
+<p>Comprueba el intervalo temporal, la consulta Flux, el bucket y que el programa responsable de escribir los datos esté funcionando. Las capturas antiguas no sustituyen a una comprobación actual.</p>
+<h3 id="la-demostracion-depende-de-internet">La demostración depende de Internet<a class="headerlink" href="#la-demostracion-depende-de-internet" title="Permanent link">&para;</a></h3>
+<p>Documenta las dependencias externas y prepara una ejecución local con datos de prueba. No atribuyas al sistema funciones que no puedan comprobarse durante la defensa.</p>
+<h2 id="2018-conclusiones-del-capitulo-y-cierre-del-libro">20.18. Conclusiones del capítulo y cierre del libro<a class="headerlink" href="#2018-conclusiones-del-capitulo-y-cierre-del-libro" title="Permanent link">&para;</a></h2>
+<p>Con este capítulo se completa el recorrido del libro <strong>Arduino UNO Q</strong>: desde los primeros programas y la interacción con hardware hasta Linux, Python, comunicaciones IoT, almacenamiento de datos, visualización y aplicaciones de inteligencia artificial en el borde de la red.</p>
+<p>El proyecto final reúne tres competencias esenciales: <strong>diseñar</strong>, <strong>implementar y comprobar</strong>, y <strong>documentar y comunicar</strong> una solución técnica. Un resultado profesional no se limita a que el programa funcione; también exige que sea comprensible, verificable, seguro y mantenible.</p>
+<div class="admonition success">
+<p class="admonition-title">Libro completado</p>
+<p>Tras validar las actividades y la defensa del proyecto, habremos finalizado los <strong>20 capítulos</strong> del libro Arduino UNO Q. Como trabajo de cierre, conviene revisar los enlaces, la navegación de MkDocs y la publicación final en GitHub Pages.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../capitulo19/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Capítulo 19. Implementación y pruebas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 19. Implementación y pruebas
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.footer", "navigation.top", "content.code.copy", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/javascripts/navigation.js"></script>
+      
+    
+  </body>
+</html>
