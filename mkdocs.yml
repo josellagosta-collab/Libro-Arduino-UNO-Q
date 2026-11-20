@@ -1,4 +1,4 @@
-site_name: Arduino UNO Q - 2º ASIX
+site_name: 0371 Fundamentos de Hardware -Arduino UNO Q - 2º ASIX
 site_description: Libro tutorial de Arduino UNO Q
 site_author: José Aguilera Molina
 theme:
@@ -41,11 +41,11 @@ markdown_extensions:
       permalink: true
 nav:
   - Inicio: index.md
-  - 'Parte 1. Introducción a Arduino UNO Q':
+  - 'Parte 1. Introducción':
       - 'Capítulo 1. Arquitectura y características de Arduino UNO Q': parte1/capitulo01.md
       - 'Capítulo 2. Preparación del entorno de desarrollo': parte1/capitulo02.md
       - 'Capítulo 3. Primeros programas y pruebas': parte1/capitulo03.md
-  - 'Parte 2. Programación y electrónica':
+  - 'Parte 2. Electrónica':
       - 'Capítulo 4. Entradas y salidas digitales': parte2/capitulo04.md
       - 'Capítulo 5. Sensores y actuadores': parte2/capitulo05.md
       - 'Capítulo 6. Comunicación entre procesadores y aplicaciones': parte2/capitulo06.md
@@ -58,7 +58,7 @@ nav:
       - 'Capítulo 11. Servidores web y API REST': parte4/capitulo11.md
       - 'Capítulo 12. MQTT y comunicaciones IoT': parte4/capitulo12.md
       - 'Capítulo 13. InfluxDB y Grafana': parte4/capitulo13.md
-  - 'Parte 5. Inteligencia artificial':
+  - 'Parte 5. IA':
       - 'Capítulo 14. Introducción a Edge AI': parte5/capitulo14.md
       - 'Capítulo 15. Modelos de inteligencia artificial': parte5/capitulo15.md
       - 'Capítulo 16. Visión artificial y reconocimiento': parte5/capitulo16.md
@@ -67,3 +67,7 @@ nav:
       - 'Capítulo 18. Diseño del proyecto final': parte6/capitulo18.md
       - 'Capítulo 19. Implementación y pruebas': parte6/capitulo19.md
       - 'Capítulo 20. Documentación y presentación': parte6/capitulo20.md
+  - 'Parte 7. Complementarias':
+      - '21. Creación, verificación y restauración de imágenes de equipos': parte7/capitulo21.md
+      - '22. Infraestructura y mantenimiento de un CPD': parte7/capitulo22.md
+      - '23. Seguridad, ESD y gestión responsable del taller': parte7/capitulo23.md
