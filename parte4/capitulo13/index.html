@@ -984,6 +984,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 13. InfluxDB y Grafana
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1000,6 +1018,369 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-conceptos-fundamentales-de-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2. Conceptos fundamentales de InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-comprobaciones-iniciales-de-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3. Comprobaciones iniciales de Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-preparar-el-directorio-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4. Preparar el directorio de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-instalar-influxdb-2x-con-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5. Instalar InfluxDB 2.x con Docker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.5. Instalar InfluxDB 2.x con Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primera-puesta-en-marcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primera puesta en marcha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-configuracion-inicial-de-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6. Configuración inicial de InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-instalar-y-comprobar-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7. Instalar y comprobar Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-preparar-python-para-enviar-mediciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8. Preparar Python para enviar mediciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#139-programa-1-escribir-datos-en-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.9. Programa 1. Escribir datos en InfluxDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.9. Programa 1. Escribir datos en InfluxDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprobacion-en-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación en la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1310-programa-2-consultar-datos-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.10. Programa 2. Consultar datos desde Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1311-integracion-mqtt-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.11. Integración MQTT → InfluxDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.11. Integración MQTT → InfluxDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-de-mqtt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración de MQTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-3-puente-mqtt-a-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 3. Puente MQTT a InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1312-configurar-influxdb-como-origen-de-datos-en-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.12. Configurar InfluxDB como origen de datos en Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1313-crear-el-primer-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.13. Crear el primer dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.13. Crear el primer dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actualización automática
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1314-persistencia-y-reinicio-de-servicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.14. Persistencia y reinicio de servicios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1315-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.15. Resolución de problemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1316-practica-integradora-estacion-iot-monitorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.16. Práctica integradora: estación IoT monitorizada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.16. Práctica integradora: estación IoT monitorizada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tareas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tareas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1317-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.17. Conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1347,6 +1728,358 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#131-introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1. Introducción
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.1. Introducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-previos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos previos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#132-conceptos-fundamentales-de-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2. Conceptos fundamentales de InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#133-comprobaciones-iniciales-de-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3. Comprobaciones iniciales de Docker
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#134-preparar-el-directorio-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.4. Preparar el directorio de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135-instalar-influxdb-2x-con-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.5. Instalar InfluxDB 2.x con Docker
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.5. Instalar InfluxDB 2.x con Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primera-puesta-en-marcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primera puesta en marcha
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#136-configuracion-inicial-de-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.6. Configuración inicial de InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#137-instalar-y-comprobar-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.7. Instalar y comprobar Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#138-preparar-python-para-enviar-mediciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.8. Preparar Python para enviar mediciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#139-programa-1-escribir-datos-en-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.9. Programa 1. Escribir datos en InfluxDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.9. Programa 1. Escribir datos en InfluxDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comprobacion-en-la-interfaz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comprobación en la interfaz
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1310-programa-2-consultar-datos-desde-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.10. Programa 2. Consultar datos desde Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1311-integracion-mqtt-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.11. Integración MQTT → InfluxDB
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.11. Integración MQTT → InfluxDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-de-mqtt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuración de MQTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programa-3-puente-mqtt-a-influxdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programa 3. Puente MQTT a InfluxDB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prueba-paso-a-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prueba paso a paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1312-configurar-influxdb-como-origen-de-datos-en-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.12. Configurar InfluxDB como origen de datos en Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1313-crear-el-primer-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.13. Crear el primer dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.13. Crear el primer dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actualización automática
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1314-persistencia-y-reinicio-de-servicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.14. Persistencia y reinicio de servicios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1315-resolucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.15. Resolución de problemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1316-practica-integradora-estacion-iot-monitorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.16. Práctica integradora: estación IoT monitorizada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13.16. Práctica integradora: estación IoT monitorizada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tareas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tareas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1317-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.17. Conclusiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1363,9 +2096,609 @@
 
 
 <h1 id="capitulo-13-influxdb-y-grafana">Capítulo 13. InfluxDB y Grafana<a class="headerlink" href="#capitulo-13-influxdb-y-grafana" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">En preparación</p>
-<p>Este capítulo se desarrollará próximamente.</p>
+<h2 id="131-introduccion">13.1. Introducción<a class="headerlink" href="#131-introduccion" title="Permanent link">&para;</a></h2>
+<p>En el capítulo 12 hemos instalado y comprobado Mosquitto y hemos intercambiado mensajes MQTT desde Arduino UNO Q. Ahora construiremos una plataforma de <strong>almacenamiento y visualización de datos IoT</strong> con dos herramientas complementarias:</p>
+<ul>
+<li><strong>InfluxDB 2.x</strong>: base de datos de series temporales, adecuada para almacenar mediciones con fecha y hora.</li>
+<li><strong>Grafana</strong>: plataforma de visualización que consulta los datos y los presenta mediante gráficos y paneles.</li>
+</ul>
+<p>La arquitectura que construiremos será:</p>
+<div class="highlight"><pre><span></span><code>Arduino UNO Q / simulador Python
+           |
+           | MQTT: monlau/aula1/telemetria
+           v
+      Mosquitto :1883
+           |
+           | Suscriptor Python
+           v
+      InfluxDB 2.x :8086
+           |
+           | Consulta Flux
+           v
+        Grafana :3000
+           |
+           v
+     Navegador del PC
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Continuidad con el capítulo 12</p>
+<p>Aprovecharemos el broker Mosquitto ya instalado y los mensajes JSON del capítulo anterior. No es necesario reinstalar MQTT.</p>
+</div>
+<h3 id="objetivos">Objetivos<a class="headerlink" href="#objetivos" title="Permanent link">&para;</a></h3>
+<p>Al finalizar el capítulo serás capaz de:</p>
+<ol>
+<li>Explicar qué es una base de datos de series temporales.</li>
+<li>Instalar y comprobar InfluxDB 2.x en un contenedor Docker.</li>
+<li>Crear una organización, un bucket y un token de acceso.</li>
+<li>Escribir y consultar mediciones mediante Python.</li>
+<li>Integrar un suscriptor MQTT con InfluxDB.</li>
+<li>Instalar Grafana, configurar su origen de datos y construir un dashboard.</li>
+<li>Verificar la persistencia de los datos y diagnosticar incidencias.</li>
+</ol>
+<h3 id="requisitos-previos">Requisitos previos<a class="headerlink" href="#requisitos-previos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Arduino UNO Q con Linux, conexión a Internet y acceso SSH.</li>
+<li>Docker operativo y espacio libre suficiente para imágenes y datos.</li>
+<li>Mosquitto funcionando según el capítulo 12.</li>
+<li>Python 3 y un entorno virtual.</li>
+<li>Un ordenador en la misma red para acceder a las interfaces web.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Recursos de Arduino UNO Q</p>
+<p>InfluxDB y Grafana consumen memoria y almacenamiento. Antes de instalarlos, comprueba la capacidad disponible. Si el rendimiento de la placa es insuficiente, puedes ejecutar los contenedores en otro ordenador Linux de la red y mantener Arduino UNO Q como cliente MQTT. No elimines contenedores ni volúmenes de otros capítulos.</p>
+</div>
+<h2 id="132-conceptos-fundamentales-de-influxdb">13.2. Conceptos fundamentales de InfluxDB<a class="headerlink" href="#132-conceptos-fundamentales-de-influxdb" title="Permanent link">&para;</a></h2>
+<p>Una <strong>serie temporal</strong> es una sucesión de mediciones asociadas a instantes de tiempo. En InfluxDB 2.x se utilizan estos conceptos:</p>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Función</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organización</td>
+<td>Agrupa usuarios y recursos</td>
+<td><code>monlau</code></td>
+</tr>
+<tr>
+<td>Bucket</td>
+<td>Almacena las mediciones</td>
+<td><code>iot</code></td>
+</tr>
+<tr>
+<td>Measurement</td>
+<td>Tipo de medición</td>
+<td><code>ambiente</code></td>
+</tr>
+<tr>
+<td>Tag</td>
+<td>Etiqueta indexada para filtrar</td>
+<td><code>dispositivo=arduino_uno_q</code></td>
+</tr>
+<tr>
+<td>Field</td>
+<td>Valor medido</td>
+<td><code>temperatura=24.5</code></td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>Instante de la medición</td>
+<td>Fecha y hora de escritura</td>
+</tr>
+</tbody>
+</table>
+<p>Un registro en <strong>line protocol</strong> podría ser:</p>
+<div class="highlight"><pre><span></span><code>ambiente,dispositivo=arduino_uno_q temperatura=24.5,humedad=58.2
+</code></pre></div>
+<p>El timestamp puede omitirse: en ese caso, InfluxDB asigna el instante de recepción. Para los ejemplos de este capítulo utilizaremos InfluxDB <strong>2.x</strong>, no InfluxDB 3, porque sus interfaces y mecanismos de consulta son distintos.</p>
+<h2 id="133-comprobaciones-iniciales-de-docker">13.3. Comprobaciones iniciales de Docker<a class="headerlink" href="#133-comprobaciones-iniciales-de-docker" title="Permanent link">&para;</a></h2>
+<p>Accede mediante SSH a Arduino UNO Q y ejecuta:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>--version
+docker<span class="w"> </span>info
+free<span class="w"> </span>-h
+df<span class="w"> </span>-h
+docker<span class="w"> </span>ps<span class="w"> </span>-a
+</code></pre></div>
+<p>Si <code>docker info</code> devuelve un error de permisos, comprueba que el servicio Docker esté activo y utiliza <code>sudo docker</code> si tu configuración lo requiere. No cambies permisos sin necesidad.</p>
+<p>Comprueba que los puertos de InfluxDB y Grafana estén libres:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ss<span class="w"> </span>-lntp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">':8086|:3000'</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
+<p>Si ya existe un contenedor InfluxDB o Grafana, <strong>no crees otro sin comprobar su configuración</strong>. En ese caso, reutiliza el servicio existente y adapta los pasos siguientes.</p>
+<h2 id="134-preparar-el-directorio-de-trabajo">13.4. Preparar el directorio de trabajo<a class="headerlink" href="#134-preparar-el-directorio-de-trabajo" title="Permanent link">&para;</a></h2>
+<p>Crearemos una carpeta independiente para los archivos de este capítulo:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/capitulo13_iot
+<span class="nb">cd</span><span class="w"> </span>~/capitulo13_iot
+</code></pre></div>
+<p>Crearemos una red Docker para que Grafana pueda comunicarse con InfluxDB mediante el nombre del contenedor:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>network<span class="w"> </span>inspect<span class="w"> </span>iot-net<span class="w"> </span>&gt;/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="o">||</span><span class="w"> </span>docker<span class="w"> </span>network<span class="w"> </span>create<span class="w"> </span>iot-net
+</code></pre></div>
+<h2 id="135-instalar-influxdb-2x-con-docker">13.5. Instalar InfluxDB 2.x con Docker<a class="headerlink" href="#135-instalar-influxdb-2x-con-docker" title="Permanent link">&para;</a></h2>
+<p>Para evitar cambios inesperados entre versiones, utilizaremos una etiqueta de la rama 2.7:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>influxdb:2.7-alpine
+</code></pre></div>
+<p>Crearemos dos volúmenes para conservar los datos y la configuración:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>influxdb2-data
+docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>influxdb2-config
+</code></pre></div>
+<h3 id="primera-puesta-en-marcha">Primera puesta en marcha<a class="headerlink" href="#primera-puesta-en-marcha" title="Permanent link">&para;</a></h3>
+<p>En un laboratorio aislado, iniciaremos el contenedor con acceso al puerto 8086:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>influxdb2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--network<span class="w"> </span>iot-net<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">8086</span>:8086<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>influxdb2-data:/var/lib/influxdb2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>influxdb2-config:/etc/influxdb2<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>influxdb:2.7-alpine
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Contenedor existente</p>
+<p>Si Docker responde que el nombre <code>influxdb2</code> ya está en uso, inspecciona el contenedor con <code>docker ps -a</code> y <code>docker inspect influxdb2</code>. No lo borres: podría contener datos de otras prácticas.</p>
+</div>
+<p>Comprueba el arranque:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps
+docker<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">40</span><span class="w"> </span>influxdb2
+curl<span class="w"> </span>-i<span class="w"> </span>http://localhost:8086/health
+</code></pre></div>
+<p>La respuesta del endpoint <code>/health</code> debe indicar que el servicio está disponible. El código HTTP y el contenido pueden variar según el estado de inicialización.</p>
+<h2 id="136-configuracion-inicial-de-influxdb">13.6. Configuración inicial de InfluxDB<a class="headerlink" href="#136-configuracion-inicial-de-influxdb" title="Permanent link">&para;</a></h2>
+<p>Desde el navegador de un ordenador de la misma red, accede a:</p>
+<div class="highlight"><pre><span></span><code>http://IP_ARDUINO:8086
+</code></pre></div>
+<p>Sustituye <code>IP_ARDUINO</code> por la dirección obtenida con:</p>
+<div class="highlight"><pre><span></span><code>hostname<span class="w"> </span>-I
+</code></pre></div>
+<p>Si es la primera vez que abres la aplicación, selecciona el proceso de configuración inicial y utiliza estos valores de ejemplo:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor recomendado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usuario</td>
+<td><code>admin_iot</code></td>
+</tr>
+<tr>
+<td>Contraseña</td>
+<td>Una contraseña robusta y privada</td>
+</tr>
+<tr>
+<td>Organización</td>
+<td><code>monlau</code></td>
+</tr>
+<tr>
+<td>Bucket inicial</td>
+<td><code>iot</code></td>
+</tr>
+</tbody>
+</table>
+<p>Guarda el <strong>token de API</strong> en un lugar seguro: lo necesitaremos para escribir y consultar datos. No lo incluyas en GitHub ni en las capturas de pantalla.</p>
+<div class="admonition tip">
+<p class="admonition-title">Si InfluxDB ya estaba configurado</p>
+<p>Si aparece la pantalla de inicio de sesión, accede con las credenciales existentes. Comprueba en la interfaz que dispones de la organización <code>monlau</code>, del bucket <code>iot</code> y de un token con permisos de lectura y escritura sobre ese bucket. No repitas el asistente inicial ni borres datos.</p>
+</div>
+<h2 id="137-instalar-y-comprobar-grafana">13.7. Instalar y comprobar Grafana<a class="headerlink" href="#137-instalar-y-comprobar-grafana" title="Permanent link">&para;</a></h2>
+<p>Descarga la imagen de Grafana:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>grafana/grafana:latest
+</code></pre></div>
+<p>Crea un volumen persistente:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>create<span class="w"> </span>grafana-data
+</code></pre></div>
+<p>Inicia el contenedor:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--name<span class="w"> </span>grafana-iot<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--restart<span class="w"> </span>unless-stopped<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--network<span class="w"> </span>iot-net<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-p<span class="w"> </span><span class="m">3000</span>:3000<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>grafana-data:/var/lib/grafana<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>grafana/grafana:latest
+</code></pre></div>
+<p>Comprueba el estado:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps
+docker<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">40</span><span class="w"> </span>grafana-iot
+curl<span class="w"> </span>-I<span class="w"> </span>http://localhost:3000/login
+</code></pre></div>
+<p>Desde el navegador abre:</p>
+<div class="highlight"><pre><span></span><code>http://IP_ARDUINO:3000
+</code></pre></div>
+<p>En una instalación nueva, Grafana suele solicitar las credenciales iniciales <code>admin</code> / <code>admin</code> y obliga a cambiar la contraseña. Si ya estaba configurado, utiliza las credenciales existentes.</p>
+<div class="admonition warning">
+<p class="admonition-title">Seguridad</p>
+<p>Los puertos 8086 y 3000 se publican en la red del laboratorio. No expongas estos servicios directamente a Internet. Configura contraseñas robustas y utiliza HTTPS o un proxy seguro si se despliegan fuera de un entorno aislado.</p>
+</div>
+<h2 id="138-preparar-python-para-enviar-mediciones">13.8. Preparar Python para enviar mediciones<a class="headerlink" href="#138-preparar-python-para-enviar-mediciones" title="Permanent link">&para;</a></h2>
+<p>En la terminal de Arduino UNO Q:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/capitulo13_iot
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s1">'influxdb-client&gt;=1,&lt;2'</span><span class="w"> </span><span class="s1">'paho-mqtt&gt;=2,&lt;3'</span>
+</code></pre></div>
+<p>Si no está disponible el módulo <code>venv</code>, instala <code>python3-venv</code> y repite la creación del entorno.</p>
+<p>Para no introducir el token directamente en el código, define las variables de entorno <strong>en la terminal desde la que ejecutarás los programas</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">INFLUX_URL</span><span class="o">=</span><span class="s1">'http://localhost:8086'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">INFLUX_ORG</span><span class="o">=</span><span class="s1">'monlau'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">INFLUX_BUCKET</span><span class="o">=</span><span class="s1">'iot'</span>
+<span class="nb">read</span><span class="w"> </span>-rsp<span class="w"> </span><span class="s1">'Token InfluxDB: '</span><span class="w"> </span>INFLUX_TOKEN<span class="p">;</span><span class="w"> </span><span class="nb">echo</span>
+<span class="nb">export</span><span class="w"> </span>INFLUX_TOKEN
+</code></pre></div>
+<p>El comando <code>read -s</code> permite introducir el token sin mostrarlo en pantalla. Estas variables solo estarán disponibles en esa sesión de terminal.</p>
+<h2 id="139-programa-1-escribir-datos-en-influxdb">13.9. Programa 1. Escribir datos en InfluxDB<a class="headerlink" href="#139-programa-1-escribir-datos-en-influxdb" title="Permanent link">&para;</a></h2>
+<p>Crea el archivo <code>01_escribir_influx.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">influxdb_client</span><span class="w"> </span><span class="kn">import</span> <span class="n">InfluxDBClient</span><span class="p">,</span> <span class="n">Point</span><span class="p">,</span> <span class="n">WritePrecision</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">influxdb_client.client.write_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">SYNCHRONOUS</span>
+
+<span class="n">URL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_URL"</span><span class="p">]</span>
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_TOKEN"</span><span class="p">]</span>
+<span class="n">ORG</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_ORG"</span><span class="p">]</span>
+<span class="n">BUCKET</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_BUCKET"</span><span class="p">]</span>
+
+<span class="k">with</span> <span class="n">InfluxDBClient</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">URL</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">TOKEN</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">ORG</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">write_api</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">write_api</span><span class="p">(</span><span class="n">write_options</span><span class="o">=</span><span class="n">SYNCHRONOUS</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">temperatura</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">humedad</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
+
+        <span class="n">punto</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">Point</span><span class="p">(</span><span class="s2">"ambiente"</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="s2">"dispositivo"</span><span class="p">,</span> <span class="s2">"arduino_uno_q"</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="s2">"temperatura"</span><span class="p">,</span> <span class="n">temperatura</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="s2">"humedad"</span><span class="p">,</span> <span class="n">humedad</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time_ns</span><span class="p">(),</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">NS</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="n">write_api</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">bucket</span><span class="o">=</span><span class="n">BUCKET</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">ORG</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">punto</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Medicion enviada:"</span><span class="p">,</span> <span class="n">numero</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">temperatura</span><span class="p">,</span> <span class="n">humedad</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+<p>Ejecútalo:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>01_escribir_influx.py
+</code></pre></div>
+<p>El programa escribe diez mediciones, separadas cinco segundos. Cada punto contiene dos campos numéricos y una etiqueta que identifica el dispositivo.</p>
+<h3 id="comprobacion-en-la-interfaz">Comprobación en la interfaz<a class="headerlink" href="#comprobacion-en-la-interfaz" title="Permanent link">&para;</a></h3>
+<p>En InfluxDB, abre <strong>Data Explorer</strong>, selecciona el bucket <code>iot</code>, la medición <code>ambiente</code> y los campos <code>temperatura</code> y <code>humedad</code>. Ajusta el intervalo temporal para incluir los últimos minutos.</p>
+<div class="admonition example">
+<p class="admonition-title">Actividad 13.1</p>
+<p>Ejecuta el programa y verifica que aparecen diez mediciones. Realiza una captura del resultado en la terminal y otra de la consulta en InfluxDB, sin mostrar el token.</p>
+</div>
+<h2 id="1310-programa-2-consultar-datos-desde-python">13.10. Programa 2. Consultar datos desde Python<a class="headerlink" href="#1310-programa-2-consultar-datos-desde-python" title="Permanent link">&para;</a></h2>
+<p>Crea <code>02_consultar_influx.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">influxdb_client</span><span class="w"> </span><span class="kn">import</span> <span class="n">InfluxDBClient</span>
+
+<span class="n">URL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_URL"</span><span class="p">]</span>
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_TOKEN"</span><span class="p">]</span>
+<span class="n">ORG</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_ORG"</span><span class="p">]</span>
+<span class="n">BUCKET</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_BUCKET"</span><span class="p">]</span>
+
+<span class="n">consulta</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'''</span>
+<span class="s1">from(bucket: "</span><span class="si">{</span><span class="n">BUCKET</span><span class="si">}</span><span class="s1">")</span>
+<span class="s1">  |&gt; range(start: -1h)</span>
+<span class="s1">  |&gt; filter(fn: (r) =&gt; r._measurement == "ambiente")</span>
+<span class="s1">  |&gt; filter(fn: (r) =&gt; r._field == "temperatura")</span>
+<span class="s1">  |&gt; last()</span>
+<span class="s1">'''</span>
+
+<span class="k">with</span> <span class="n">InfluxDBClient</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">URL</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">TOKEN</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">ORG</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="n">tablas</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">query_api</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">consulta</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">ORG</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">tabla</span> <span class="ow">in</span> <span class="n">tablas</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">registro</span> <span class="ow">in</span> <span class="n">tabla</span><span class="o">.</span><span class="n">records</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Fecha:"</span><span class="p">,</span> <span class="n">registro</span><span class="o">.</span><span class="n">get_time</span><span class="p">())</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Temperatura:"</span><span class="p">,</span> <span class="n">registro</span><span class="o">.</span><span class="n">get_value</span><span class="p">())</span>
+</code></pre></div>
+<p>Ejecuta:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>02_consultar_influx.py
+</code></pre></div>
+<p>La consulta está escrita en <strong>Flux</strong>, lenguaje utilizado por InfluxDB 2.x para filtrar y transformar datos. Si no aparece ningún registro, revisa que el bucket contenga mediciones dentro de la última hora.</p>
+<h2 id="1311-integracion-mqtt-influxdb">13.11. Integración MQTT → InfluxDB<a class="headerlink" href="#1311-integracion-mqtt-influxdb" title="Permanent link">&para;</a></h2>
+<p>Ahora conectaremos los dos capítulos. El programa del capítulo 12 publicará mensajes JSON en el topic <code>monlau/aula1/telemetria</code>, y un nuevo suscriptor almacenará los datos en InfluxDB.</p>
+<h3 id="configuracion-de-mqtt">Configuración de MQTT<a class="headerlink" href="#configuracion-de-mqtt" title="Permanent link">&para;</a></h3>
+<p>Si en el capítulo 12 activaste la autenticación, introduce también las credenciales MQTT en esta sesión:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">MQTT_HOST</span><span class="o">=</span><span class="s1">'localhost'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MQTT_PORT</span><span class="o">=</span><span class="s1">'1883'</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MQTT_USER</span><span class="o">=</span><span class="s1">'alumno'</span>
+<span class="nb">read</span><span class="w"> </span>-rsp<span class="w"> </span><span class="s1">'Clave MQTT: '</span><span class="w"> </span>MQTT_PASSWORD<span class="p">;</span><span class="w"> </span><span class="nb">echo</span>
+<span class="nb">export</span><span class="w"> </span>MQTT_PASSWORD
+</code></pre></div>
+<p>Si el broker funciona sin autenticación, puedes dejar <code>MQTT_USER</code> y <code>MQTT_PASSWORD</code> sin definir.</p>
+<h3 id="programa-3-puente-mqtt-a-influxdb">Programa 3. Puente MQTT a InfluxDB<a class="headerlink" href="#programa-3-puente-mqtt-a-influxdb" title="Permanent link">&para;</a></h3>
+<p>Crea <code>03_mqtt_a_influx.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">paho.mqtt.client</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mqtt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">influxdb_client</span><span class="w"> </span><span class="kn">import</span> <span class="n">InfluxDBClient</span><span class="p">,</span> <span class="n">Point</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">influxdb_client.client.write_api</span><span class="w"> </span><span class="kn">import</span> <span class="n">SYNCHRONOUS</span>
+
+<span class="n">TOPIC</span> <span class="o">=</span> <span class="s2">"monlau/aula1/telemetria"</span>
+
+<span class="n">influx</span> <span class="o">=</span> <span class="n">InfluxDBClient</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_URL"</span><span class="p">],</span>
+    <span class="n">token</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_TOKEN"</span><span class="p">],</span>
+    <span class="n">org</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_ORG"</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">write_api</span> <span class="o">=</span> <span class="n">influx</span><span class="o">.</span><span class="n">write_api</span><span class="p">(</span><span class="n">write_options</span><span class="o">=</span><span class="n">SYNCHRONOUS</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_connect</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">flags</span><span class="p">,</span> <span class="n">reason_code</span><span class="p">,</span> <span class="n">properties</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">reason_code</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"MQTT conectado"</span><span class="p">)</span>
+        <span class="n">client</span><span class="o">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">TOPIC</span><span class="p">,</span> <span class="n">qos</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error MQTT:"</span><span class="p">,</span> <span class="n">reason_code</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_message</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">userdata</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">datos</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">payload</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">"utf-8"</span><span class="p">))</span>
+        <span class="n">dispositivo</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datos</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"dispositivo"</span><span class="p">,</span> <span class="s2">"desconocido"</span><span class="p">))</span>
+        <span class="n">temperatura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">"temperatura"</span><span class="p">])</span>
+        <span class="n">humedad</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">datos</span><span class="p">[</span><span class="s2">"humedad"</span><span class="p">])</span>
+
+        <span class="n">punto</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">Point</span><span class="p">(</span><span class="s2">"ambiente"</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="s2">"dispositivo"</span><span class="p">,</span> <span class="n">dispositivo</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="s2">"temperatura"</span><span class="p">,</span> <span class="n">temperatura</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="s2">"humedad"</span><span class="p">,</span> <span class="n">humedad</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="n">write_api</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+            <span class="n">bucket</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_BUCKET"</span><span class="p">],</span>
+            <span class="n">org</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"INFLUX_ORG"</span><span class="p">],</span>
+            <span class="n">record</span><span class="o">=</span><span class="n">punto</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Datos guardados:"</span><span class="p">,</span> <span class="n">dispositivo</span><span class="p">,</span> <span class="n">temperatura</span><span class="p">,</span> <span class="n">humedad</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">KeyError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">,</span> <span class="ne">UnicodeDecodeError</span><span class="p">)</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Mensaje incorrecto:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error al guardar datos:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
+
+<span class="n">cliente</span> <span class="o">=</span> <span class="n">mqtt</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span>
+    <span class="n">callback_api_version</span><span class="o">=</span><span class="n">mqtt</span><span class="o">.</span><span class="n">CallbackAPIVersion</span><span class="o">.</span><span class="n">VERSION2</span>
+<span class="p">)</span>
+
+<span class="n">usuario</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"MQTT_USER"</span><span class="p">)</span>
+<span class="n">clave</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"MQTT_PASSWORD"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">usuario</span><span class="p">:</span>
+    <span class="n">cliente</span><span class="o">.</span><span class="n">username_pw_set</span><span class="p">(</span><span class="n">usuario</span><span class="p">,</span> <span class="n">clave</span><span class="p">)</span>
+
+<span class="n">cliente</span><span class="o">.</span><span class="n">on_connect</span> <span class="o">=</span> <span class="n">on_connect</span>
+<span class="n">cliente</span><span class="o">.</span><span class="n">on_message</span> <span class="o">=</span> <span class="n">on_message</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">cliente</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"MQTT_HOST"</span><span class="p">,</span> <span class="s2">"localhost"</span><span class="p">),</span>
+        <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"MQTT_PORT"</span><span class="p">,</span> <span class="s2">"1883"</span><span class="p">)),</span>
+        <span class="mi">60</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Esperando telemetria MQTT..."</span><span class="p">)</span>
+    <span class="n">cliente</span><span class="o">.</span><span class="n">loop_forever</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Programa detenido"</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">cliente</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+    <span class="n">influx</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="prueba-paso-a-paso">Prueba paso a paso<a class="headerlink" href="#prueba-paso-a-paso" title="Permanent link">&para;</a></h3>
+<ol>
+<li>En una terminal, activa el entorno virtual y define las variables de InfluxDB y MQTT.</li>
+<li>Ejecuta el suscriptor:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>03_mqtt_a_influx.py
+</code></pre></div>
+<ol>
+<li>En otra terminal, publica un mensaje de prueba. Si tu broker requiere usuario y contraseña, añade <code>-u alumno -P</code> y escribe la contraseña cuando se solicite:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>mosquitto_pub<span class="w"> </span>-h<span class="w"> </span>localhost<span class="w"> </span>-t<span class="w"> </span><span class="s1">'monlau/aula1/telemetria'</span><span class="w"> </span>-m<span class="w"> </span><span class="s1">'{"dispositivo":"arduino_uno_q","temperatura":25.4,"humedad":57.2}'</span>
+</code></pre></div>
+<ol>
+<li>Comprueba que el programa muestra <code>Datos guardados</code>.</li>
+<li>Abre Data Explorer y verifica que aparece la nueva medición.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Mensajes reales o simulados</p>
+<p>Para generar un flujo continuo puedes ejecutar <code>03_publicador_json.py</code> del capítulo 12. Los datos serán simulados hasta que conectemos sensores reales. No confundas una simulación con una medida física.</p>
+</div>
+<h2 id="1312-configurar-influxdb-como-origen-de-datos-en-grafana">13.12. Configurar InfluxDB como origen de datos en Grafana<a class="headerlink" href="#1312-configurar-influxdb-como-origen-de-datos-en-grafana" title="Permanent link">&para;</a></h2>
+<p>Abre Grafana en <code>http://IP_ARDUINO:3000</code> e inicia sesión.</p>
+<ol>
+<li>En el menú de conexiones, selecciona <strong>Data sources</strong> y añade <strong>InfluxDB</strong>.</li>
+<li>Selecciona <strong>Flux</strong> como lenguaje de consulta.</li>
+<li>En el campo URL introduce <strong><code>http://influxdb2:8086</code></strong>.</li>
+<li>En Organization introduce <code>monlau</code>.</li>
+<li>En Token pega un token de InfluxDB con permisos de lectura sobre <code>iot</code>.</li>
+<li>En Default Bucket introduce <code>iot</code>.</li>
+<li>Guarda y pulsa <strong>Save &amp; test</strong>.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">¿Por qué no utilizamos localhost en Grafana?</p>
+<p>Grafana e InfluxDB se ejecutan en contenedores diferentes. Dentro del contenedor Grafana, <code>localhost</code> apunta al propio Grafana, no a InfluxDB. Ambos contenedores están en la red <code>iot-net</code>, por lo que Grafana puede resolver el nombre <code>influxdb2</code>.</p>
+</div>
+<p>Si la conexión falla, comprueba que ambos contenedores aparecen en la misma red:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>network<span class="w"> </span>inspect<span class="w"> </span>iot-net
+</code></pre></div>
+<h2 id="1313-crear-el-primer-dashboard">13.13. Crear el primer dashboard<a class="headerlink" href="#1313-crear-el-primer-dashboard" title="Permanent link">&para;</a></h2>
+<p>En Grafana, selecciona <strong>Dashboards → New → New dashboard</strong> y añade una visualización.</p>
+<p>Selecciona el origen de datos InfluxDB y utiliza esta consulta Flux para representar la temperatura:</p>
+<div class="highlight"><pre><span></span><code>from(bucket: "iot")
+  |&gt; range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |&gt; filter(fn: (r) =&gt; r._measurement == "ambiente")
+  |&gt; filter(fn: (r) =&gt; r._field == "temperatura")
+  |&gt; aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)
+  |&gt; yield(name: "temperatura")
+</code></pre></div>
+<p>Configura la visualización como <strong>Time series</strong>, con el título <strong>Temperatura aula 1</strong> y la unidad <strong>Celsius (°C)</strong>.</p>
+<p>Crea un segundo panel para la humedad, sustituyendo el filtro por:</p>
+<div class="highlight"><pre><span></span><code>|&gt; filter(fn: (r) =&gt; r._field == "humedad")
+</code></pre></div>
+<p>El segundo panel debe mostrar la unidad <strong>Porcentaje (0-100)</strong>.</p>
+<p>Guarda el dashboard con el nombre <strong>Monitorización IoT Arduino UNO Q</strong>.</p>
+<h3 id="actualizacion-automatica">Actualización automática<a class="headerlink" href="#actualizacion-automatica" title="Permanent link">&para;</a></h3>
+<p>Selecciona un rango temporal adecuado, por ejemplo los últimos 15 minutos, y activa un intervalo de refresco disponible en tu instalación de Grafana, como 10 segundos. Si no hay datos, comprueba primero que el publicador y el puente MQTT están funcionando.</p>
+<div class="admonition example">
+<p class="admonition-title">Actividad 13.2</p>
+<p>Construye un dashboard con dos paneles: temperatura y humedad. Verifica que ambos se actualizan mientras el publicador MQTT está enviando mensajes.</p>
+</div>
+<h2 id="1314-persistencia-y-reinicio-de-servicios">13.14. Persistencia y reinicio de servicios<a class="headerlink" href="#1314-persistencia-y-reinicio-de-servicios" title="Permanent link">&para;</a></h2>
+<p>Los volúmenes Docker permiten conservar los datos aunque se detenga el contenedor. Comprueba los volúmenes:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>volume<span class="w"> </span>ls
+</code></pre></div>
+<p>Reinicia únicamente los contenedores creados en este capítulo:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>restart<span class="w"> </span>influxdb2<span class="w"> </span>grafana-iot
+</code></pre></div>
+<p>Después, vuelve a abrir InfluxDB y Grafana y comprueba que siguen existiendo el bucket, las mediciones y el dashboard.</p>
+<div class="admonition warning">
+<p class="admonition-title">No borrar volúmenes</p>
+<p><code>docker rm</code> elimina contenedores, y <code>docker volume rm</code> puede eliminar permanentemente los datos asociados. No utilices comandos de limpieza masiva como <code>docker system prune --volumes</code> en la placa del laboratorio.</p>
+</div>
+<h2 id="1315-resolucion-de-problemas">13.15. Resolución de problemas<a class="headerlink" href="#1315-resolucion-de-problemas" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Causa probable</th>
+<th>Comprobación o solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No abre InfluxDB</td>
+<td>Contenedor detenido o puerto ocupado</td>
+<td><code>docker ps -a</code> y <code>docker logs influxdb2</code></td>
+</tr>
+<tr>
+<td>No abre Grafana</td>
+<td>Contenedor detenido</td>
+<td><code>docker logs grafana-iot</code></td>
+</tr>
+<tr>
+<td>Grafana no conecta con InfluxDB</td>
+<td>URL o red Docker incorrectas</td>
+<td>Usar <code>http://influxdb2:8086</code> y revisar <code>iot-net</code></td>
+</tr>
+<tr>
+<td><code>401 Unauthorized</code></td>
+<td>Token incorrecto o sin permisos</td>
+<td>Revisar token y permisos del bucket</td>
+</tr>
+<tr>
+<td>No aparecen datos</td>
+<td>Bucket, rango temporal o campos incorrectos</td>
+<td>Revisar Data Explorer y consulta Flux</td>
+</tr>
+<tr>
+<td>MQTT no recibe mensajes</td>
+<td>Broker, credenciales o topic incorrectos</td>
+<td>Probar <code>mosquitto_sub</code> con las mismas credenciales</td>
+</tr>
+<tr>
+<td>Python no encuentra una biblioteca</td>
+<td>Entorno virtual inactivo</td>
+<td>Activar <code>.venv</code> y revisar <code>pip show</code></td>
+</tr>
+<tr>
+<td>Datos desaparecen tras reiniciar</td>
+<td>Volúmenes no configurados</td>
+<td>Revisar montajes con <code>docker inspect</code></td>
+</tr>
+<tr>
+<td>Error de conexión desde otro PC</td>
+<td>IP, firewall o puertos</td>
+<td>Comprobar <code>hostname -I</code> y <code>ss -lntp</code></td>
+</tr>
+</tbody>
+</table>
+<p>Comandos útiles:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a
+docker<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">50</span><span class="w"> </span>influxdb2
+docker<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">50</span><span class="w"> </span>grafana-iot
+curl<span class="w"> </span>-i<span class="w"> </span>http://localhost:8086/health
+sudo<span class="w"> </span>ss<span class="w"> </span>-lntp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">':1883|:8086|:3000'</span>
+</code></pre></div>
+<h2 id="1316-practica-integradora-estacion-iot-monitorizada">13.16. Práctica integradora: estación IoT monitorizada<a class="headerlink" href="#1316-practica-integradora-estacion-iot-monitorizada" title="Permanent link">&para;</a></h2>
+<p><strong>Enunciado:</strong> desarrolla una estación de monitorización ambiental simulada que publique temperatura y humedad mediante MQTT, almacene las mediciones en InfluxDB y las visualice en Grafana.</p>
+<h3 id="tareas">Tareas<a class="headerlink" href="#tareas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Comprueba que Mosquitto funciona correctamente.</li>
+<li>Instala o reutiliza InfluxDB 2.x y Grafana.</li>
+<li>Configura la organización <code>monlau</code> y el bucket <code>iot</code>.</li>
+<li>Ejecuta un publicador MQTT de telemetría JSON.</li>
+<li>Programa un suscriptor Python que almacene las mediciones en InfluxDB.</li>
+<li>Diseña un dashboard con gráficos de temperatura y humedad.</li>
+<li>Activa la actualización automática del dashboard.</li>
+<li>Reinicia los contenedores y verifica que se conservan los datos.</li>
+<li>Documenta el procedimiento y las incidencias encontradas.</li>
+</ol>
+<h3 id="entrega">Entrega<a class="headerlink" href="#entrega" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>capitulo13_iot/
+|-- 01_escribir_influx.py
+|-- 02_consultar_influx.py
+|-- 03_mqtt_a_influx.py
+|-- capturas/
+|   |-- influxdb.png
+|   |-- mqtt.png
+|   |-- grafana.png
+|   |-- persistencia.png
+|-- memoria.pdf
+</code></pre></div>
+<p>No incluyas tokens, contraseñas ni archivos con credenciales en la entrega o en GitHub.</p>
+<h3 id="rubrica-de-evaluacion">Rúbrica de evaluación<a class="headerlink" href="#rubrica-de-evaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instalación y comprobación de InfluxDB</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Instalación y configuración de Grafana</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Escritura y consulta de datos con Python</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Integración MQTT con InfluxDB</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Dashboard con dos gráficos funcionales</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Documentación y pruebas de persistencia</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="1317-conclusiones">13.17. Conclusiones<a class="headerlink" href="#1317-conclusiones" title="Permanent link">&para;</a></h2>
+<p>En este capítulo hemos conectado tres tecnologías fundamentales para el Internet de las Cosas: <strong>MQTT</strong> para transportar los mensajes, <strong>InfluxDB</strong> para conservar mediciones con marcas temporales y <strong>Grafana</strong> para visualizar su evolución. La combinación permite construir un sistema de monitorización reproducible y ampliable.</p>
+<p>En próximos capítulos podremos incorporar sensores reales, alarmas, automatización de respuestas y servicios adicionales.</p>
+<div class="admonition note">
+<p class="admonition-title">Comprobación antes de publicar</p>
+<p>Verifica los comandos y programas en tu Arduino UNO Q antes de dar el capítulo por cerrado. Una vez comprobado, integra <code>capitulo13.md</code> en la navegación de <code>mkdocs.yml</code>, ejecuta <code>mkdocs build</code> y publica con <code>mkdocs gh-deploy</code> siguiendo el procedimiento habitual del libro.</p>
 </div>
 
 
