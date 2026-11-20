@@ -1155,6 +1155,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 17. Integración de IA con sensores y actuadores
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1171,6 +1189,413 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#171-objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1. Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#172-de-los-modelos-de-ia-al-control-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2. De los modelos de IA al control de dispositivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.2. De los modelos de IA al control de dispositivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1721-dos-procesadores-dos-responsabilidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2.1. Dos procesadores, dos responsabilidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1722-reglas-frente-a-modelos-aprendidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2.2. Reglas frente a modelos aprendidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#173-arquitectura-de-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.3. Arquitectura de la práctica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#174-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.4. Preparación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#175-programa-1-adquisicion-de-lecturas-simuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.5. Programa 1: adquisición de lecturas simuladas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#176-programa-2-entrenamiento-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.6. Programa 2: entrenamiento del modelo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#177-programa-3-inferencia-local-y-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.7. Programa 3: inferencia local y decisiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#178-programa-4-validacion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.8. Programa 4: validación básica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#179-interpretacion-de-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.9. Interpretación de resultados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.9. Interpretación de resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1791-modelo-politica-de-control-y-actuador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.9.1. Modelo, política de control y actuador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1710-integracion-opcional-con-sensores-y-actuadores-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10. Integración opcional con sensores y actuadores reales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.10. Integración opcional con sensores y actuadores reales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#17101-adquisicion-de-datos-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.1. Adquisición de datos reales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17102-salida-fisica-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.2. Salida física segura
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17103-comunicacion-con-el-microcontrolador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.3. Comunicación con el microcontrolador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1711-relacion-con-mqtt-influxdb-y-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.11. Relación con MQTT, InfluxDB y Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1712-actividades-guiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.12. Actividades guiadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.12. Actividades guiadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-1-verificar-el-conjunto-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 1. Verificar el conjunto de datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-2-modificar-la-regla-de-etiquetado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 2. Modificar la regla de etiquetado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-3-estudiar-el-numero-de-vecinos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 3. Estudiar el número de vecinos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-4-medir-el-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 4. Medir el rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-5-disenar-una-ampliacion-con-mqtt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 5. Diseñar una ampliación con MQTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1713-practica-integradora-evaluable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.13. Práctica integradora evaluable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.13. Práctica integradora evaluable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titulo-prototipo-de-control-ambiental-con-inferencia-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Título: Prototipo de control ambiental con inferencia local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-de-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos de entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1714-resolucion-de-problemas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.14. Resolución de problemas frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1715-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.15. Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1716-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.16. Conclusiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.16. Conclusiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencias-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias de consulta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1347,6 +1772,402 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#171-objetivos-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1. Objetivos de aprendizaje
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#172-de-los-modelos-de-ia-al-control-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2. De los modelos de IA al control de dispositivos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.2. De los modelos de IA al control de dispositivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1721-dos-procesadores-dos-responsabilidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2.1. Dos procesadores, dos responsabilidades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1722-reglas-frente-a-modelos-aprendidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2.2. Reglas frente a modelos aprendidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#173-arquitectura-de-la-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.3. Arquitectura de la práctica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#174-preparacion-del-entorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.4. Preparación del entorno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#175-programa-1-adquisicion-de-lecturas-simuladas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.5. Programa 1: adquisición de lecturas simuladas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#176-programa-2-entrenamiento-del-modelo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.6. Programa 2: entrenamiento del modelo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#177-programa-3-inferencia-local-y-decisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.7. Programa 3: inferencia local y decisiones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#178-programa-4-validacion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.8. Programa 4: validación básica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#179-interpretacion-de-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.9. Interpretación de resultados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.9. Interpretación de resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1791-modelo-politica-de-control-y-actuador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.9.1. Modelo, política de control y actuador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1710-integracion-opcional-con-sensores-y-actuadores-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10. Integración opcional con sensores y actuadores reales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.10. Integración opcional con sensores y actuadores reales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#17101-adquisicion-de-datos-reales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.1. Adquisición de datos reales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17102-salida-fisica-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.2. Salida física segura
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17103-comunicacion-con-el-microcontrolador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.10.3. Comunicación con el microcontrolador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1711-relacion-con-mqtt-influxdb-y-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.11. Relación con MQTT, InfluxDB y Grafana
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1712-actividades-guiadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.12. Actividades guiadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.12. Actividades guiadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actividad-1-verificar-el-conjunto-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 1. Verificar el conjunto de datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-2-modificar-la-regla-de-etiquetado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 2. Modificar la regla de etiquetado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-3-estudiar-el-numero-de-vecinos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 3. Estudiar el número de vecinos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-4-medir-el-rendimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 4. Medir el rendimiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actividad-5-disenar-una-ampliacion-con-mqtt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad 5. Diseñar una ampliación con MQTT
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1713-practica-integradora-evaluable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.13. Práctica integradora evaluable
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.13. Práctica integradora evaluable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#titulo-prototipo-de-control-ambiental-con-inferencia-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Título: Prototipo de control ambiental con inferencia local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enunciado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enunciado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-de-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos de entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrica-de-evaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rúbrica de evaluación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1714-resolucion-de-problemas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.14. Resolución de problemas frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1715-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.15. Autoevaluación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1716-conclusiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.16. Conclusiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17.16. Conclusiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#referencias-de-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referencias de consulta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1364,9 +2185,495 @@
 
 <h1 id="capitulo-17-integracion-de-ia-con-sensores-y-actuadores">Capítulo 17. Integración de IA con sensores y actuadores<a class="headerlink" href="#capitulo-17-integracion-de-ia-con-sensores-y-actuadores" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
-<p class="admonition-title">En preparación</p>
-<p>Este capítulo se desarrollará próximamente.</p>
+<p class="admonition-title">Parte V — Inteligencia artificial en Arduino UNO Q</p>
+<p>En este capítulo construiremos un sistema de decisión Edge AI que recibe lecturas ambientales, realiza inferencia local y propone acciones de control. Empezaremos en <strong>modo simulación</strong>, sin activar salidas físicas, para poder reproducir las pruebas en cualquier Arduino UNO Q.</p>
 </div>
+<h2 id="171-objetivos-de-aprendizaje">17.1. Objetivos de aprendizaje<a class="headerlink" href="#171-objetivos-de-aprendizaje" title="Permanent link">&para;</a></h2>
+<p>Al finalizar este capítulo, el alumnado será capaz de:</p>
+<ul>
+<li>Explicar el flujo <strong>sensor → adquisición → preprocesamiento → modelo → decisión → actuador</strong>.</li>
+<li>Distinguir la predicción de un modelo de la activación real de un dispositivo.</li>
+<li>Generar datos de prueba y crear un modelo k-NN sencillo en Python.</li>
+<li>Ejecutar inferencia local sin depender de servicios en la nube.</li>
+<li>Registrar decisiones y tiempos de respuesta para analizarlos.</li>
+<li>Aplicar medidas de seguridad antes de controlar hardware real.</li>
+<li>Relacionar el sistema con MQTT, InfluxDB y Grafana, estudiados en los capítulos 12 y 13.</li>
+</ul>
+<h2 id="172-de-los-modelos-de-ia-al-control-de-dispositivos">17.2. De los modelos de IA al control de dispositivos<a class="headerlink" href="#172-de-los-modelos-de-ia-al-control-de-dispositivos" title="Permanent link">&para;</a></h2>
+<p>En el capítulo 15 entrenamos y evaluamos modelos; en el 16 analizamos imágenes. Ahora conectaremos las predicciones con decisiones que podrían afectar al mundo físico.</p>
+<p>Un <strong>sensor</strong> transforma una magnitud física (temperatura, humedad, luz, movimiento) en una señal o un dato digital. Un <strong>actuador</strong> ejecuta una acción: encender un ventilador, mover un servomotor, activar un relé o iluminar un LED.</p>
+<p>El modelo de IA se sitúa entre la adquisición y la decisión. En lugar de enviar los datos a un servidor remoto, <strong>Edge AI</strong> realiza la inferencia en el propio equipo. Esto puede reducir la latencia, el tráfico de red y la exposición de datos, aunque no garantiza por sí mismo un sistema seguro.</p>
+<div class="highlight"><pre><span></span><code>Sensores → Lectura y validación → Normalización → Modelo IA
+                                                  ↓
+Registro CSV / MQTT / InfluxDB ← Decisión segura ← Predicción
+                                                  ↓
+                                         Actuador (opcional)
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Predicción no equivale a control seguro</p>
+<p>Ningún programa de este capítulo conecta automáticamente un motor, un relé o una carga eléctrica. Antes de controlar un actuador real hay que verificar tensiones, corrientes, alimentación, aislamiento, estado inicial, parada de emergencia y comportamiento ante fallos. No se deben conectar cargas de potencia directamente a los pines de la placa.</p>
+</div>
+<h3 id="1721-dos-procesadores-dos-responsabilidades">17.2.1. Dos procesadores, dos responsabilidades<a class="headerlink" href="#1721-dos-procesadores-dos-responsabilidades" title="Permanent link">&para;</a></h3>
+<p>Arduino UNO Q combina un entorno Linux, adecuado para ejecutar Python y tareas de IA, con un microcontrolador destinado a la interacción con entradas y salidas. El intercambio entre ambos debe diseñarse de acuerdo con las interfaces y herramientas efectivamente disponibles en la versión instalada del sistema.</p>
+<p>En esta práctica utilizaremos <strong>Python en Linux</strong> para simular lecturas y generar decisiones. La conexión posterior con sensores y actuadores físicos será una ampliación guiada, no un requisito para completar la práctica.</p>
+<h3 id="1722-reglas-frente-a-modelos-aprendidos">17.2.2. Reglas frente a modelos aprendidos<a class="headerlink" href="#1722-reglas-frente-a-modelos-aprendidos" title="Permanent link">&para;</a></h3>
+<p>Una regla como <code>temperatura &gt;= 27</code> es programación convencional. Un clasificador k-NN compara una lectura nueva con ejemplos etiquetados y decide según sus vecinos. <strong>Si las etiquetas se generan mediante una regla, el modelo solo aprende a imitar esa regla</strong>: no descubre por sí mismo la temperatura óptima ni constituye un control industrial certificado.</p>
+<p>Para un proyecto real necesitaríamos lecturas auténticas, etiquetas fiables, separación entre entrenamiento y prueba, métricas y supervisión humana.</p>
+<h2 id="173-arquitectura-de-la-practica">17.3. Arquitectura de la práctica<a class="headerlink" href="#173-arquitectura-de-la-practica" title="Permanent link">&para;</a></h2>
+<p>Construiremos un prototipo de ventilación inteligente con tres variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Unidad</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperatura</td>
+<td>°C</td>
+<td>Principal indicador térmico</td>
+</tr>
+<tr>
+<td>Humedad relativa</td>
+<td>%</td>
+<td>Variable ambiental complementaria</td>
+</tr>
+<tr>
+<td>Luz</td>
+<td>% (escala simulada)</td>
+<td>Contexto adicional para el modelo</td>
+</tr>
+</tbody>
+</table>
+<p>La salida será una <strong>propuesta</strong>: <code>0 = ventilacion apagada</code> o <code>1 = ventilacion encendida</code>. El sistema no activa físicamente ningún ventilador.</p>
+<p>El flujo consta de cuatro programas:</p>
+<ol>
+<li><code>01_generar_lecturas.py</code>: crea 120 muestras ambientales simuladas.</li>
+<li><code>02_entrenar_modelo.py</code>: construye un modelo k-NN y lo guarda en JSON.</li>
+<li><code>03_control_edge.py</code>: ejecuta inferencia local y registra las decisiones.</li>
+<li><code>04_validar_seguridad.py</code>: comprueba rangos y cuenta cambios de estado.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Alcance didáctico</p>
+<p>Los datos son sintéticos y las etiquetas del entrenamiento se calculan con una regla de referencia. La práctica demuestra la integración de un modelo con una cadena de decisión, pero <strong>no valida su precisión con datos reales independientes</strong>. Tampoco implementa histéresis ni protección eléctrica para un actuador físico.</p>
+</div>
+<h2 id="174-preparacion-del-entorno">17.4. Preparación del entorno<a class="headerlink" href="#174-preparacion-del-entorno" title="Permanent link">&para;</a></h2>
+<p>Conecta mediante SSH o PuTTY al Arduino UNO Q. El prompt puede tener este aspecto:</p>
+<div class="highlight"><pre><span></span><code>arduino@UNO-Q-JOSE:~$
+</code></pre></div>
+<p>Crea la estructura de carpetas:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/practicas/capitulo17/<span class="o">{</span>datos,modelos,resultados<span class="o">}</span>
+<span class="nb">cd</span><span class="w"> </span>~/practicas/capitulo17
+</code></pre></div>
+<p>Comprueba la versión de Python:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>--version
+</code></pre></div>
+<p>Los ejemplos emplean <strong>solo la biblioteca estándar de Python</strong>: <code>csv</code>, <code>json</code>, <code>math</code>, <code>random</code>, <code>pathlib</code> y <code>time</code>. Por tanto, no necesitan instalar paquetes externos. Si deseas mantener un entorno aislado, puedes crearlo así:</p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</code></pre></div>
+<p>Si falla la creación del entorno virtual por ausencia de <code>ensurepip</code>, utiliza la solución que aplicamos en capítulos anteriores (<code>python3.13-venv</code> para Python 3.13), o ejecuta los programas directamente con <code>python3</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Cómo crear los archivos</p>
+<p>Sitúate en <code>~/practicas/capitulo17</code>, ejecuta <code>nano nombre_del_archivo.py</code>, pega el programa correspondiente, guarda con <code>Ctrl + O</code>, confirma con <code>Enter</code> y sal con <code>Ctrl + X</code>. Los programas Python de este capítulo contienen únicamente caracteres ASCII para evitar problemas de codificación; el texto explicativo mantiene la ortografía española.</p>
+</div>
+<h2 id="175-programa-1-adquisicion-de-lecturas-simuladas">17.5. Programa 1: adquisición de lecturas simuladas<a class="headerlink" href="#175-programa-1-adquisicion-de-lecturas-simuladas" title="Permanent link">&para;</a></h2>
+<p>En un sistema real, las lecturas llegarían de sensores físicos o de un servicio MQTT. Para empezar, generaremos una secuencia reproducible de temperaturas, humedades y niveles de luz.</p>
+<p>El programa fija una semilla aleatoria, crea un fichero CSV con cabecera y guarda 120 muestras. Los valores cambian suavemente para representar un entorno variable.</p>
+<p><strong>Archivo:</strong> <code>01_generar_lecturas.py</code></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="n">BASE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+<span class="n">DESTINO</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"datos"</span> <span class="o">/</span> <span class="s2">"lecturas.csv"</span>
+<span class="n">DESTINO</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">DESTINO</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"w"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">escritor</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+    <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">"instante"</span><span class="p">,</span> <span class="s2">"temperatura"</span><span class="p">,</span> <span class="s2">"humedad"</span><span class="p">,</span> <span class="s2">"luz"</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">120</span><span class="p">):</span>
+        <span class="n">temperatura</span> <span class="o">=</span> <span class="mi">23</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">14</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span>
+        <span class="n">humedad</span> <span class="o">=</span> <span class="mi">56</span> <span class="o">-</span> <span class="mi">9</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">14</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">luz</span> <span class="o">=</span> <span class="mi">55</span> <span class="o">+</span> <span class="mi">35</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">11</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">i</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">temperatura</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">humedad</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">luz</span><span class="p">)),</span> <span class="mi">2</span><span class="p">)])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Archivo generado:"</span><span class="p">,</span> <span class="n">DESTINO</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Lecturas simuladas: 120"</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Ejecución:</strong></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>01_generar_lecturas.py
+</code></pre></div>
+<p><strong>Comprobación:</strong></p>
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-n<span class="w"> </span><span class="m">6</span><span class="w"> </span>datos/lecturas.csv
+wc<span class="w"> </span>-l<span class="w"> </span>datos/lecturas.csv
+</code></pre></div>
+<p>El archivo debe contener 121 líneas: una cabecera y 120 lecturas.</p>
+<h2 id="176-programa-2-entrenamiento-del-modelo">17.6. Programa 2: entrenamiento del modelo<a class="headerlink" href="#176-programa-2-entrenamiento-del-modelo" title="Permanent link">&para;</a></h2>
+<p>El clasificador <strong>k-NN</strong> conserva ejemplos etiquetados. En la inferencia calcula distancias normalizadas, selecciona los cinco vecinos más cercanos y decide por mayoría. La normalización impide que una variable con escala numérica grande domine la distancia. El archivo JSON incluye ejemplos, escalas, etiquetas y el origen de las etiquetas.</p>
+<p><strong>Archivo:</strong> <code>02_entrenar_modelo.py</code></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+<span class="n">BASE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+<span class="n">ORIGEN</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"datos"</span> <span class="o">/</span> <span class="s2">"lecturas.csv"</span>
+<span class="n">DESTINO</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"modelos"</span> <span class="o">/</span> <span class="s2">"modelo_ventilacion.json"</span>
+<span class="n">DESTINO</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">ORIGEN</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="n">filas</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">archivo</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">filas</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="s2">"No hay lecturas para entrenar"</span><span class="p">)</span>
+
+<span class="c1"># Modelo simple basado en ejemplos etiquetados por una regla de referencia.</span>
+<span class="c1"># Este entrenamiento NO aprende una politica distinta de dicha regla.</span>
+<span class="n">ejemplos</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">filas</span><span class="p">:</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"temperatura"</span><span class="p">])</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"humedad"</span><span class="p">])</span>
+    <span class="n">luz</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"luz"</span><span class="p">])</span>
+    <span class="n">etiqueta</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;=</span> <span class="mi">27</span> <span class="ow">or</span> <span class="p">(</span><span class="n">t</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">h</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">ejemplos</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">"x"</span><span class="p">:</span> <span class="p">[</span><span class="n">t</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">luz</span><span class="p">],</span> <span class="s2">"y"</span><span class="p">:</span> <span class="n">etiqueta</span><span class="p">})</span>
+
+<span class="n">modelo</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"tipo"</span><span class="p">:</span> <span class="s2">"knn"</span><span class="p">,</span>
+    <span class="s2">"k"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">"escalas"</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">40.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">],</span>
+    <span class="s2">"etiquetas"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"0"</span><span class="p">:</span> <span class="s2">"apagado"</span><span class="p">,</span> <span class="s2">"1"</span><span class="p">:</span> <span class="s2">"encendido"</span><span class="p">},</span>
+    <span class="s2">"ejemplos"</span><span class="p">:</span> <span class="n">ejemplos</span><span class="p">,</span>
+    <span class="s2">"origen_etiquetas"</span><span class="p">:</span> <span class="s2">"regla_de_referencia"</span>
+<span class="p">}</span>
+<span class="n">DESTINO</span><span class="o">.</span><span class="n">write_text</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">modelo</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Modelo guardado:"</span><span class="p">,</span> <span class="n">DESTINO</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ejemplos:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ejemplos</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Ejecución:</strong></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>02_entrenar_modelo.py
+</code></pre></div>
+<p><strong>Comprobación:</strong></p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>modelos/modelo_ventilacion.json
+</code></pre></div>
+<p>El modelo debe existir y contener 120 ejemplos. No se trata de un modelo neuronal: es un clasificador k-NN sencillo y transparente.</p>
+<h2 id="177-programa-3-inferencia-local-y-decisiones">17.7. Programa 3: inferencia local y decisiones<a class="headerlink" href="#177-programa-3-inferencia-local-y-decisiones" title="Permanent link">&para;</a></h2>
+<p>Este programa lee las muestras, carga el modelo JSON, calcula una predicción para cada lectura y mide la duración de la inferencia con <code>time.perf_counter()</code>. <strong>No controla GPIO ni envía órdenes a un actuador</strong>: solo muestra decisiones y las registra en un CSV.</p>
+<p><strong>Archivo:</strong> <code>03_control_edge.py</code></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">BASE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+<span class="n">MODELO</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"modelos"</span> <span class="o">/</span> <span class="s2">"modelo_ventilacion.json"</span>
+<span class="n">LECTURAS</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"datos"</span> <span class="o">/</span> <span class="s2">"lecturas.csv"</span>
+<span class="n">REGISTRO</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"resultados"</span> <span class="o">/</span> <span class="s2">"decisiones.csv"</span>
+<span class="n">REGISTRO</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">modelo</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">MODELO</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
+<span class="n">escalas</span> <span class="o">=</span> <span class="n">modelo</span><span class="p">[</span><span class="s2">"escalas"</span><span class="p">]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">modelo</span><span class="p">[</span><span class="s2">"k"</span><span class="p">]</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">predecir</span><span class="p">(</span><span class="n">valores</span><span class="p">):</span>
+    <span class="n">distancias</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">ejemplo</span> <span class="ow">in</span> <span class="n">modelo</span><span class="p">[</span><span class="s2">"ejemplos"</span><span class="p">]:</span>
+        <span class="n">distancia</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span>
+            <span class="p">((</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="n">escala</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+            <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">escala</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">valores</span><span class="p">,</span> <span class="n">ejemplo</span><span class="p">[</span><span class="s2">"x"</span><span class="p">],</span> <span class="n">escalas</span><span class="p">)</span>
+        <span class="p">))</span>
+        <span class="n">distancias</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">distancia</span><span class="p">,</span> <span class="n">ejemplo</span><span class="p">[</span><span class="s2">"y"</span><span class="p">]))</span>
+    <span class="n">vecinos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">distancias</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">par</span><span class="p">:</span> <span class="n">par</span><span class="p">[</span><span class="mi">0</span><span class="p">])[:</span><span class="n">k</span><span class="p">]</span>
+    <span class="n">votos</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">etiqueta</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">etiqueta</span> <span class="ow">in</span> <span class="n">vecinos</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">votos</span> <span class="o">&gt;</span> <span class="n">k</span> <span class="o">/</span> <span class="mi">2</span> <span class="k">else</span> <span class="mi">0</span>
+
+
+<span class="c1"># Modo seguro: solo registra decisiones, no acciona hardware.</span>
+<span class="k">with</span> <span class="n">LECTURAS</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">entrada</span><span class="p">,</span>         <span class="n">REGISTRO</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">"w"</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">salida</span><span class="p">:</span>
+    <span class="n">lector</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">entrada</span><span class="p">)</span>
+    <span class="n">escritor</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">salida</span><span class="p">)</span>
+    <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">"instante"</span><span class="p">,</span> <span class="s2">"temperatura"</span><span class="p">,</span> <span class="s2">"humedad"</span><span class="p">,</span> <span class="s2">"luz"</span><span class="p">,</span> <span class="s2">"prediccion"</span><span class="p">,</span> <span class="s2">"latencia_ms"</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">lector</span><span class="p">:</span>
+        <span class="n">valores</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="n">c</span><span class="p">])</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"temperatura"</span><span class="p">,</span> <span class="s2">"humedad"</span><span class="p">,</span> <span class="s2">"luz"</span><span class="p">)]</span>
+        <span class="n">inicio</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
+        <span class="n">prediccion</span> <span class="o">=</span> <span class="n">predecir</span><span class="p">(</span><span class="n">valores</span><span class="p">)</span>
+        <span class="n">latencia_ms</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span> <span class="o">-</span> <span class="n">inicio</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span>
+        <span class="n">escritor</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">fila</span><span class="p">[</span><span class="s2">"instante"</span><span class="p">],</span> <span class="o">*</span><span class="n">valores</span><span class="p">,</span> <span class="n">prediccion</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">latencia_ms</span><span class="p">,</span> <span class="mi">4</span><span class="p">)])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"t="</span><span class="p">,</span> <span class="n">fila</span><span class="p">[</span><span class="s2">"instante"</span><span class="p">],</span> <span class="s2">"ventilacion="</span><span class="p">,</span> <span class="s2">"ON"</span> <span class="k">if</span> <span class="n">prediccion</span> <span class="k">else</span> <span class="s2">"OFF"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Registro guardado:"</span><span class="p">,</span> <span class="n">REGISTRO</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Ejecución:</strong></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>03_control_edge.py
+</code></pre></div>
+<p><strong>Comprobación:</strong></p>
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-n<span class="w"> </span><span class="m">6</span><span class="w"> </span>resultados/decisiones.csv
+wc<span class="w"> </span>-l<span class="w"> </span>resultados/decisiones.csv
+</code></pre></div>
+<p>Se esperan 121 líneas. La columna <code>latencia_ms</code> contiene una medida local orientativa; su valor depende de la carga del equipo.</p>
+<h2 id="178-programa-4-validacion-basica">17.8. Programa 4: validación básica<a class="headerlink" href="#178-programa-4-validacion-basica" title="Permanent link">&para;</a></h2>
+<p>Antes de conectar dispositivos físicos revisamos si existen lecturas fuera de rango y cuántas veces cambia la salida propuesta. Un número elevado de cambios puede indicar oscilaciones y desgaste si en el futuro se emplea un relé.</p>
+<p><strong>Archivo:</strong> <code>04_validar_seguridad.py</code></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+
+<span class="n">BASE</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span>
+<span class="n">ORIGEN</span> <span class="o">=</span> <span class="n">BASE</span> <span class="o">/</span> <span class="s2">"resultados"</span> <span class="o">/</span> <span class="s2">"decisiones.csv"</span>
+<span class="n">TOTAL</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">CAMBIOS</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ANOMALIAS</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">anterior</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="k">with</span> <span class="n">ORIGEN</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">newline</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">archivo</span><span class="p">):</span>
+        <span class="n">TOTAL</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"temperatura"</span><span class="p">])</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"humedad"</span><span class="p">])</span>
+        <span class="n">luz</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"luz"</span><span class="p">])</span>
+        <span class="n">accion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="s2">"prediccion"</span><span class="p">])</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="o">-</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="n">t</span> <span class="o">&lt;=</span> <span class="mi">60</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="ow">and</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">luz</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">):</span>
+            <span class="n">ANOMALIAS</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">anterior</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">accion</span> <span class="o">!=</span> <span class="n">anterior</span><span class="p">:</span>
+            <span class="n">CAMBIOS</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">anterior</span> <span class="o">=</span> <span class="n">accion</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Muestras:"</span><span class="p">,</span> <span class="n">TOTAL</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cambios de estado:"</span><span class="p">,</span> <span class="n">CAMBIOS</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Valores fuera de rango:"</span><span class="p">,</span> <span class="n">ANOMALIAS</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">ANOMALIAS</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"AVISO: revisar los datos antes de conectar actuadores"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Validacion basica de rangos: OK"</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Ejecución:</strong></p>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>04_validar_seguridad.py
+</code></pre></div>
+<p><strong>Comprobación:</strong> el programa debe mostrar el número de muestras, los cambios de estado y los valores fuera de rango. Un resultado de cero anomalías solo significa que los valores cumplen estos límites básicos, no que el sistema sea seguro para uso industrial.</p>
+<h2 id="179-interpretacion-de-resultados">17.9. Interpretación de resultados<a class="headerlink" href="#179-interpretacion-de-resultados" title="Permanent link">&para;</a></h2>
+<p>Una vez ejecutados los cuatro programas, examina los archivos generados:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lh<span class="w"> </span>datos<span class="w"> </span>modelos<span class="w"> </span>resultados
+head<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span>resultados/decisiones.csv
+</code></pre></div>
+<p>Analiza las siguientes preguntas:</p>
+<ul>
+<li>¿En qué instantes propone encender el ventilador?</li>
+<li>¿Hay diferencias entre las decisiones del modelo y la regla que generó las etiquetas?</li>
+<li>¿Cuánto tarda cada inferencia? ¿Es comparable ese tiempo con el intervalo de muestreo?</li>
+<li>¿Qué ocurre si la temperatura se aproxima a un umbral de decisión?</li>
+<li>¿Por qué no sería seguro accionar directamente un relé con cada cambio de predicción?</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Ejemplo de análisis</p>
+<p>Si la predicción cambia rápidamente entre 0 y 1, el actuador físico podría encenderse y apagarse repetidamente. Para evitarlo, un diseño real debe añadir una política de control independiente del modelo: histéresis, tiempo mínimo entre maniobras, límites de seguridad y un estado seguro ante fallos.</p>
+</div>
+<h3 id="1791-modelo-politica-de-control-y-actuador">17.9.1. Modelo, política de control y actuador<a class="headerlink" href="#1791-modelo-politica-de-control-y-actuador" title="Permanent link">&para;</a></h3>
+<p>Conviene separar tres responsabilidades:</p>
+<table>
+<thead>
+<tr>
+<th>Capa</th>
+<th>Responsabilidad</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modelo</td>
+<td>Estimar un estado o necesidad</td>
+<td>«Conviene ventilar»</td>
+</tr>
+<tr>
+<td>Política de control</td>
+<td>Autorizar o rechazar la acción</td>
+<td>«Solo activar si el sensor es válido y han pasado 30 s»</td>
+</tr>
+<tr>
+<td>Actuador</td>
+<td>Ejecutar la orden autorizada</td>
+<td>Activar un módulo de control adecuado</td>
+</tr>
+</tbody>
+</table>
+<p>Esta separación facilita las pruebas, la depuración y la seguridad.</p>
+<h2 id="1710-integracion-opcional-con-sensores-y-actuadores-reales">17.10. Integración opcional con sensores y actuadores reales<a class="headerlink" href="#1710-integracion-opcional-con-sensores-y-actuadores-reales" title="Permanent link">&para;</a></h2>
+<p>El paso de simulación a hardware debe realizarse únicamente después de identificar los módulos concretos y verificar su compatibilidad con Arduino UNO Q.</p>
+<h3 id="17101-adquisicion-de-datos-reales">17.10.1. Adquisición de datos reales<a class="headerlink" href="#17101-adquisicion-de-datos-reales" title="Permanent link">&para;</a></h3>
+<p>El sistema podría recibir valores de:</p>
+<ul>
+<li>Un sensor de temperatura y humedad conectado a una interfaz compatible.</li>
+<li>Un sensor de luminosidad mediante un bus o una entrada apropiada.</li>
+<li>Un microcontrolador que publique lecturas por MQTT.</li>
+<li>Una API REST que proporcione medidas ambientales.</li>
+</ul>
+<p>Antes de modificar los programas, hay que documentar: modelo de sensor, tensión de alimentación, pines o bus utilizado, biblioteca necesaria, frecuencia de muestreo y formato de datos.</p>
+<h3 id="17102-salida-fisica-segura">17.10.2. Salida física segura<a class="headerlink" href="#17102-salida-fisica-segura" title="Permanent link">&para;</a></h3>
+<p>Para accionar un ventilador o motor <strong>no se debe utilizar directamente un pin de la placa como fuente de potencia</strong>. Se requiere una etapa de control adecuada, alimentación compatible y protección frente a cargas inductivas cuando corresponda. En una primera ampliación es preferible emplear un LED indicador o una simulación de actuador.</p>
+<div class="admonition warning">
+<p class="admonition-title">Seguridad eléctrica</p>
+<p>No conectar tensión de red a una protoboard ni manipular cargas de 230 V en esta práctica. Si se emplea un módulo de relé o controlador de motor, el docente debe comprobar su esquema, alimentación, aislamiento y requisitos de protección antes de autorizar las conexiones.</p>
+</div>
+<h3 id="17103-comunicacion-con-el-microcontrolador">17.10.3. Comunicación con el microcontrolador<a class="headerlink" href="#17103-comunicacion-con-el-microcontrolador" title="Permanent link">&para;</a></h3>
+<p>En una ampliación posterior, la aplicación Linux podría enviar comandos a un programa del microcontrolador mediante una interfaz soportada por el entorno instalado. El microcontrolador debería validar la orden, aplicar límites y pasar a un estado seguro si deja de recibir mensajes.</p>
+<p>No incluimos aquí código de pines o librerías de comunicación no verificadas, porque dependen del firmware, las bibliotecas y el hardware conectado.</p>
+<h2 id="1711-relacion-con-mqtt-influxdb-y-grafana">17.11. Relación con MQTT, InfluxDB y Grafana<a class="headerlink" href="#1711-relacion-con-mqtt-influxdb-y-grafana" title="Permanent link">&para;</a></h2>
+<p>La arquitectura del proyecto puede reutilizar lo aprendido en capítulos anteriores:</p>
+<div class="highlight"><pre><span></span><code>Lecturas → Modelo local → Decisión → Registro CSV
+    |                         |
+    +------&gt; MQTT ------------+
+                 |
+              InfluxDB
+                 |
+              Grafana
+</code></pre></div>
+<p>Una implementación ampliada podría publicar por MQTT el instante, las tres lecturas, la predicción y la latencia de inferencia. Después, InfluxDB almacenaría la serie temporal y Grafana mostraría la evolución y los cambios de estado.</p>
+<p><strong>Importante:</strong> los cuatro programas proporcionados no publican por MQTT ni escriben en InfluxDB. Esta integración se propone como actividad de ampliación y debe aprovechar la configuración ya probada en los capítulos 12 y 13.</p>
+<h2 id="1712-actividades-guiadas">17.12. Actividades guiadas<a class="headerlink" href="#1712-actividades-guiadas" title="Permanent link">&para;</a></h2>
+<h3 id="actividad-1-verificar-el-conjunto-de-datos">Actividad 1. Verificar el conjunto de datos<a class="headerlink" href="#actividad-1-verificar-el-conjunto-de-datos" title="Permanent link">&para;</a></h3>
+<p>Ejecuta <code>01_generar_lecturas.py</code>, abre <code>datos/lecturas.csv</code> y comprueba el número de filas, los nombres de columnas y los rangos de temperatura, humedad y luz. Explica por qué son datos simulados y no medidas físicas.</p>
+<h3 id="actividad-2-modificar-la-regla-de-etiquetado">Actividad 2. Modificar la regla de etiquetado<a class="headerlink" href="#actividad-2-modificar-la-regla-de-etiquetado" title="Permanent link">&para;</a></h3>
+<p>En <code>02_entrenar_modelo.py</code>, modifica el umbral <code>t &gt;= 27</code> por <code>t &gt;= 26</code>. Vuelve a entrenar el modelo y ejecuta de nuevo <code>03_control_edge.py</code>. Compara el número de decisiones de encendido.</p>
+<h3 id="actividad-3-estudiar-el-numero-de-vecinos">Actividad 3. Estudiar el número de vecinos<a class="headerlink" href="#actividad-3-estudiar-el-numero-de-vecinos" title="Permanent link">&para;</a></h3>
+<p>Cambia <code>"k": 5</code> por <code>"k": 3</code> y después por <code>"k": 9</code> en el entrenamiento. Genera cada modelo, realiza inferencia y describe las diferencias observadas. Guarda una copia de cada CSV para comparar los resultados.</p>
+<h3 id="actividad-4-medir-el-rendimiento">Actividad 4. Medir el rendimiento<a class="headerlink" href="#actividad-4-medir-el-rendimiento" title="Permanent link">&para;</a></h3>
+<p>Ejecuta varias veces <code>03_control_edge.py</code>. Compara las latencias registradas e identifica posibles variaciones debidas a la carga del sistema. Explica por qué una inferencia rápida no garantiza por sí sola una respuesta de control segura.</p>
+<h3 id="actividad-5-disenar-una-ampliacion-con-mqtt">Actividad 5. Diseñar una ampliación con MQTT<a class="headerlink" href="#actividad-5-disenar-una-ampliacion-con-mqtt" title="Permanent link">&para;</a></h3>
+<p>Dibuja el flujo de mensajes que permitiría enviar las lecturas y decisiones a InfluxDB mediante el sistema MQTT trabajado anteriormente. Propón los nombres de los temas, los campos de los mensajes y dos paneles para Grafana. No es necesario conectar hardware nuevo.</p>
+<h2 id="1713-practica-integradora-evaluable">17.13. Práctica integradora evaluable<a class="headerlink" href="#1713-practica-integradora-evaluable" title="Permanent link">&para;</a></h2>
+<h3 id="titulo-prototipo-de-control-ambiental-con-inferencia-local">Título: Prototipo de control ambiental con inferencia local<a class="headerlink" href="#titulo-prototipo-de-control-ambiental-con-inferencia-local" title="Permanent link">&para;</a></h3>
+<p><strong>Organización:</strong> individual o por parejas, según indique el docente.<br />
+<strong>Entorno:</strong> Arduino UNO Q con Linux y Python.<br />
+<strong>Duración orientativa:</strong> 2-3 sesiones de taller.<br />
+<strong>Material:</strong> Arduino UNO Q, ordenador con SSH/PuTTY, editor de texto y archivos de este capítulo. No se requieren sensores ni actuadores físicos.</p>
+<h3 id="enunciado">Enunciado<a class="headerlink" href="#enunciado" title="Permanent link">&para;</a></h3>
+<p>Desarrolla y documenta un prototipo que genere lecturas ambientales simuladas, entrene un modelo k-NN, ejecute inferencia local, registre las decisiones y analice sus riesgos antes de controlar un actuador real.</p>
+<h3 id="requisitos-de-entrega">Requisitos de entrega<a class="headerlink" href="#requisitos-de-entrega" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Los cuatro programas Python funcionando en <code>~/practicas/capitulo17</code>.</li>
+<li>El CSV de lecturas y el archivo JSON del modelo.</li>
+<li>El CSV de decisiones con tiempos de inferencia.</li>
+<li>Una tabla comparativa con dos valores diferentes de <code>k</code>.</li>
+<li>Una breve memoria en PDF o Markdown con capturas, resultados, conclusiones y medidas de seguridad.</li>
+<li>Una demostración al profesor de la ejecución completa.</li>
+</ol>
+<h3 id="rubrica-de-evaluacion">Rúbrica de evaluación<a class="headerlink" href="#rubrica-de-evaluacion" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th style="text-align: right;">Puntuación máxima</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organización del proyecto y ejecución de programas</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Generación y validación de datos</td>
+<td style="text-align: right;">1,5</td>
+</tr>
+<tr>
+<td>Entrenamiento y explicación del modelo k-NN</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr>
+<td>Inferencia, registro y medición de latencias</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr>
+<td>Análisis de seguridad y limitaciones</td>
+<td style="text-align: right;">2,0</td>
+</tr>
+<tr>
+<td>Documentación y demostración</td>
+<td style="text-align: right;">1,0</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>10,0</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Condición de seguridad</p>
+<p>La demostración se realizará en modo simulación. La conexión de un actuador físico requerirá una práctica específica, un esquema revisado y autorización del docente.</p>
+</div>
+<h2 id="1714-resolucion-de-problemas-frecuentes">17.14. Resolución de problemas frecuentes<a class="headerlink" href="#1714-resolucion-de-problemas-frecuentes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Causa probable</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FileNotFoundError</code> al entrenar</td>
+<td>No existe <code>datos/lecturas.csv</code></td>
+<td>Ejecutar primero <code>01_generar_lecturas.py</code></td>
+</tr>
+<tr>
+<td><code>FileNotFoundError</code> al inferir</td>
+<td>Falta el JSON del modelo</td>
+<td>Ejecutar <code>02_entrenar_modelo.py</code></td>
+</tr>
+<tr>
+<td>Error al validar</td>
+<td>Falta <code>resultados/decisiones.csv</code></td>
+<td>Ejecutar <code>03_control_edge.py</code></td>
+</tr>
+<tr>
+<td>No aparecen archivos</td>
+<td>Ejecución desde otra carpeta</td>
+<td>Los programas guardan rutas relativas a su propio archivo; revisar <code>~/practicas/capitulo17</code></td>
+</tr>
+<tr>
+<td>Predicciones inesperadas</td>
+<td>Datos simulados, etiquetas de referencia o elección de <code>k</code></td>
+<td>Revisar los ejemplos y el origen de las etiquetas</td>
+</tr>
+<tr>
+<td>Latencias diferentes entre ejecuciones</td>
+<td>Carga variable del sistema</td>
+<td>Repetir medidas y comparar distribuciones</td>
+</tr>
+<tr>
+<td>Cambios frecuentes de estado</td>
+<td>Ausencia de política de control con histéresis</td>
+<td>Mantener modo simulación y diseñar protecciones antes de conectar hardware</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1715-autoevaluacion">17.15. Autoevaluación<a class="headerlink" href="#1715-autoevaluacion" title="Permanent link">&para;</a></h2>
+<ol>
+<li>¿Qué diferencia existe entre una lectura de sensor y una predicción de IA?</li>
+<li>¿Por qué es conveniente ejecutar la inferencia localmente en ciertos sistemas IoT?</li>
+<li>¿Qué función cumple el archivo JSON del modelo?</li>
+<li>¿Cómo decide el algoritmo k-NN la clase de una lectura nueva?</li>
+<li>¿Por qué se normalizan las variables antes de calcular distancias?</li>
+<li>¿Qué limitación tiene entrenar con etiquetas obtenidas de una regla programada?</li>
+<li>¿Por qué debemos separar modelo y política de control?</li>
+<li>¿Qué información registramos en <code>decisiones.csv</code>?</li>
+<li>¿Qué medidas añadirías antes de controlar un ventilador real?</li>
+<li>¿Cómo aprovecharías MQTT, InfluxDB y Grafana para supervisar este sistema?</li>
+</ol>
+<h2 id="1716-conclusiones">17.16. Conclusiones<a class="headerlink" href="#1716-conclusiones" title="Permanent link">&para;</a></h2>
+<p>En este capítulo hemos integrado adquisición de datos, entrenamiento, inferencia y evaluación de decisiones en un prototipo <strong>Edge AI</strong> que funciona localmente en Arduino UNO Q. Hemos comprobado que el modelo puede proponer acciones, pero también que un sistema físico necesita una capa independiente de validación y seguridad.</p>
+<p>En el <strong>capítulo 18 — Diseño del proyecto final</strong>, utilizaremos los conocimientos adquiridos para planificar una solución completa, definir requisitos, seleccionar componentes y organizar las fases de desarrollo.</p>
+<h3 id="referencias-de-consulta">Referencias de consulta<a class="headerlink" href="#referencias-de-consulta" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://docs.python.org/3/">Documentación de Python</a></li>
+<li><a href="https://docs.arduino.cc/">Arduino — documentación oficial</a></li>
+<li><a href="https://mqtt.org/">MQTT — sitio oficial</a></li>
+<li><a href="https://docs.influxdata.com/">InfluxDB — documentación</a></li>
+<li><a href="https://grafana.com/docs/">Grafana — documentación</a></li>
+</ul>
 
 
 
